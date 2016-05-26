@@ -1,0 +1,425 @@
+{
+    "query": {
+        "count": 20,
+        "created": "2011-07-11T19:06:00Z",
+        "lang": "en-US",
+        "diagnostics": {
+            "publiclyCallable": "true",
+            "url": {
+                "execution-time": "6",
+                "proxy": "DEFAULT",
+                "content": "http://rss.news.yahoo.com/rss/topstories"
+            },
+            "user-time": "8",
+            "service-time": "6",
+            "build-version": "19262"
+        },
+        "results": {
+            "item": [
+                {
+                    "title": "Obama challenges GOP to compromise on debt \n    (AP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_go_pr_wh/us_debt_showdown",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "ap/20110711/us_debt_showdown"
+                    },
+                    "source": "AP",
+                    "category": "politics",
+                    "pubDate": "Mon, 11 Jul 2011 18:01:20 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_go_pr_wh/us_debt_showdown\"><img src=\"http://d.yimg.com/a/p/ap/20110711/capt.a65bc652a32b495b9631d93f6d012bcc-a65bc652a32b495b9631d93f6d012bcc-0.jpg?x=130&y=118&q=85&sig=u1LxJ087xEm.uiqBc.p0tg--\" align=\"left\" height=\"118\" width=\"130\" alt=\"President Barack Obama talks about the ongoing budget negotiations, Monday, July 11, 2011, in the briefing room of the White House in Washington.   (AP Photo/Pablo Martinez Monsivais)\" border=\"0\" /></a>AP - President Barack Obama declared on Monday there would be no deal on raising the government's debt limit if Republicans won't compromise, and he said he would not sign a short-term extension &mdash; raising the stakes on volatile negotiations with the clock ticking toward an Aug. 2 deadline.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "118",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/ap/20110711/capt.a65bc652a32b495b9631d93f6d012bcc-a65bc652a32b495b9631d93f6d012bcc-0.jpg?x=130&y=118&q=85&sig=u1LxJ087xEm.uiqBc.p0tg--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_go_pr_wh/us_debt_showdown\"><img src=\"http://d.yimg.com/a/p/ap/20110711/capt.a65bc652a32b495b9631d93f6d012bcc-a65bc652a32b495b9631d93f6d012bcc-0.jpg?x=130&y=118&q=85&sig=u1LxJ087xEm.uiqBc.p0tg--\" align=\"left\" height=\"118\" width=\"130\" alt=\"photo\" title=\"President Barack Obama talks about the ongoing budget negotiations, Monday, July 11, 2011, in the briefing room of the White House in Washington.   (AP Photo/Pablo Martinez Monsivais)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AP)"
+                    }
+                }, {
+                    "title": "Syrian protesters attack US, French embassies \n    (AP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_mi_ea/ml_syria",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "ap/20110711/ml_syria"
+                    },
+                    "source": "AP",
+                    "category": "world",
+                    "pubDate": "Mon, 11 Jul 2011 16:19:17 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_mi_ea/ml_syria\"><img src=\"http://d.yimg.com/a/p/ap/20110711/capt.bde5e61379cc481d891926cabba668f0-bde5e61379cc481d891926cabba668f0-0.jpg?x=130&y=87&q=85&sig=EbrRGTIeOaSI..23ZyCbAw--\" align=\"left\" height=\"87\" width=\"130\" alt=\"A man checks the damaged U.S. embassy after pro-government protesters attacked the embassy compound in Damascus, Syria, Monday, July 11, 2011. A U.S. official says the Obama administration will formally protest an attack on the American Embassy in Syria and may seek compensation for damage caused when a mob breached the wall of the compound before being dispersed by Marine guards.(AP Photo)\" border=\"0\" /></a>AP - Syrian government supporters smashed windows at the U.S. Embassy in Damascus on Monday, raised a Syrian flag and scrawled graffiti calling the American ambassador a \"dog\" in anger over the envoy's visit to an opposition stronghold, witnesses said.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "87",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/ap/20110711/capt.bde5e61379cc481d891926cabba668f0-bde5e61379cc481d891926cabba668f0-0.jpg?x=130&y=87&q=85&sig=EbrRGTIeOaSI..23ZyCbAw--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_mi_ea/ml_syria\"><img src=\"http://d.yimg.com/a/p/ap/20110711/capt.bde5e61379cc481d891926cabba668f0-bde5e61379cc481d891926cabba668f0-0.jpg?x=130&y=87&q=85&sig=EbrRGTIeOaSI..23ZyCbAw--\" align=\"left\" height=\"87\" width=\"130\" alt=\"photo\" title=\"A man checks the damaged U.S. embassy after pro-government protesters attacked the embassy compound in Damascus, Syria, Monday, July 11, 2011. A U.S. official says the Obama administration will formally protest an attack on the American Embassy in Syria and may seek compensation for damage caused when a mob breached the wall of the compound before being dispersed by Marine guards.(AP Photo)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AP)"
+                    }
+                }, {
+                    "title": "Murdoch empire scandal spread to new papers \n    (AP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_bi_ge/eu_britain_phone_hacking",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "ap/20110711/eu_britain_phone_hacking"
+                    },
+                    "source": "AP",
+                    "category": "business",
+                    "pubDate": "Mon, 11 Jul 2011 18:48:19 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_bi_ge/eu_britain_phone_hacking\"><img src=\"http://d.yimg.com/a/p/ap/20110710/capt.2ef8254d31d04ba8be4c9e826ba35127-2ef8254d31d04ba8be4c9e826ba35127-0.jpg?x=130&y=86&q=85&sig=OeUp.lhZv2F5cBEZYAcOBA--\" align=\"left\" height=\"86\" width=\"130\" alt=\"Chairman of News Corporation Rupert Murdoch, center right, and his son James Murdoch, center left, chief executive of News Corporation Europe and Asia face the media as they arrive at his residence in central London, Sunday, July 10, 2011. News of the World cease publication with Sunday issue the last. News of the World is accused of hacking into the mobile phones of various crime victims, celebrities and politicians. (AP Photo/Sang Tan)\" border=\"0\" /></a>AP - The scandal engulfing Rupert Murdoch's media empire exploded in several directions Monday, with fresh reports of phone hacking attacks against some of the nation's most powerful figures, including royals and former Prime Minister Gordon Brown.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "86",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/ap/20110710/capt.2ef8254d31d04ba8be4c9e826ba35127-2ef8254d31d04ba8be4c9e826ba35127-0.jpg?x=130&y=86&q=85&sig=OeUp.lhZv2F5cBEZYAcOBA--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_bi_ge/eu_britain_phone_hacking\"><img src=\"http://d.yimg.com/a/p/ap/20110710/capt.2ef8254d31d04ba8be4c9e826ba35127-2ef8254d31d04ba8be4c9e826ba35127-0.jpg?x=130&y=86&q=85&sig=OeUp.lhZv2F5cBEZYAcOBA--\" align=\"left\" height=\"86\" width=\"130\" alt=\"photo\" title=\"Chairman of News Corporation Rupert Murdoch, center right, and his son James Murdoch, center left, chief executive of News Corporation Europe and Asia face the media as they arrive at his residence in central London, Sunday, July 10, 2011. News of the World cease publication with Sunday issue the last. News of the World is accused of hacking into the mobile phones of various crime victims, celebrities and politicians. (AP Photo/Sang Tan)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AP)"
+                    }
+                }, {
+                    "title": "Cypriot defense min resigns after blast kills 12 \n    (AP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_eu/eu_cyprus_explosion_naval_base",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "ap/20110711/eu_cyprus_explosion_naval_base"
+                    },
+                    "source": "AP",
+                    "category": "world",
+                    "pubDate": "Mon, 11 Jul 2011 18:23:03 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_eu/eu_cyprus_explosion_naval_base\"><img src=\"http://d.yimg.com/a/p/ap/20110711/capt.31c1019f070d4723b2187c1fbf39656a-31c1019f070d4723b2187c1fbf39656a-0.jpg?x=130&y=86&q=85&sig=tD40f7.5_9X.tBrkqhMtSw--\" align=\"left\" height=\"86\" width=\"130\" alt=\"Smoke billows from the damaged Mari power station &mdash; the island's primary electricity generator &mdash;  damaged by the explosion's concussion wave near the Evangelos Florakis naval base in Mari, Cyprus, Monday July 11, 2011. A huge explosion tore through a Cypriot National Guard naval base causing widespread damage, the Defense Ministry said. At least 10 people were feared dead. A bush fire ignited gunpowder stored in containers that Cypriot authorities confiscated in 2009 from a ship sailing off its coast. The ship, the Cypriot-flagged Monchegorsk, had been suspected of heading from Iran to Syria, with gunpowder destined for Gaza. It was seized in February 2009. (AP Photo/Philippos Christou)\" border=\"0\" /></a>AP - Dozens of containers of gunpowder seized years ago from an Iranian cargo ship exploded on Cyprus' main naval base Monday in a massive blast that killed 12 people, wounded 62 and wrecked a major power station, causing extensive blackouts.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "86",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/ap/20110711/capt.31c1019f070d4723b2187c1fbf39656a-31c1019f070d4723b2187c1fbf39656a-0.jpg?x=130&y=86&q=85&sig=tD40f7.5_9X.tBrkqhMtSw--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_eu/eu_cyprus_explosion_naval_base\"><img src=\"http://d.yimg.com/a/p/ap/20110711/capt.31c1019f070d4723b2187c1fbf39656a-31c1019f070d4723b2187c1fbf39656a-0.jpg?x=130&y=86&q=85&sig=tD40f7.5_9X.tBrkqhMtSw--\" align=\"left\" height=\"86\" width=\"130\" alt=\"photo\" title=\"Smoke billows from the damaged Mari power station &mdash; the island's primary electricity generator &mdash;  damaged by the explosion's concussion wave near the Evangelos Florakis naval base in Mari, Cyprus, Monday July 11, 2011. A huge explosion tore through a Cypriot National Guard naval base causing widespread damage, the Defense Ministry said. At least 10 people were feared dead. A bush fire ignited gunpowder stored in containers that Cypriot authorities confiscated in 2009 from a ship sailing off its coast. The ship, the Cypriot-flagged Monchegorsk, had been suspected of heading from Iran to Syria, with gunpowder destined for Gaza. It was seized in February 2009. (AP Photo/Philippos Christou)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AP)"
+                    }
+                }, {
+                    "title": "Amtrak train hits truck in Maine; both catch fire \n    (AP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_us/us_train_collision",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "ap/20110711/us_train_collision"
+                    },
+                    "source": "AP",
+                    "category": "us",
+                    "pubDate": "Mon, 11 Jul 2011 18:19:11 GMT",
+                    "description": "AP - An Amtrak train smashed into a tractor-trailer Monday, killing the truck driver and injuring at least four others in an explosion that sent flames more than three stories high, a witness and officials said."
+                }, {
+                    "title": "Death toll in Volga sinking at 55 \n    (AP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_eu/eu_russia_boat_sinks",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "ap/20110711/eu_russia_boat_sinks"
+                    },
+                    "source": "AP",
+                    "category": "world",
+                    "pubDate": "Mon, 11 Jul 2011 18:36:13 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_eu/eu_russia_boat_sinks\"><img src=\"http://d.yimg.com/a/p/ap/20110711/capt.00d7236376e8411eaeded62fc053cffd-00d7236376e8411eaeded62fc053cffd-0.jpg?x=130&y=89&q=85&sig=HFoiwO5edmv_PL3AvVtbUA--\" align=\"left\" height=\"89\" width=\"130\" alt=\"Relatives of passengers believed to be aboard a cruise ship which sank await fresh information at a river Station in Kazan, about 450 miles (750 kilometers) east of Moscow, Russia, Monday, July 11, 2011, on the Volga River, in central Russia. Rescuers scoured the wide waters of a Volga River reservoir on Monday, searching with dimming hopes for survivors after an aged, overloaded cruise ship sank amid wind and rain. Nine people were confirmed dead, but more than 90 remained missing. Exactly how many people were aboard the two-deck Bulgaria when it set off for a cruise on Sunday remains unclear but it was certain to be carrying more than its licensed maximum. Officials say anywhere from 185 to 196 people were aboard the ship that should have carried no more than 120. (AP Photo/Misha Japaridze)\" border=\"0\" /></a>AP - Rescuers scoured the wide waters of a Volga River reservoir on Monday, searching with dimming hopes for survivors after an aged, overloaded cruise ship sank amid wind and rain. Fifty-five people were confirmed dead, but dozens remained missing.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "89",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/ap/20110711/capt.00d7236376e8411eaeded62fc053cffd-00d7236376e8411eaeded62fc053cffd-0.jpg?x=130&y=89&q=85&sig=HFoiwO5edmv_PL3AvVtbUA--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_eu/eu_russia_boat_sinks\"><img src=\"http://d.yimg.com/a/p/ap/20110711/capt.00d7236376e8411eaeded62fc053cffd-00d7236376e8411eaeded62fc053cffd-0.jpg?x=130&y=89&q=85&sig=HFoiwO5edmv_PL3AvVtbUA--\" align=\"left\" height=\"89\" width=\"130\" alt=\"photo\" title=\"Relatives of passengers believed to be aboard a cruise ship which sank await fresh information at a river Station in Kazan, about 450 miles (750 kilometers) east of Moscow, Russia, Monday, July 11, 2011, on the Volga River, in central Russia. Rescuers scoured the wide waters of a Volga River reservoir on Monday, searching with dimming hopes for survivors after an aged, overloaded cruise ship sank amid wind and rain. Nine people were confirmed dead, but more than 90 remained missing. Exactly how many people were aboard the two-deck Bulgaria when it set off for a cruise on Sunday remains unclear but it was certain to be carrying more than its licensed maximum. Officials say anywhere from 185 to 196 people were aboard the ship that should have carried no more than 120. (AP Photo/Misha Japaridze)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AP)"
+                    }
+                }, {
+                    "title": "Somali children die en route to refugee camp \n    (AP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_af/af_east_africa_drought",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "ap/20110711/af_east_africa_drought"
+                    },
+                    "source": "AP",
+                    "category": "world",
+                    "pubDate": "Mon, 11 Jul 2011 16:58:34 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_af/af_east_africa_drought\"><img src=\"http://d.yimg.com/a/p/ap/20110711/capt.5fc968ee37fe463ead49b327c3d802e4-5fc968ee37fe463ead49b327c3d802e4-0.jpg?x=130&y=92&q=85&sig=vUWcvdeIgZ8DLAJVW8Xw8Q--\" align=\"left\" height=\"92\" width=\"130\" alt=\"Two-year-old Aden Salaad, sits in a tub as he is bathed by his mother at a Doctors Without Borders hospital, where Aden is receiving treatment for malnutrition, in Dagahaley Camp, outside Dadaab, Kenya, Monday, July 11, 2011. U.N. refugee chief Antonio Guterres said Sunday that drought-ridden Somalia is the 'worst humanitarian disaster' in the world, after meeting with refugees who endured unspeakable hardship to reach the world's largest refugee camp in Dadaab, Kenya. (AP Photo/Rebecca Blackwell)\" border=\"0\" /></a>AP - Faduma Sakow Abdullahi and her five children tried to escape starvation in Somalia by journeying to a Kenyan refugee camp. Only one day before they reached their destination, her 4-year-old daughter and 5-year-old son died of exhaustion and hunger.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "92",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/ap/20110711/capt.5fc968ee37fe463ead49b327c3d802e4-5fc968ee37fe463ead49b327c3d802e4-0.jpg?x=130&y=92&q=85&sig=vUWcvdeIgZ8DLAJVW8Xw8Q--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_af/af_east_africa_drought\"><img src=\"http://d.yimg.com/a/p/ap/20110711/capt.5fc968ee37fe463ead49b327c3d802e4-5fc968ee37fe463ead49b327c3d802e4-0.jpg?x=130&y=92&q=85&sig=vUWcvdeIgZ8DLAJVW8Xw8Q--\" align=\"left\" height=\"92\" width=\"130\" alt=\"photo\" title=\"Two-year-old Aden Salaad, sits in a tub as he is bathed by his mother at a Doctors Without Borders hospital, where Aden is receiving treatment for malnutrition, in Dagahaley Camp, outside Dadaab, Kenya, Monday, July 11, 2011. U.N. refugee chief Antonio Guterres said Sunday that drought-ridden Somalia is the 'worst humanitarian disaster' in the world, after meeting with refugees who endured unspeakable hardship to reach the world's largest refugee camp in Dadaab, Kenya. (AP Photo/Rebecca Blackwell)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AP)"
+                    }
+                }, {
+                    "title": "Hundreds gather for funeral of Texas fan who fell \n    (AP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_sp_ba_ne/bba_rangers_fan_death",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "ap/20110711/bba_rangers_fan_death"
+                    },
+                    "source": "AP",
+                    "category": "sports",
+                    "pubDate": "Mon, 11 Jul 2011 18:47:59 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_sp_ba_ne/bba_rangers_fan_death\"><img src=\"http://d.yimg.com/a/p/ap/20110709/capt.d94783d0efd247f8be8f9379432fceb5-d94783d0efd247f8be8f9379432fceb5-0.jpg?x=127&y=130&q=85&sig=Ydn_fKfiQciSYTFndtYFPg--\" align=\"left\" height=\"130\" width=\"127\" alt=\"A Texas Rangers ballpark employee sits waiting for the gates to open as fans stand by a Texas flag the sits at half staff before the start of a baseball game against the Oakland Athletics Saturday, July 9, 2011, in Arlington, Texas. The flags around the ballpark have been lowered in remembrance of a fan, Shannon Stone, who fell at Thursday nights game and later died.  (AP Photo/Tony Gutierrez)\" border=\"0\" /></a>AP - A funeral procession is under way in Brownwood, Texas, for 39-year-old Shannon Stone, who was fatally injured trying to catch a souvenir baseball at a Texas Rangers game.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "130",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/ap/20110709/capt.d94783d0efd247f8be8f9379432fceb5-d94783d0efd247f8be8f9379432fceb5-0.jpg?x=127&y=130&q=85&sig=Ydn_fKfiQciSYTFndtYFPg--",
+                        "width": "127"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_sp_ba_ne/bba_rangers_fan_death\"><img src=\"http://d.yimg.com/a/p/ap/20110709/capt.d94783d0efd247f8be8f9379432fceb5-d94783d0efd247f8be8f9379432fceb5-0.jpg?x=127&y=130&q=85&sig=Ydn_fKfiQciSYTFndtYFPg--\" align=\"left\" height=\"130\" width=\"127\" alt=\"photo\" title=\"A Texas Rangers ballpark employee sits waiting for the gates to open as fans stand by a Texas flag the sits at half staff before the start of a baseball game against the Oakland Athletics Saturday, July 9, 2011, in Arlington, Texas. The flags around the ballpark have been lowered in remembrance of a fan, Shannon Stone, who fell at Thursday nights game and later died.  (AP Photo/Tony Gutierrez)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AP)"
+                    }
+                }, {
+                    "title": "Summer heat hits hard from Louisiana to Illinois \n    (AP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_us/us_heat_wave",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "ap/20110711/us_heat_wave"
+                    },
+                    "source": "AP",
+                    "category": "us",
+                    "pubDate": "Mon, 11 Jul 2011 18:45:06 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_us/us_heat_wave\"><img src=\"http://d.yimg.com/a/p/ap/20110710/capt.68341ac6231542a48699d5d3dee5c62e-68341ac6231542a48699d5d3dee5c62e-0.jpg?x=130&y=93&q=85&sig=yQE056lVV4IMu1GfbjFm9Q--\" align=\"left\" height=\"93\" width=\"130\" alt=\"With the temperature hitting the 100 degree mark a fan tries to stay cool by covering his head with a towel during a baseball game between the Detroit Tigers and the Kansas City Royals, Sunday, July 10, 2011, in Kansas City, Mo. The Tigers won the game 2-1. (AP Photo/Ed Zurga)\" border=\"0\" /></a>AP - The temperature setting is stuck on broil across a swath of the Midwest and South, with Dallas and Oklahoma City suffering through 100-degree heat for 10 or more days in a row.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "93",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/ap/20110710/capt.68341ac6231542a48699d5d3dee5c62e-68341ac6231542a48699d5d3dee5c62e-0.jpg?x=130&y=93&q=85&sig=yQE056lVV4IMu1GfbjFm9Q--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_re_us/us_heat_wave\"><img src=\"http://d.yimg.com/a/p/ap/20110710/capt.68341ac6231542a48699d5d3dee5c62e-68341ac6231542a48699d5d3dee5c62e-0.jpg?x=130&y=93&q=85&sig=yQE056lVV4IMu1GfbjFm9Q--\" align=\"left\" height=\"93\" width=\"130\" alt=\"photo\" title=\"With the temperature hitting the 100 degree mark a fan tries to stay cool by covering his head with a towel during a baseball game between the Detroit Tigers and the Kansas City Royals, Sunday, July 10, 2011, in Kansas City, Mo. The Tigers won the game 2-1. (AP Photo/Ed Zurga)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AP)"
+                    }
+                }, {
+                    "title": "Astronauts get busy with space station stockpiling \n    (AP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_sc/us_space_shuttle",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "ap/20110711/us_space_shuttle"
+                    },
+                    "source": "AP",
+                    "category": "science",
+                    "pubDate": "Mon, 11 Jul 2011 16:45:31 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_sc/us_space_shuttle\"><img src=\"http://d.yimg.com/a/p/ap/20110710/capt.125d84528dc44e4b8170ca8573e11e66-125d84528dc44e4b8170ca8573e11e66-0.jpg?x=130&y=86&q=85&sig=H5EsuhuYXEjZebDgeQ.5TQ--\" align=\"left\" height=\"86\" width=\"130\" alt=\"In this photo provided by NASA, space shuttle Atlantis and its payload is shown while in orbit Sunday, July 10, 2011. Seen at the rear of the cargo bay is the Raffaello multi-purpose logistics module, packed with supplies and spare parts for the International Space Station. Atlantis is delivering more than 4 tons of food, clothes and other space station provisions â\u0080\u0094 an entire year's worth, in fact, to keep the complex going in the looming post-shuttle era. Atlantis' journey marks the final shuttle mission by NASA. (AP Photo/NASA)\" border=\"0\" /></a>AP - The International Space Station got a year's worth of groceries in a giant shopping cart on Monday, courtesy of the astronauts on NASA's final shuttle flight.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "86",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/ap/20110710/capt.125d84528dc44e4b8170ca8573e11e66-125d84528dc44e4b8170ca8573e11e66-0.jpg?x=130&y=86&q=85&sig=H5EsuhuYXEjZebDgeQ.5TQ--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/ap/20110711/ap_on_sc/us_space_shuttle\"><img src=\"http://d.yimg.com/a/p/ap/20110710/capt.125d84528dc44e4b8170ca8573e11e66-125d84528dc44e4b8170ca8573e11e66-0.jpg?x=130&y=86&q=85&sig=H5EsuhuYXEjZebDgeQ.5TQ--\" align=\"left\" height=\"86\" width=\"130\" alt=\"photo\" title=\"In this photo provided by NASA, space shuttle Atlantis and its payload is shown while in orbit Sunday, July 10, 2011. Seen at the rear of the cargo bay is the Raffaello multi-purpose logistics module, packed with supplies and spare parts for the International Space Station. Atlantis is delivering more than 4 tons of food, clothes and other space station provisions â\u0080\u0094 an entire year's worth, in fact, to keep the complex going in the looming post-shuttle era. Atlantis' journey marks the final shuttle mission by NASA. (AP Photo/NASA)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AP)"
+                    }
+                }, {
+                    "title": "Obama increases pressure on Republicans on debt \n    (Reuters)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/bs_nm/us_usa_debt",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "nm/20110711/us_usa_debt"
+                    },
+                    "source": "Reuters",
+                    "category": "business",
+                    "pubDate": "Mon, 11 Jul 2011 18:29:05 GMT",
+                    "description": "Reuters - President Barack Obama on Monday increased pressure on Republican lawmakers to make concessions for a deal to avoid an August 2 debt default and said both sides must \"pull off the Band-aid\" and make sacrifices."
+                }, {
+                    "title": "Murdoch takes BSkyB bid out of political arena \n    (Reuters)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/bs_nm/us_newscorp_hacking",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "nm/20110711/us_newscorp_hacking"
+                    },
+                    "source": "Reuters",
+                    "category": "business",
+                    "pubDate": "Mon, 11 Jul 2011 18:01:44 GMT",
+                    "description": "Reuters - Rupert Murdoch and the British government agreed on Monday to refer his bid for broadcaster BSkyB to regulators, opening a lengthy review in the hope of taking the sting from a phone-hacking scandal threatening the buyout and sending tremors through the political establishment."
+                }, {
+                    "title": "UK'S ex-PM Brown says he is a suspected phone hacking victim \n    (Reuters)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/ts_nm/us_newscorp_hacking_brown",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "nm/20110711/us_newscorp_hacking_brown"
+                    },
+                    "source": "Reuters",
+                    "category": "topstories",
+                    "pubDate": "Mon, 11 Jul 2011 18:42:00 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/ts_nm/us_newscorp_hacking_brown\"><img src=\"http://d.yimg.com/a/p/rids/20110711/i/r1953697141.jpg?x=130&y=91&q=85&sig=qeeSRTnIrhicA85DbLURPw--\" align=\"left\" height=\"91\" width=\"130\" alt=\"Britain's former Prime Minister Gordon Brown arrives for the funeral of former union official Jimmy Reid at the Govan Old Parish Church in Glasgow, Scotland August 19, 2010. REUTERS/David Moir\" border=\"0\" /></a>Reuters - Police have confirmed that Britain's former Prime Minister Gordon Brown was a possible victim of phone hacking, his spokeswoman said on Monday.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "91",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/rids/20110711/i/r1953697141.jpg?x=130&y=91&q=85&sig=qeeSRTnIrhicA85DbLURPw--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/ts_nm/us_newscorp_hacking_brown\"><img src=\"http://d.yimg.com/a/p/rids/20110711/i/r1953697141.jpg?x=130&y=91&q=85&sig=qeeSRTnIrhicA85DbLURPw--\" align=\"left\" height=\"91\" width=\"130\" alt=\"photo\" title=\"Britain's former Prime Minister Gordon Brown arrives for the funeral of former union official Jimmy Reid at the Govan Old Parish Church in Glasgow, Scotland August 19, 2010. REUTERS/David Moir\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(Reuters)"
+                    }
+                }, {
+                    "title": "Alcoa profit seen higher on aluminum price surge \n    (Reuters)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/bs_nm/us_alcoa",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "nm/20110711/us_alcoa"
+                    },
+                    "source": "Reuters",
+                    "category": "business",
+                    "pubDate": "Mon, 11 Jul 2011 18:55:13 GMT",
+                    "description": "Reuters - Alcoa Inc, often viewed as a bellwether of the U.S. economy, is looking at a big jump in second-quarter profit as a result of soaring aluminum prices and growing demand, especially from planemakers."
+                }, {
+                    "title": "Eurozone mulls Greek options, concerns spread to Italy \n    (Reuters)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/bs_nm/us_eurozone",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "nm/20110711/us_eurozone"
+                    },
+                    "source": "Reuters",
+                    "category": "business",
+                    "pubDate": "Mon, 11 Jul 2011 15:55:05 GMT",
+                    "description": "Reuters - EU finance officials discussed options for resolving Greece's intractable debt crisis on Monday, galvanized by the growing threat of contagion to Italy, the euro zone's third-largest economy."
+                }, {
+                    "title": "AIG may replace banks in next share offer \n    (Reuters)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/bs_nm/us_aig",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "nm/20110711/us_aig"
+                    },
+                    "source": "Reuters",
+                    "category": "business",
+                    "pubDate": "Mon, 11 Jul 2011 12:06:53 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/bs_nm/us_aig\"><img src=\"http://d.yimg.com/a/p/ap/20110513/capt.0a5d7c533b4c4816b04ad73a733f1b07-0a5d7c533b4c4816b04ad73a733f1b07-0.jpg?x=130&y=93&q=85&sig=vjIKiVjCllppxmhN9dDziw--\" align=\"left\" height=\"93\" width=\"130\" alt=\"FILE- This Dec. 11, 2008 file photo displays the Stowe Mountain Lodge in Stowe, Vt. About 300 condo owners at the resort filed suit Friday, May 13, 2011 in U.S. District Court in Burlington against affiliates of American International Group (AIG), which owns the resort. Owners maintain they put down 20 percent deposits on their units in 2005, but when changes in the fees came just before closing in 2008, they say they weren't given an opportunity to back out. (AP Photo/Toby Talbot, File)\" border=\"0\" /></a>Reuters - American International Group plans to replace one or more Wall Street banks in its next sale of shares from the U.S. government, The Wall Street Journal reported on Sunday.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "93",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/ap/20110513/capt.0a5d7c533b4c4816b04ad73a733f1b07-0a5d7c533b4c4816b04ad73a733f1b07-0.jpg?x=130&y=93&q=85&sig=vjIKiVjCllppxmhN9dDziw--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/bs_nm/us_aig\"><img src=\"http://d.yimg.com/a/p/ap/20110513/capt.0a5d7c533b4c4816b04ad73a733f1b07-0a5d7c533b4c4816b04ad73a733f1b07-0.jpg?x=130&y=93&q=85&sig=vjIKiVjCllppxmhN9dDziw--\" align=\"left\" height=\"93\" width=\"130\" alt=\"photo\" title=\"FILE- This Dec. 11, 2008 file photo displays the Stowe Mountain Lodge in Stowe, Vt. About 300 condo owners at the resort filed suit Friday, May 13, 2011 in U.S. District Court in Burlington against affiliates of American International Group (AIG), which owns the resort. Owners maintain they put down 20 percent deposits on their units in 2005, but when changes in the fees came just before closing in 2008, they say they weren't given an opportunity to back out. (AP Photo/Toby Talbot, File)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(Reuters)"
+                    }
+                }, {
+                    "title": "China raps U.S. over military drills in disputed seas \n    (Reuters)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/pl_nm/us_china_us_military",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "nm/20110711/us_china_us_military"
+                    },
+                    "source": "Reuters",
+                    "category": "politics",
+                    "pubDate": "Mon, 11 Jul 2011 16:42:40 GMT",
+                    "description": "Reuters - China's military sharply criticized the United States on Monday for holding military drills in contested waters of the South China Sea, a dispute Beijing has warned Washington not to meddle in."
+                }, {
+                    "title": "Assad loyalists storm U.S. and French embassies in Syria \n    (Reuters)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/nm/20110711/ts_nm/us_syria_embassies_attacks",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "nm/20110711/us_syria_embassies_attacks"
+                    },
+                    "source": "Reuters",
+                    "category": "topstories",
+                    "pubDate": "Mon, 11 Jul 2011 18:40:29 GMT",
+                    "description": "Reuters - Several loyalists of President Bashar al-Assad broke into the U.S. embassy in Damascus on Monday and security guards used live ammunition to prevent hundreds from storming the French embassy, diplomats said."
+                }, {
+                    "title": "Obama, Republicans still deadlocked on debt deal \n    (AFP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/afp/20110711/bs_afp/useconomydebtpolitics",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "afp/20110711/useconomydebtpolitics"
+                    },
+                    "source": "AFP",
+                    "category": "business",
+                    "pubDate": "Mon, 11 Jul 2011 18:26:34 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/afp/20110711/bs_afp/useconomydebtpolitics\"><img src=\"http://d.yimg.com/a/p/afp/20110711/capt.photo_1310408733522-11-0.jpg?x=130&y=82&q=85&sig=PBhZn9ayIi9kx2Woc.OF4Q--\" align=\"left\" height=\"82\" width=\"130\" alt=\"US President Barack Obama meets with House Majority Leader Eric Cantor (L), House Minority Leader Nancy Pelosi (2nd L) and Speaker of the House John Boehner (2nd R) during a meeting with Congressional Leaders on budget talks in the Cabinet Room of the White House in Washington, DC. Obama, aiming to break an impasse in crisis talks on US debt, urged his Republican foes to accept compromise.(AFP/Saul Loeb)\" border=\"0\" /></a>AFP - President Barack Obama, aiming to break an impasse in crisis talks on US debt, urged his Republican foes on Monday to accept a politically painful compromise to avert a likely economic calamity.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "82",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/afp/20110711/capt.photo_1310408733522-11-0.jpg?x=130&y=82&q=85&sig=PBhZn9ayIi9kx2Woc.OF4Q--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/afp/20110711/bs_afp/useconomydebtpolitics\"><img src=\"http://d.yimg.com/a/p/afp/20110711/capt.photo_1310408733522-11-0.jpg?x=130&y=82&q=85&sig=PBhZn9ayIi9kx2Woc.OF4Q--\" align=\"left\" height=\"82\" width=\"130\" alt=\"photo\" title=\"US President Barack Obama meets with House Majority Leader Eric Cantor (L), House Minority Leader Nancy Pelosi (2nd L) and Speaker of the House John Boehner (2nd R) during a meeting with Congressional Leaders on budget talks in the Cabinet Room of the White House in Washington, DC. Obama, aiming to break an impasse in crisis talks on US debt, urged his Republican foes to accept compromise.(AFP/Saul Loeb)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AFP)"
+                    }
+                }, {
+                    "title": "UK hacking scandal widens with Brown, royal claims \n    (AFP)\n",
+                    "link": "http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/afp/20110711/bs_afp/britainmediapolitics",
+                    "guid": {
+                        "isPermaLink": "false",
+                        "content": "afp/20110711/britainmediapolitics"
+                    },
+                    "source": "AFP",
+                    "category": "business",
+                    "pubDate": "Mon, 11 Jul 2011 18:00:17 GMT",
+                    "description": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/afp/20110711/bs_afp/britainmediapolitics\"><img src=\"http://d.yimg.com/a/p/afp/20110711/capt.photo_1310398725271-12-0.jpg?x=130&y=98&q=85&sig=9HK1sHSR6c1LevhlKSCxig--\" align=\"left\" height=\"98\" width=\"130\" alt=\"News Corp chief Rupert Murdoch leaves his London home as Britain's government referred his bid for control of BSkyB to a competition watchdog amid the phone hacking scandal.(AFP/Leon Neal)\" border=\"0\" /></a>AFP - Britain's phone hacking scandal spiralled Monday amid reports that former premier Gordon Brown and the royals were targeted, as the government dealt a blow to Rupert Murdoch's bid for pay-TV giant BSkyB.</p><br clear=\"all\"/>",
+                    "content": {
+                        "height": "98",
+                        "type": "image/jpeg",
+                        "url": "http://d.yimg.com/a/p/afp/20110711/capt.photo_1310398725271-12-0.jpg?x=130&y=98&q=85&sig=9HK1sHSR6c1LevhlKSCxig--",
+                        "width": "130"
+                    },
+                    "text": {
+                        "type": "html",
+                        "content": "<p><a href=\"http://us.rd.yahoo.com/dailynews/rss/topstories/*http://news.yahoo.com/s/afp/20110711/bs_afp/britainmediapolitics\"><img src=\"http://d.yimg.com/a/p/afp/20110711/capt.photo_1310398725271-12-0.jpg?x=130&y=98&q=85&sig=9HK1sHSR6c1LevhlKSCxig--\" align=\"left\" height=\"98\" width=\"130\" alt=\"photo\" title=\"News Corp chief Rupert Murdoch leaves his London home as Britain's government referred his bid for control of BSkyB to a competition watchdog amid the phone hacking scandal.(AFP/Leon Neal)\" border=\"0\"/></a></p><br clear=\"all\"/>"
+                    },
+                    "credit": {
+                        "role": "publishing company",
+                        "content": "(AFP)"
+                    }
+                }
+            ]
+        }
+    }
+}

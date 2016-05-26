@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>viewport dimensions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+        }
+        #abs-sized {
+            background-color: #ff9473;
+            width: 160px;
+        }
+        #rel-sized {
+            background-color: #a62800;
+            width: 50%;
+            color: white;
+            text-align: right;
+        }
+    </style>    
+    <script>
+window.onload = function() {
+    var $ = function(selector) {
+        return document.querySelector(selector);
+    };
+
+    $("#screen-width").innerHTML = screen.width;
+    $("#screen-height").innerHTML = screen.height;
+
+    $("#layout-width").innerHTML = document.documentElement.clientWidth;
+    $("#layout-height").innerHTML = document.documentElement.clientHeight;
+    
+    $("#visual-width").innerHTML = window.innerWidth;
+    $("#visual-height").innerHTML = window.innerHeight;
+    
+    $("#html-width").innerHTML = document.documentElement.offsetWidth;
+    $("#html-height").innerHTML = document.documentElement.offsetHeight;
+    
+    $("#zoom-scale").innerHTML = window.innerWidth / 
+        document.documentElement.clientWidth;
+            
+    setTimeout(arguments.callee, 500);
+};
+    </script>  
+</head>
+
+<body>
+    <article>
+        <header>
+                <h1>Dimensions</h1>
+        </header>
+        <section>
+            <h1>Device Resolution (device independent pixels)</h1>
+            <div>Width: <span id="screen-width"></span></div>
+            <div>Height: <span id="screen-height"></span></div>
+        </section>
+        <section>
+            <h1>Layout Viewport (CSS Pixels)</h1>
+            <div>Width: <span id="layout-width"></span></div>
+            <div>Height: <span id="layout-height"></span></div>
+        </section>
+        <section>
+            <h1>Visual Viewport (CSS Pixels)</h1>
+            <div>Width: <span id="visual-width"></span></div>
+            <div>Height: <span id="visual-height"></span></div>
+        </section>
+        <section>
+            <h1>HTML Element (CSS Pixels)</h1>
+            <div>Width: <span id="html-width"></span></div>
+            <div>Height: <span id="html-height"></span></div>            
+        </section>
+        <section>
+            <h1>Current Zoom Level (for Mobile)</h1>
+            <div>Scale: <span id="zoom-scale"></span></div>
+        </section>
+    </article>
+    <div id="abs-sized">Absolutely sized box</div>
+    <div id="rel-sized">Relatively sized box</div>
+</body>
+</html>

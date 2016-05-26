@@ -1,0 +1,13 @@
+CACHE MANIFEST
+# v0
+
+CACHE:
+img/happy.png
+
+# NETWORK
+# if you have ajax APIs
+# http://dogs.are.awesome.com/api/
+# /api/*
+
+# FALLBACK
+# img img/happy.png

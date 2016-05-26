@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>news lab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+/* Large size first == default == 3 columns*/
+body, html {
+    padding: 0;
+    margin: 0;
+}
+#news {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 302px;
+    margin: 0 auto;
+}
+article {
+    vertical-align: middle;
+    white-space: normal;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+    
+    box-sizing: border-box;
+    
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+article header h1, article header h2 {
+    margin: 0;
+}
+article header h2 {
+    font-size: 0.8em;
+    color: #aaa;
+}
+article section p {
+    margin: 0;
+}
+article section img {
+    margin: 0 0.5em 0.5em 0;
+}
+/* medium layout == 2 columns */
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    body {
+        font-size: 120%;
+    }
+}
+
+/* small layout == 1 column */
+@media screen and (max-width: 599px) {
+    body {
+        font-size: 150%;
+    }
+}
+        </style>
+        <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>       
+        <script>
+YUI().use('node', 'substitute', 'yql', 'event-touch', function(Y) {
+    Y.YQL(
+        "select * from rss where url='http://rss.news.yahoo.com/rss/topstories'", 
+        // http://jsfiddle.net/D3XyY/
+        function(response) {
+            var items = response.query.results.item;
+            var i, item;
+            var output = [];
+            
+            var template = Y.one("#template").getContent();
+            for (i = 0; i < items.length; i++) {
+                //console.log(items[i]);
+                item = items[i];
+                item.source = item.source.content;
+                
+                output.push(Y.substitute(template, item));
+            }
+            Y.one("#news").setContent(output.join(""));
+            
+            /*
+            Y.one("#news").delegate("click", function(e) {
+                this.one("section").setStyle("display", "block");
+            }, "article");
+            */
+            Y.one("#news").on("click", function(e) {
+                if (e.target.get("nodeName") == "H1" &&
+                    e.target.get("parentNode").get("nodeName") == "HEADER") {
+                    e.target.get("parentNode").get("parentNode")
+                        .one("section").setStyle("display", "block");
+                }
+            });
+        }
+    );
+    
+    // http://jsfiddle.net/D3XyY/3/
+    
+    // Swipe experimental code
+    var startX = null;
+    var container = Y.one("#news");
+    var threshhold = container.get("clientWidth") / 2;
+    Y.one('body').on('touchstart', function(e) {
+        startX = e.touches[0].pageX;
+    });
+    Y.one('body').on('touchmove', function(e) {
+        // for when we go to touch events.
+        e.preventDefault();
+    });
+    Y.one("body").on('touchend', function(e) {
+        var diff = e.touches[0].pageX - startX;
+        var firstArticle = container.one("article");
+        var articleWidth = firstArticle.get("clientWidth");        
+        var currentMarginLeft = 
+            parseInt(firstArticle.getComputedStyle("marginLeft"));
+        if (Math.abs(diff) > threshhold) {
+            if (diff > 0) {
+                // Move right == margin++
+                currentMarginLeft += articleWidth;
+            }
+            else {
+                // Move left == margin--
+                currentMarginLeft -= articleWidth;
+            }
+            firstArticle.setStyle("marginLeft", 
+                currentMarginLeft+"px");
+        }
+    });    
+});
+        </script>
+        <script id="template" type="text/template">
+<article>
+    <header>
+        <h1>{title}</h1>
+        <h2>{pubDate}, {source}</h2>
+    </header>
+    <section>
+    {description}
+    </section>
+</article>
+        </script>
+    </head>
+    <body>
+        <section>
+            <h1>Today's Headlines</h1>
+            <div id="news">
+                <!-- populate with articles. -->
+            </div>
+        </section>
+    </body>
+</html>

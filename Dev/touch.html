@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>touches</title>
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0"/>
+        <style>
+			body, html {
+			    margin: 0;
+			    padding: 0;
+			    height: 100%;
+			    width: 100%;
+			    overflow: hidden;
+			}
+			#canvas {
+			    border: 1px solid black;
+			}
+        </style>
+        <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>       
+        <script>
+			YUI().use("node", "event-touch", function(Y) {
+			    var Point = function(e, el) {
+			        this.x = e.pageX - el.getX();
+			        this.y = e.pageY - el.getY();
+			        
+			        this.radius = 40;
+			        
+			        this.r = Math.floor(Math.random() * 256);
+			        this.g = Math.floor(Math.random() * 256);
+			        this.b = Math.floor(Math.random() * 256);
+			    };
+			    
+			    var CanvasView = function(selector) {
+			        var el = Y.one(selector);
+			        var ctx = el.getDOMNode().getContext('2d');
+			        var points = [];
+			        var scale = 1.0;
+			        var rotation = 0;
+			        
+			        this.el = el;
+			        
+			        this.resize = function() {
+			            var ww = window.innerWidth;
+			            var wh = window.innerHeight;
+			            var w = el.getAttribute("width");
+			            var h = el.getAttribute("height");
+			            
+			            if ((w != ww) || (h != wh)) {
+			                el.setAttribute("width", ww);
+			                el.setAttribute("height", wh);
+			            }
+			        };
+			        
+			        var drawPoint = function(p) {
+			            ctx.beginPath();
+			            ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true);
+			            ctx.fillStyle = "rgba("+p.r+","+p.g+","+p.b+",0.2)";
+			            ctx.fill();
+			            
+			            ctx.strokeStyle = "rgba("+p.r+","+p.g+","+p.b+",0.8)";
+			            ctx.stroke();            
+			        };
+			        
+			        this.clear = function() {
+			        	ctx.clearRect(0, 0, el.getAttribute("width"),
+			        		el.getAttribute("height"));
+			        };
+			        
+			        this.draw = function() {
+			        	this.clear();
+			        	ctx.save();
+			        	ctx.rotate(rotation);
+			        	ctx.scale(scale, scale);
+			            for (var i = 0; i < points.length; i++) {
+			                drawPoint(points[i]);
+			            }
+			            ctx.restore();
+			        };
+			        
+			        this.setScale = function(value) {
+			        	scale = value;
+			        };
+			        
+			        this.setRotation = function(value) {
+			        	rotation = Math.PI / 180 * value;
+			        };
+			        
+			        this.addPoint = function(e) {
+			            var p = new Point(e, el);
+			            points.push(p);
+			        };
+			    };
+			    
+			    var c = new CanvasView("#canvas");
+			    /*
+			    c.el.on("click", function(e) {
+			    	c.addPoint(e);
+			    	c.draw();
+			    });
+			    */
+			    
+			    var isGesturing = false;
+			    
+			    c.el.on("touchmove", function(e) {
+			    	var i;
+			    	//Stops panning by dragging in this element.
+			    	e.preventDefault();
+			    	
+			    	if (!isGesturing) {
+				    	for (i = 0; i < e.touches.length; i++) {
+				    		c.addPoint(e.touches[i]);
+				    	}
+			    	}
+			    	
+			    });
+			    
+			    c.el.on("gesturechange", function(e) {
+			    	e.preventDefault();
+			    	c.setScale(e.scale);
+			    	c.setRotation(e.rotation);
+			    	isGesturing = true;
+			    });
+			    
+			    c.el.on("gestureend", function(e) {
+			    	isGesturing = false;
+			    });
+			    
+			    setInterval(function() {
+			    	c.resize();
+			    	c.draw();
+			    }, 40);
+			});
+        </script>
+    </head>
+    <body>
+        <canvas id="canvas" width="300" height="300"></canvas>
+    </body>
+</html>

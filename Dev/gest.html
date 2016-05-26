@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html manifest="index.appcache">
+    <head>
+        <title>gestures</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            body, html {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            
+            #lock {
+                background-image: url("img/lock.jpg");
+                width: 240px;
+                height: 240px;
+                margin: -120px auto 0 auto;
+                position: relative;
+                top: 50%;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+            	var body = document.body;
+            	var lock = document.querySelector("#lock");
+            	
+            	body.addEventListener("touchmove", function(e) {
+            		e.preventDefault();
+            	}, false);
+            	
+            	body.addEventListener("gesturechange", function(e) {
+                    e.preventDefault();
+                    lock.style.webkitTransform = "rotate("+e.rotation+"deg)";
+                }, false);
+            };
+
+        </script>
+    </head>
+    <body>
+        <div id="lock">
+        </div>
+    </body>
+</html>
