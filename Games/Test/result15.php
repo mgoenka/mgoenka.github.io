@@ -1,87 +1,87 @@
 <?php
-	session_start();
-	$gate = $_REQUEST['gate'];
+    session_start();
+    $gate = $_REQUEST['gate'];
 
-	if (($gate == "") || ($gate == null))
-	{
-		echo "<meta http-equiv='refresh' content='0;url=game15.php#GT'>";
-	}
+    if (($gate == "") || ($gate == null))
+    {
+        echo "<meta http-equiv='refresh' content='0;url=game15.php#GT'>";
+    }
 
-	$maxround = 20;
+    $maxround = 20;
 
-	if(!isset($_SESSION['counter']))
-	{
-		$_SESSION['counter'] = 0;
-		$_SESSION['won'] = 0;
-		$_SESSION['lost'] = 0;
-		$_SESSION['points'] = 0;
-	}
+    if(!isset($_SESSION['counter']))
+    {
+        $_SESSION['counter'] = 0;
+        $_SESSION['won'] = 0;
+        $_SESSION['lost'] = 0;
+        $_SESSION['points'] = 0;
+    }
 
-	do
-	{
-		$pirate1 = rand(0, 300);
-		$pirate2 = rand(0, 300);
-		$pirate3 = rand(0, 300);
-		if ($pirate1 < 13)
-			$pgate1 = "1";
-		else if ($pirate1 < 66)
-			$pgate1 = "2";
-		else if ($pirate1 < 161)
-			$pgate1 = "3";
-		else if ($pirate1 < 179)
-			$pgate1 = "4";
-		else if ($pirate1 < 217)
-			$pgate1 = "5";
-		else if ($pirate1 < 239)
-			$pgate1 = "6";
-		else if ($pirate1 < 268)
-			$pgate1 = "7";
-		else
-			$pgate1 = "8";
-		if ($pirate2 < 13)
-			$pgate2 = "1";
-		else if ($pirate2 < 66)
-			$pgate2 = "2";
-		else if ($pirate2 < 161)
-			$pgate2 = "3";
-		else if ($pirate2 < 179)
-			$pgate2 = "4";
-		else if ($pirate2 < 217)
-			$pgate2 = "5";
-		else if ($pirate2 < 239)
-			$pgate2 = "6";
-		else if ($pirate2 < 268)
-			$pgate2 = "7";
-		else
-			$pgate2 = "8";
-		if ($pirate3 < 13)
-			$pgate3 = "1";
-		else if ($pirate3 < 66)
-			$pgate3 = "2";
-		else if ($pirate3 < 161)
-			$pgate3 = "3";
-		else if ($pirate3 < 179)
-			$pgate3 = "4";
-		else if ($pirate3 < 217)
-			$pgate3 = "5";
-		else if ($pirate3 < 239)
-			$pgate3 = "6";
-		else if ($pirate3 < 268)
-			$pgate3 = "7";
-		else
-			$pgate3 = "8";
-	} while (($pgate1 == $pgate2) || ($pgate1 == $pgate3) || ($pgate2 == $pgate3));
+    do
+    {
+        $pirate1 = rand(0, 300);
+        $pirate2 = rand(0, 300);
+        $pirate3 = rand(0, 300);
+        if ($pirate1 < 13)
+            $pgate1 = "1";
+        else if ($pirate1 < 66)
+            $pgate1 = "2";
+        else if ($pirate1 < 161)
+            $pgate1 = "3";
+        else if ($pirate1 < 179)
+            $pgate1 = "4";
+        else if ($pirate1 < 217)
+            $pgate1 = "5";
+        else if ($pirate1 < 239)
+            $pgate1 = "6";
+        else if ($pirate1 < 268)
+            $pgate1 = "7";
+        else
+            $pgate1 = "8";
+        if ($pirate2 < 13)
+            $pgate2 = "1";
+        else if ($pirate2 < 66)
+            $pgate2 = "2";
+        else if ($pirate2 < 161)
+            $pgate2 = "3";
+        else if ($pirate2 < 179)
+            $pgate2 = "4";
+        else if ($pirate2 < 217)
+            $pgate2 = "5";
+        else if ($pirate2 < 239)
+            $pgate2 = "6";
+        else if ($pirate2 < 268)
+            $pgate2 = "7";
+        else
+            $pgate2 = "8";
+        if ($pirate3 < 13)
+            $pgate3 = "1";
+        else if ($pirate3 < 66)
+            $pgate3 = "2";
+        else if ($pirate3 < 161)
+            $pgate3 = "3";
+        else if ($pirate3 < 179)
+            $pgate3 = "4";
+        else if ($pirate3 < 217)
+            $pgate3 = "5";
+        else if ($pirate3 < 239)
+            $pgate3 = "6";
+        else if ($pirate3 < 268)
+            $pgate3 = "7";
+        else
+            $pgate3 = "8";
+    } while (($pgate1 == $pgate2) || ($pgate1 == $pgate3) || ($pgate2 == $pgate3));
 
-	$_SESSION['counter'] = $_SESSION['counter']+1;
+    $_SESSION['counter'] = $_SESSION['counter']+1;
 
-	if ($_SESSION['counter'] > $maxround)
-	{
-		unset($_SESSION['counter']);
-		unset($_SESSION['won']);
-		unset($_SESSION['lost']);
-		unset($_SESSION['points']);
-		echo "<meta http-equiv='refresh' content='0;url=index.php'>";
-	}
+    if ($_SESSION['counter'] > $maxround)
+    {
+        unset($_SESSION['counter']);
+        unset($_SESSION['won']);
+        unset($_SESSION['lost']);
+        unset($_SESSION['points']);
+        echo "<meta http-equiv='refresh' content='0;url=index.php'>";
+    }
 ?>
 
 
@@ -134,12 +134,12 @@
 
 <!--div id="fb-root"></div>
 <script>
-	window.fbAsyncInit = function() {
-		FB.init({appId: '138151759539266', status: true, cookie: true,
-			xfbml: true});
+    window.fbAsyncInit = function() {
+        FB.init({appId: '138151759539266', status: true, cookie: true,
+            xfbml: true});
     };
     (function() {
-		var e = document.createElement('script');
+        var e = document.createElement('script');
         e.type = 'text/javascript';
         e.src = document.location.protocol +
           '//connect.facebook.net/en_US/all.js';
@@ -149,8 +149,8 @@
 </script-->
 
 <noscript>
-	Your browser does not support JavaScript! OR The JavaScript has been turned off!<br/>
-	Please upgrade your browser OR turn on the JavaScript on your browser.
+    Your browser does not support JavaScript! OR The JavaScript has been turned off!<br/>
+    Please upgrade your browser OR turn on the JavaScript on your browser.
 </noscript>
 
 </head>
@@ -176,9 +176,9 @@
 
 <td align="right" width="300px">
 <form method="get" action="http://www.google.com/search" target="_blank" align="right">
-	<input type="radio"  name="sitesearch" value="http://www.mohitgoenka.com" style="display: none;" checked />
-	<input type="text"   name="q" size="30"	maxlength="255" value="" />
-	<input type="submit" value="Search" /><br />
+    <input type="radio"  name="sitesearch" value="http://www.mohitgoenka.com" style="display: none;" checked />
+    <input type="text"   name="q" size="30"    maxlength="255" value="" />
+    <input type="submit" value="Search" /><br />
 </form>
 </td></tr></table>
 </div>
@@ -223,124 +223,124 @@
 <br/>
 
 <table align="center" cellspacing="10" cellpadding="50" bgcolor="black">
-	<tr bgcolor = #555555>
-		<th>Gates</th>
+    <tr bgcolor = #555555>
+        <th>Gates</th>
 <?php if ($gate=="1") { ?>
-		<th bgcolor = yellow style = "color: #000000" >Gate 1</th>
+        <th bgcolor = yellow style = "color: #000000" >Gate 1</th>
 <?php } ?>
 <?php if ($gate != "1") { ?>
-		<th>Gate 1</th>
+        <th>Gate 1</th>
 <?php } ?>
 <?php if ($gate=="2") { ?>
-		<th bgcolor = yellow style = "color: #000000" >Gate 2</th>
+        <th bgcolor = yellow style = "color: #000000" >Gate 2</th>
 <?php } ?>
 <?php if ($gate != "2") { ?>
-		<th>Gate 2</th>
+        <th>Gate 2</th>
 <?php } ?>
 <?php if ($gate=="3") { ?>
-		<th bgcolor = yellow style = "color: #000000" >Gate 3</th>
+        <th bgcolor = yellow style = "color: #000000" >Gate 3</th>
 <?php } ?>
 <?php if ($gate != "3") { ?>
-		<th>Gate 3</th>
+        <th>Gate 3</th>
 <?php } ?>
 <?php if ($gate=="4") { ?>
-		<th bgcolor = yellow style = "color: #000000" >Gate 4</th>
+        <th bgcolor = yellow style = "color: #000000" >Gate 4</th>
 <?php } ?>
 <?php if ($gate != "4") { ?>
-		<th>Gate 4</th>
+        <th>Gate 4</th>
 <?php } ?>
 <?php if ($gate=="5") { ?>
-		<th bgcolor = yellow style = "color: #000000" >Gate 5</th>
+        <th bgcolor = yellow style = "color: #000000" >Gate 5</th>
 <?php } ?>
 <?php if ($gate != "5") { ?>
-		<th>Gate 5</th>
+        <th>Gate 5</th>
 <?php } ?>
 <?php if ($gate=="6") { ?>
-		<th bgcolor = yellow style = "color: #000000" >Gate 6</th>
+        <th bgcolor = yellow style = "color: #000000" >Gate 6</th>
 <?php } ?>
 <?php if ($gate != "6") { ?>
-		<th>Gate 6</th>
+        <th>Gate 6</th>
 <?php } ?>
 <?php if ($gate=="7") { ?>
-		<th bgcolor = yellow style = "color: #000000" >Gate 7</th>
+        <th bgcolor = yellow style = "color: #000000" >Gate 7</th>
 <?php } ?>
 <?php if ($gate != "7") { ?>
-		<th>Gate 7</th>
+        <th>Gate 7</th>
 <?php } ?>
 <?php if ($gate=="8") { ?>
-		<th bgcolor = yellow style = "color: #000000" >Gate 8</th>
+        <th bgcolor = yellow style = "color: #000000" >Gate 8</th>
 <?php } ?>
 <?php if ($gate != "8") { ?>
-		<th>Gate 8</th>
+        <th>Gate 8</th>
 <?php } ?>
 
-	</tr>
-	<tr align="center" >
-		<td></td>
+    </tr>
+    <tr align="center" >
+        <td></td>
 <?php if (($pgate1 == "1") || ($pgate2 == "1") || ($pgate3 == "1")) { ?>
-		<td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 1"></td>
+        <td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 1"></td>
 <?php } ?>
 <?php if (($pgate1 != "1") && ($pgate2 != "1") && ($pgate3 != "1")) { ?>
-		<td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 1"></td>
+        <td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 1"></td>
 <?php } ?>
 <?php if (($pgate1 == "2") || ($pgate2 == "2") || ($pgate3 == "2")) { ?>
-		<td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 2"></td>
+        <td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 2"></td>
 <?php } ?>
 <?php if (($pgate1 != "2") && ($pgate2 != "2") && ($pgate3 != "2")) { ?>
-		<td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 2"></td>
+        <td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 2"></td>
 <?php } ?>
 <?php if (($pgate1 == "3") || ($pgate2 == "3") || ($pgate3 == "3")) { ?>
-		<td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 3"></td>
+        <td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 3"></td>
 <?php } ?>
 <?php if (($pgate1 != "3") && ($pgate2 != "3") && ($pgate3 != "3")) { ?>
-		<td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 3"></td>
+        <td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 3"></td>
 <?php } ?>
 <?php if (($pgate1 == "4") || ($pgate2 == "4") || ($pgate3 == "4")) { ?>
-		<td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 4"></td>
+        <td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 4"></td>
 <?php } ?>
 <?php if (($pgate1 != "4") && ($pgate2 != "4") && ($pgate3 != "4")) { ?>
-		<td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 4"></td>
+        <td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 4"></td>
 <?php } ?>
 <?php if (($pgate1 == "5") || ($pgate2 == "5") || ($pgate3 == "5")) { ?>
-		<td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 5"></td>
+        <td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 5"></td>
 <?php } ?>
 <?php if (($pgate1 != "5") && ($pgate2 != "5") && ($pgate3 != "5")) { ?>
-		<td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 5"></td>
+        <td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 5"></td>
 <?php } ?>
 <?php if (($pgate1 == "6") || ($pgate2 == "6") || ($pgate3 == "6")) { ?>
-		<td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 6"></td>
+        <td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 6"></td>
 <?php } ?>
 <?php if (($pgate1 != "6") && ($pgate2 != "6") && ($pgate3 != "6")) { ?>
-		<td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 6"></td>
+        <td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 6"></td>
 <?php } ?>
 <?php if (($pgate1 == "7") || ($pgate2 == "7") || ($pgate3 == "7")) { ?>
-		<td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 7"></td>
+        <td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 7"></td>
 <?php } ?>
 <?php if (($pgate1 != "7") && ($pgate2 != "7") && ($pgate3 != "7")) { ?>
-		<td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 7"></td>
+        <td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 7"></td>
 <?php } ?>
 <?php if (($pgate1 == "8") || ($pgate2 == "8") || ($pgate3 == "8")) { ?>
-		<td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 8"></td>
+        <td bgcolor = #555555 ><img src="Images/guardGate.jpg" title="Gate 8"></td>
 <?php } ?>
 <?php if (($pgate1 != "8") && ($pgate2 != "8") && ($pgate3 != "8")) { ?>
-		<td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 8"></td>
+        <td bgcolor = #555555 ><img src="Images/luckGate.jpg" title="Gate 8"></td>
 <?php } ?>
-	</tr>
-	<tr align="center" >
-		<td bgcolor = #555555 align="left" >Player Rewards</td><td>1</td><td>8</td><td>10</td><td>1</td><td>3</td><td>2</td><td>1</td><td>2</td>
-	</tr>
-	<tr align="center" >
-		<td bgcolor = #555555 align="left" >Player Penalties</td><td>-10</td><td>-8</td><td>-1</td><td>-7</td><td>-6</td><td>-9</td><td>-4</td><td>-6</td>
-	</tr>
-	<tr align="center" >
-		<td bgcolor = #555555 align="left" >Guard Rewards</td><td>6</td><td>7</td><td>5</td><td>2</td><td>2</td><td>7</td><td>9</td><td>7</td>
-	</tr>
-	<tr align="center" >
-		<td bgcolor = #555555 align="left" >Guard Penalties</td><td>-2</td><td>-8</td><td>-4</td><td>-10</td><td>-3</td><td>-10</td><td>-7</td><td>-1</td>
-	</tr>
-	<tr align="center" >
-		<td bgcolor = #555555 align="left" >Probabilities</td><td>0.13</td><td>0.53</td><td>0.95</td><td>0.18</td><td>0.38</td><td>0.22</td><td>0.29</td><td>0.32</td>
-	</tr>
+    </tr>
+    <tr align="center" >
+        <td bgcolor = #555555 align="left" >Player Rewards</td><td>1</td><td>8</td><td>10</td><td>1</td><td>3</td><td>2</td><td>1</td><td>2</td>
+    </tr>
+    <tr align="center" >
+        <td bgcolor = #555555 align="left" >Player Penalties</td><td>-10</td><td>-8</td><td>-1</td><td>-7</td><td>-6</td><td>-9</td><td>-4</td><td>-6</td>
+    </tr>
+    <tr align="center" >
+        <td bgcolor = #555555 align="left" >Guard Rewards</td><td>6</td><td>7</td><td>5</td><td>2</td><td>2</td><td>7</td><td>9</td><td>7</td>
+    </tr>
+    <tr align="center" >
+        <td bgcolor = #555555 align="left" >Guard Penalties</td><td>-2</td><td>-8</td><td>-4</td><td>-10</td><td>-3</td><td>-10</td><td>-7</td><td>-1</td>
+    </tr>
+    <tr align="center" >
+        <td bgcolor = #555555 align="left" >Probabilities</td><td>0.13</td><td>0.53</td><td>0.95</td><td>0.18</td><td>0.38</td><td>0.22</td><td>0.29</td><td>0.32</td>
+    </tr>
 </table>
 
 
@@ -350,53 +350,53 @@
 <!--You selected Gate <?php echo "$gate"; ?> and the Guard was also in Gate <?php echo "$pgate"; ?></h4-->
 
 <?php
-	$_SESSION['lost'] = $_SESSION['lost']+1;
-	if ($gate == "1")
-		$_SESSION['points'] = $_SESSION['points']-10;
-	else if ($gate == "2")
-		$_SESSION['points'] = $_SESSION['points']-8;
-	else if ($gate == "3")
-		$_SESSION['points'] = $_SESSION['points']-1;
-	else if ($gate == "4")
-		$_SESSION['points'] = $_SESSION['points']-7;
-	else if ($gate == "5")
-		$_SESSION['points'] = $_SESSION['points']-6;
-	else if ($gate == "6")
-		$_SESSION['points'] = $_SESSION['points']-9;
-	else if ($gate == "7")
-		$_SESSION['points'] = $_SESSION['points']-4;
-	else
-		$_SESSION['points'] = $_SESSION['points']-6;
+    $_SESSION['lost'] = $_SESSION['lost']+1;
+    if ($gate == "1")
+        $_SESSION['points'] = $_SESSION['points']-10;
+    else if ($gate == "2")
+        $_SESSION['points'] = $_SESSION['points']-8;
+    else if ($gate == "3")
+        $_SESSION['points'] = $_SESSION['points']-1;
+    else if ($gate == "4")
+        $_SESSION['points'] = $_SESSION['points']-7;
+    else if ($gate == "5")
+        $_SESSION['points'] = $_SESSION['points']-6;
+    else if ($gate == "6")
+        $_SESSION['points'] = $_SESSION['points']-9;
+    else if ($gate == "7")
+        $_SESSION['points'] = $_SESSION['points']-4;
+    else
+        $_SESSION['points'] = $_SESSION['points']-6;
 } ?>
 
 <?php if(($gate != $pgate1) && ($gate != $pgate2) && ($gate != $pgate3)) { ?>
 <h4>You Won round <?php echo $_SESSION['counter']; ?>.<br/>
 <!--You selected Gate <?php echo "$gate"; ?> and the Guard was in Gate <?php echo "$pgate1"; ?>, <?php echo "$pgate2"; ?> and <?php echo "$pgate3"; ?></h4-->
 <?php
-	$_SESSION['won'] = $_SESSION['won']+1;
-	if ($gate == "1")
-		$_SESSION['points'] = $_SESSION['points']+1;
-	else if ($gate == "2")
-		$_SESSION['points'] = $_SESSION['points']+8;
-	else if ($gate == "3")
-		$_SESSION['points'] = $_SESSION['points']+10;
-	else if ($gate == "4")
-		$_SESSION['points'] = $_SESSION['points']+1;
-	else if ($gate == "5")
-		$_SESSION['points'] = $_SESSION['points']+3;
-	else if ($gate == "6")
-		$_SESSION['points'] = $_SESSION['points']+2;
-	else if ($gate == "7")
-		$_SESSION['points'] = $_SESSION['points']+1;
-	else
-		$_SESSION['points'] = $_SESSION['points']+2;
+    $_SESSION['won'] = $_SESSION['won']+1;
+    if ($gate == "1")
+        $_SESSION['points'] = $_SESSION['points']+1;
+    else if ($gate == "2")
+        $_SESSION['points'] = $_SESSION['points']+8;
+    else if ($gate == "3")
+        $_SESSION['points'] = $_SESSION['points']+10;
+    else if ($gate == "4")
+        $_SESSION['points'] = $_SESSION['points']+1;
+    else if ($gate == "5")
+        $_SESSION['points'] = $_SESSION['points']+3;
+    else if ($gate == "6")
+        $_SESSION['points'] = $_SESSION['points']+2;
+    else if ($gate == "7")
+        $_SESSION['points'] = $_SESSION['points']+1;
+    else
+        $_SESSION['points'] = $_SESSION['points']+2;
 } ?>
 
 <?php
-	$handle = fopen('scores.csv', 'a+');
-	$data = "$gate,";
-	fwrite($handle, $data);
-	fclose($handle);
+    $handle = fopen('scores.csv', 'a+');
+    $data = "$gate,";
+    fwrite($handle, $data);
+    fclose($handle);
 ?>
 
 <h3>Your Score</h3>
@@ -406,11 +406,11 @@ Points: <?php echo $_SESSION['points']; ?><br/>
 <br/>
 
 <?php if (($_SESSION['counter'] == $maxround) || ($_SESSION['counter'] != $maxround)) {
-	$handle = fopen('scores.csv', 'a+');
-	$_SESSION['string'] = $_SESSION['won'].",".$_SESSION['lost'].",".$_SESSION['points'];
-	$data = $_SESSION['string'];
-	fwrite($handle, $data);
-	fclose($handle);
+    $handle = fopen('scores.csv', 'a+');
+    $_SESSION['string'] = $_SESSION['won'].",".$_SESSION['lost'].",".$_SESSION['points'];
+    $data = $_SESSION['string'];
+    fwrite($handle, $data);
+    fclose($handle);
 ?>
 
 If you are among the top scorers, your score will soon be updated on this website.<br/>
@@ -423,23 +423,23 @@ If you are among the top scorers, your score will soon be updated on this websit
 <br/>
 
 <?php if ($_SESSION['counter'] >= 1) { ?>
-	Click to upload your current score to Facebook<br/>
-	<input id="uploadfacebook" type="submit" value="Upload to Facebook" onclick="uploadToFacebook()" />
+    Click to upload your current score to Facebook<br/>
+    <input id="uploadfacebook" type="submit" value="Upload to Facebook" onclick="uploadToFacebook()" />
 <?php } ?>
 
 <script type="text/javascript">
-	function uploadToFacebook()
-	{
-		FB_RequireFeatures(["Api"],function()
-		{
-			FB.init("3bdf35a7c722a4a6e636c1e96da4334f","xd_receiver.htm");
-			FB.Connect.requireSession();
-			FB.Facebook.get_sessionState().waitUntilReady(function()
-			{
-				FB.Connect.streamPublish('is playing the game of "The Guard and The Treasure".',{"name": "I won <?php echo $_SESSION['points']; ?> points in <?php echo $_SESSION['counter']; ?> rounds. Find out how much you can win!","caption": "Let's beat the guard and steal some treasure! Click to launch the Game!", "href": "http://games.mohitgoenka.com", "media": [{'type':'image','src':'http://games.mohitgoenka.com/Images/treasure.jpg','href':'http://games.mohitgoenka.com'}], "action_links": [{"text":"Play the game of \"The Guard and The Treasure\"!","href":"http://games.mohitgoenka.com"}],"app_has_no_session":false,"body_general":null})
-			});
-		});
-	}
+    function uploadToFacebook()
+    {
+        FB_RequireFeatures(["Api"],function()
+        {
+            FB.init("3bdf35a7c722a4a6e636c1e96da4334f","xd_receiver.htm");
+            FB.Connect.requireSession();
+            FB.Facebook.get_sessionState().waitUntilReady(function()
+            {
+                FB.Connect.streamPublish('is playing the game of "The Guard and The Treasure".',{"name": "I won <?php echo $_SESSION['points']; ?> points in <?php echo $_SESSION['counter']; ?> rounds. Find out how much you can win!","caption": "Let's beat the guard and steal some treasure! Click to launch the Game!", "href": "http://games.mohitgoenka.com", "media": [{'type':'image','src':'http://games.mohitgoenka.com/Images/treasure.jpg','href':'http://games.mohitgoenka.com'}], "action_links": [{"text":"Play the game of \"The Guard and The Treasure\"!","href":"http://games.mohitgoenka.com"}],"app_has_no_session":false,"body_general":null})
+            });
+        });
+    }
 </script>
 
 <script type="text/javascript" src="http://static.ak.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php"></script>
@@ -459,7 +459,7 @@ If you are among the top scorers, your score will soon be updated on this websit
 </div>
 
 <div class="entry" style="background-color:#eceff5; padding: 0.45em;">
-	<fb:comments width="541"></fb:comments>
+    <fb:comments width="541"></fb:comments>
 </div>
 
 </div>

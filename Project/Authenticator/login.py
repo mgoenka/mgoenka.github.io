@@ -10,64 +10,64 @@ from gevent import monkey
 app = Flask(__name__)
 
 getdevicedetails =     '''
-					SELECT deviceusername, deviceid
-					FROM registration
-					WHERE hostname ='$hostname'
-						AND username = '$username';
-					'''
+                    SELECT deviceusername, deviceid
+                    FROM registration
+                    WHERE hostname ='$hostname'
+                        AND username = '$username';
+                    '''
 
-registeruser = 	'''
-					INSERT INTO registration (hostname, username, deviceid, deviceusername)
-					VALUES ('$hostname','$username', '$deviceid', '$deviceusername');
-					'''
+registeruser =     '''
+                    INSERT INTO registration (hostname, username, deviceid, deviceusername)
+                    VALUES ('$hostname','$username', '$deviceid', '$deviceusername');
+                    '''
 
 authList= [{ 'deviceId': '10', 'userName': 'aditya', 'reg_id': '' },{ 'deviceId': '10', 'userName': 'mohit', 'reg_id': '' }]
 
 @app.route('/api/authenticate/<deviceId>')
 def authenticate(deviceId):
-	# q1 = getdevicedetails.replace("$username",username)
-	# q1 = q1.replace("$hostname",request.remote_addr)
-	# data = db.getData(q1)
-	
-	reg_id=''
+    # q1 = getdevicedetails.replace("$username",username)
+    # q1 = q1.replace("$hostname",request.remote_addr)
+    # data = db.getData(q1)
 
-	# callAppNotify(deviceid,reg_id)
-	# if len(data) == 0:
-	# 	return "Username not recognized"
+    reg_id=''
 
-	# row = data[0]
-	# deviceid = row["deviceid"]
-	# deviceusername = row["deviceusername"]
+    # callAppNotify(deviceid,reg_id)
+    # if len(data) == 0:
+    #     return "Username not recognized"
 
-	# print deviceid + " " + deviceusername
+    # row = data[0]
+    # deviceid = row["deviceid"]
+    # deviceusername = row["deviceusername"]
 
-	if deviceId=="marriot":
-		return "1"
-	else:
-		return "0"
-#  	callAppNotify(deviceid,deviceusername)
+    # print deviceid + " " + deviceusername
+
+    if deviceId=="marriot":
+        return "1"
+    else:
+        return "0"
+#      callAppNotify(deviceid,deviceusername)
 
 
 def callAppNotify(deviceid,reg_id):
- 	gcm = GCM("GCM-ID")
-	data = {'deviceid' : deviceid}
-	response=gcm.plaintext_request(registration_id=reg_id, data=data)
-	#do whatever you want with the response
+     gcm = GCM("GCM-ID")
+    data = {'deviceid' : deviceid}
+    response=gcm.plaintext_request(registration_id=reg_id, data=data)
+    #do whatever you want with the response
 
 # @app.route('/api/register/<username>/<deviceid>/<deviceusername>')
 # def register(username,deviceid,deviceusername):
-# 	#Check if username for this host exists
-# 	q1 = getdevicedetails.replace("$username",username)
-# 	q1 = q1.replace("$hostname",request.remote_addr)
-# 	data = db.getData(q1)
-# 	if len(data) > 0:
-# 		return "Username already exists for this host"
-# 	q2 = registeruser.replace("$hostname",request.remote_addr)
-# 	q2 = q2.replace("$username",username)
-# 	q2 = q2.replace("$deviceid",deviceid)
-# 	q2 = q2.replace("$deviceusername",deviceusername)
-# 	data = db.getData(q2)
-# 	return "registered"
+#     #Check if username for this host exists
+#     q1 = getdevicedetails.replace("$username",username)
+#     q1 = q1.replace("$hostname",request.remote_addr)
+#     data = db.getData(q1)
+#     if len(data) > 0:
+#         return "Username already exists for this host"
+#     q2 = registeruser.replace("$hostname",request.remote_addr)
+#     q2 = q2.replace("$username",username)
+#     q2 = q2.replace("$deviceid",deviceid)
+#     q2 = q2.replace("$deviceusername",deviceusername)
+#     data = db.getData(q2)
+#     return "registered"
 
 # @app.route('/login')
 # def view_login():

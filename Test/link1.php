@@ -3,7 +3,7 @@
 <head>
 <meta name="google-site-verification" content="k7FHwFm9BvIqcIOqVtg-bAMkTaXC-CLs2RAtaqeypEc" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" /> 
+<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" />
 <meta name="Description" content="Mohit Goenka's website is a place for curriculum as well as fun activities" />
 
 
@@ -131,12 +131,12 @@ initalizetab("maintab")
 <!-- Top Links -->
      <div id="navigation" style="margin-bottom:5px;">
       <ul id="theTabMenu">
-	   <li><a href=index.html title=Home>Home</a></li>";
-		<li><a href=Career title=Career>Career</a></li>";
-		<li><a href=Entertainment title=Entertainment>Entertainment</a></li>";
-		<li><a href=Events title=Events>Events</a></li>";
-		<li><a href=Gallery title=Gallery>Gallery</a></li>";
-		<li><a href=Contact title=Contact>Contact</a></li>";
+       <li><a href=index.html title=Home>Home</a></li>";
+        <li><a href=Career title=Career>Career</a></li>";
+        <li><a href=Entertainment title=Entertainment>Entertainment</a></li>";
+        <li><a href=Events title=Events>Events</a></li>";
+        <li><a href=Gallery title=Gallery>Gallery</a></li>";
+        <li><a href=Contact title=Contact>Contact</a></li>";
 
 
        <li><a href="#" title="Features" onmouseover="getDesc(menu_1)">Features</a></li>

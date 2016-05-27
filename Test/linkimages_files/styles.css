@@ -1,49 +1,49 @@
 /* BASIC PAGE STYLES */
 div.wrapper {
-	width: 990px;
-	position: relative;
-	margin: 0 auto 0;
+    width: 990px;
+    position: relative;
+    margin: 0 auto 0;
 
 }
 
 /* Style the menu and position list items */
 ul.mainMenu {
-	position: relative;
-	height: 35px;
-	padding: 0 8px;
-	text-align: left;
-	font-family: Trebuchet MS,Tahoma, Verdana, Arial, Serif;
-	background-repeat:repeat-x;
-	background-position:center;
-	clear: both;
+    position: relative;
+    height: 35px;
+    padding: 0 8px;
+    text-align: left;
+    font-family: Trebuchet MS,Tahoma, Verdana, Arial, Serif;
+    background-repeat:repeat-x;
+    background-position:center;
+    clear: both;
 }
 
 ul.mainMenu li {
-	float: left; 
-	margin: 0px; 
-	list-style-type: none;
+    float: left;
+    margin: 0px;
+    list-style-type: none;
 }
 
 /* Style and position links and images in second level list items */
 ul.mainMenu li a {
-	border-right:1px solid #1e1e1e;
-	border-bottom:none;
-	padding: 9px 15px 9px 15px; 
-	display: block; 
-	font-weight:bold;
-	color:#fff;		
-	text-decoration: none;
-	font-size:12px;
-	letter-spacing:0px;
-	background-repeat:repeat-x;
-	background-position:center;
-	cursor:pointer;
-	
+    border-right:1px solid #1e1e1e;
+    border-bottom:none;
+    padding: 9px 15px 9px 15px;
+    display: block;
+    font-weight:bold;
+    color:#fff;
+    text-decoration: none;
+    font-size:12px;
+    letter-spacing:0px;
+    background-repeat:repeat-x;
+    background-position:center;
+    cursor:pointer;
+
 }
-ul.mainMenu li a:hover, 
-ul li a:active, 
+ul.mainMenu li a:hover,
+ul li a:active,
 ul li.current_page_item a  {
-	background-image:url(../img/li-hover.gif);
+    background-image:url(../img/li-hover.gif);
 background-repeat:repeat-x;
 background-position:top;
 border-right:1px solid #1e1e1e;
@@ -58,34 +58,34 @@ ul.cssonly li:hover ul { display: block; }
 
 /* Position and style second level lists and items */
 ul.mainMenu ul {
-	position: absolute;
-	z-index:82;
-	top: 35px;
-	left: 8px;
-	padding-top: 5px;
-	background: #fdfdfd url(images/shadow.png) repeat-x;
-	display: none; /* Hide until parent list item is hovered on */
+    position: absolute;
+    z-index:82;
+    top: 35px;
+    left: 8px;
+    padding-top: 5px;
+    background: #fdfdfd url(images/shadow.png) repeat-x;
+    display: none; /* Hide until parent list item is hovered on */
 }
 ul.mainMenu ul li { padding: 8px; border-right: dashed 1px #f4f4f4; }
 ul.mainMenu ul li:last-child { border: 0; }
 ul.mainMenu ul li.title {
-	float: none; /* Remove parent float setting */
-	padding: 6px 10px;
-	border: 0; /* Remove parent border setting */
-	border-bottom: dashed 1px #f4f4f4;
-	font-size: 11px;
-	font-weight: bold;
-	color: #000;
+    float: none; /* Remove parent float setting */
+    padding: 6px 10px;
+    border: 0; /* Remove parent border setting */
+    border-bottom: dashed 1px #f4f4f4;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
 }
 
 ul.mainMenu ul img { height: 64px; width: 64px; }
 ul.mainMenu ul span { display: block; }
 ul.mainMenu ul a {
-	text-align: center;
-	font-size: 12px;
-	font-weight: bold;
-	border: solid 1px #ebebeb;
-	background: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: solid 1px #ebebeb;
+    background: #fff;
 }
 ul.mainMenu ul a:hover { background: #000; }
 ul.mainMenu ul a img { opacity: .7; border: 0; }
@@ -96,21 +96,21 @@ ul.mainMenu ul a:hover span.moreinfo { display: block; }
 
 /* Position and style the more info div */
 ul.mainMenu ul span.moreinfo {
-	display: none;
-	position: relative;
-	bottom: 130px;
-	color: #000;
-	background: #fff;
-	text-align: left;
-	font-weight: normal;
+    display: none;
+    position: relative;
+    bottom: 130px;
+    color: #000;
+    background: #fff;
+    text-align: left;
+    font-weight: normal;
 }
 
 /* Rounded corners */
-ul.mainMenu ul { 
-	-webkit-border-bottom-right-radius: 10px;
-	-webkit-border-bottom-left-radius: 10px;
-	-moz-border-radius-bottomright: 10px;
-	-moz-border-radius-bottomleft: 10px;
+ul.mainMenu ul {
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
 }
 
 

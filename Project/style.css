@@ -1,5 +1,5 @@
 * {
-padding: 0; 
+padding: 0;
 margin:0;
 font-family:Georgia, "Times New Roman", Times, serif;
 }
@@ -12,9 +12,9 @@ border:none;
 background:none;
 padding:none;
 background:url(../img/shadow.gif);
-padding:4px 10px 10px 4px;	
+padding:4px 10px 10px 4px;
 border-top:#eee 1px solid;
-border-left:#eee 1px solid;		
+border-left:#eee 1px solid;
 }
 img.wp-smiley, .wpstats, img.noborder, a img.noborder {
 background: none;
@@ -30,21 +30,21 @@ blockquote
 color:#666;
 margin: 1em;
 padding: 0 0 10px 50px;
-background: url(../img/blockquote.gif) no-repeat left top;	
+background: url(../img/blockquote.gif) no-repeat left top;
 }
-fieldset 
+fieldset
 {
 border:0;
 }
-body 
+body
 {
 background: #171717 url(../img/bg.gif);
 margin: 10px;
-font: 76%/1.6em verdana, tahoma, arial,  sans-serif; 
-color: #fff; 
+font: 76%/1.6em verdana, tahoma, arial,  sans-serif;
+color: #fff;
 text-align: center;
 }
-a 
+a
 {
 text-decoration:none;
 }
@@ -56,7 +56,7 @@ a:hover, a:active {
 text-decoration:underline;
 color:#fff;
 }
-h1, h2, h3, h4, h5, h6 
+h1, h2, h3, h4, h5, h6
 {
 font-family:Georgia, Verdana, Arial, Serif;
 color:#c49400;
@@ -66,7 +66,7 @@ color:#c49400;
 margin: 0 auto;
 padding:0;
 width:990px;
-position: relative; 
+position: relative;
 text-align: left;
 border:1px solid #000;
 background:#313131;
@@ -82,15 +82,15 @@ padding-top:2px;
 padding-bottom:3px;
 }
 #header {
-clear: both; 
-margin: 0 auto; 
+clear: both;
+margin: 0 auto;
 width:990px;
 position: relative;
 text-align:left;
 padding:15px 0px 15px 0px;
 color:#FFFFFF;
 }
-#header h1 
+#header h1
 {
 font-size:1.8em;
 margin:10px 0 0 0px;
@@ -100,11 +100,11 @@ color:#FFFFFF;
 }
 #header h1 a {
 
-text-decoration:none;	
+text-decoration:none;
 border:0;
 color:#FFFFFF;
 }
-#header h2 
+#header h2
 {
 margin:5px 0 0 0px;
 font-size:1em;
@@ -113,7 +113,7 @@ font-family:Tahoma, Verdana, Arial, Serif;
 letter-spacing:0px;
 }
 #feedarea {
-height:30px; 	
+height:30px;
 text-align: left;
 width:100%;
 }
@@ -126,13 +126,13 @@ border-bottom:1px dashed #151515;
 
 }
 #feedarea dl dt {
-display: inline; 
-margin-right: 5px; 
+display: inline;
+margin-right: 5px;
 
 }
 #feedarea dl dd {
-display: inline; 
-margin-right: 5px; 
+display: inline;
+margin-right: 5px;
 background:url(../img/icon_feed.gif) no-repeat left center;
 padding-left:16px;
 
@@ -150,26 +150,26 @@ html #content {
 
 }
 #content h4 {
-font-size: 1.1em; 
+font-size: 1.1em;
 margin: 1em 0 0 0;
 }
 #content h5 {
-font-size: 1em; 
+font-size: 1em;
 margin: 1em 0;
 }
-#content-main ul 
+#content-main ul
 {
 margin:0 1em;
 padding:0 1em;
 list-style-image:url(../img/bullet.png);
 }
-#content-main ul.asides 
+#content-main ul.asides
 {
 margin:0;
 padding:2em;
 border-bottom:#000 1px solid;
 }
-#content ol 
+#content ol
 {
 list-style-type:decimal;
 margin:1em;
@@ -182,34 +182,34 @@ width: 700px;
 html #section-index #content-main {
 margin-right: 0px;
 }
-#content .post 
+#content .post
 {
 padding-left:10px;
 }
 #content h2,
-#content h3 
+#content h3
 {
-font-size: 1.5em; 
-margin: 1em 0 0;	
+font-size: 1.5em;
+margin: 1em 0 0;
 font-weight:normal;
-line-height:1.4em;	
+line-height:1.4em;
 letter-spacing:0px;
 color: #c49400;
 }
-#content .entry 
+#content .entry
 {
 
 
 }
 #content .entry a:link, #content .entry a:visited
 {
-border-bottom:#c49400 1px dashed;    
+border-bottom:#c49400 1px dashed;
 }
 #content .entry a:hover, #content .entry a:active
 {
 border-bottom:#333333 1px solid;
 }
-#content .entry li 
+#content .entry li
 {
 margin:0 0 0.3em 0;
 padding:0;
@@ -219,7 +219,7 @@ line-height:1.6em;
 {
 clear:both;
 font-size:0.9em;
-text-align:right;	color:#fff;
+text-align:right;    color:#fff;
 margin:0;
 padding:0;
 
@@ -227,13 +227,13 @@ padding:0;
 #content .post-info
 {
 clear:both;
-font-size:0.9em;	color:#fff;
+font-size:0.9em;    color:#fff;
 margin:0;
 padding:0;
 
 }
-#content .post-info, 
-#content h2.pagetitle 
+#content .post-info,
+#content h2.pagetitle
 {
 background:url(../img/underline-repeat1.gif) repeat-x left bottom;
 padding-bottom:15px;
@@ -245,17 +245,17 @@ padding:1em 0 0 0;
 margin: 50px;
 color:#333333;
 }
-#commentform 
+#commentform
 {
 margin: 5px;
 padding:10px;
 background:#292929;
 border: #000 1px solid;
 }
-.commentnum 
+.commentnum
 {
 font-size:1.5em;
-font-weight:bold;	
+font-weight:bold;
 margin:0 5px 0 0;
 }
 #container .commentlist {
@@ -264,54 +264,54 @@ padding: 0;
 margin: 5px;
 
 }
-#container .commentlist li 
+#container .commentlist li
 {
 list-style:none;
 margin: 0;
 padding: 5px;
 }
-#container .commentlist li.alt 
+#container .commentlist li.alt
 {
-background:#313131;    
+background:#313131;
 }
-#container .commentlist li.authorcomment 
+#container .commentlist li.authorcomment
 {
 border:#000 1px solid;
-margin:20px;   
+margin:20px;
 background-image:url(../img/cat-box-rep.png);
 background-repeat:repeat-x;
-background-position:top;	
+background-position:top;
 
 }
-#container .commentlist li .cmtinfo 
+#container .commentlist li .cmtinfo
 {
-font-size:1em;			
+font-size:1em;
 }
-#container .commentlist li cite 
+#container .commentlist li cite
 {
 font-style:normal;
 font-weight:bold;
 }
-#container .commentlist li .cmtinfo em 
+#container .commentlist li .cmtinfo em
 {
 float:right;
 margin:0;
 padding:0;
 font-style:normal;
-font-size:0.9em;	color:#fff;
+font-size:0.9em;    color:#fff;
 }
-#content .commentsfeed 
+#content .commentsfeed
 {
 background:url(../img/icon_feed.gif) no-repeat left center;
 padding-left:16px;
 }
-#content .trackback 
+#content .trackback
 {
 background:url(../img/link.gif) no-repeat left center;
 padding-left:20px;
 }
 
-#submit 
+#submit
 {
 background-image:url(../img/orange/orange-li.gif);
 background-repeat:repeat-x;
@@ -328,7 +328,7 @@ background-repeat:repeat-x;
 background-position:center;
 color: #fff;
 }
-.post h4 
+.post h4
 {
 font-size:1em;
 font-weight:normal;
@@ -345,21 +345,21 @@ overflow: hidden;
 }
 .did-you-know{
 background-color:#1e1e1e;
-border-bottom: #000000 1px solid; 
-border-left: #000000 1px solid; 
-border-right: #000000 1px solid; 
+border-bottom: #000000 1px solid;
+border-left: #000000 1px solid;
+border-right: #000000 1px solid;
 padding-top:3px;
 padding-bottom:3px;
 width:990px;
 font-size:11px;
-margin: 0px  auto; 
+margin: 0px  auto;
 color:#fff;
 }
 
 .footer-area{
-overflow: hidden; 
-width:990px; 
-position: relative; 
+overflow: hidden;
+width:990px;
+position: relative;
 text-align: left;
 font-family: Trebuchet MS,Tahoma, Verdana, Arial, Serif;
 margin: 0 auto;

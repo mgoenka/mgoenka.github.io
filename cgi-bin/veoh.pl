@@ -15,8 +15,8 @@ print "<body>";
 @nvpairs = split(/&/, $buffer);
 foreach $pair (@nvpairs)
 {
-	($name, $value) = split(/=/, $pair);
-	$data = $value;
+    ($name, $value) = split(/=/, $pair);
+    $data = $value;
     $data =~ tr/+/ /;
     $data =~ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
 
@@ -43,8 +43,8 @@ use LWP::Simple;
 # Checking if the LWP Module is installed
 if(eval{require LWP::Simple;}){
 } else {
-	print "You need to install the Perl LWP module!<br/>";
-	exit;
+    print "You need to install the Perl LWP module!<br/>";
+    exit;
 }
 
 # Fetching the content of the URL passed in the get() function and storing the HTML coding in the variable $urldata
@@ -55,38 +55,38 @@ print "<br/><div align=center>";
 my $maxcount = 0;
 $maxcount++ while $urldata =~ m{class="runLength"}gsi;
 if ($maxcount > 20) {
-	$maxcount = 20;
+    $maxcount = 20;
 }
 if ($maxcount > 0) {
-	print "<TABLE><TABLE BORDER><TR Style='Font-Weight: bold;'><TD align=center>Video Name</TD><TD align=center>Category</TD><TD align=center>Duration</TD><TD align=center>Views</TD><TD align=center>Thumb</TD></TR>";
-	for ($count = 0;$count < $maxcount;$count++) {
-		print "<TR>";
-		if ($urldata =~ m{<a  id=\"thumb_browse(.*?)/>}gsi) {
-			$t = $1;
-		}
-		if ($urldata =~ m{class=\"runLength\">(.*?)</span>}gsi) {
-			$d = $1;
-		}
-		if ($urldata =~ m{<a  id=\"thumbTitle_browse(.*?)/a>}gsi) {
-			$temp = $1;
-			if ($temp =~ m{>(.*?)<}gsi) {
-				$vn = $1;
-			}
-		}
-		if ($urldata =~ m{<dl><dt>category:</dt><dd><a(.*?)/a>}gsi) {
-			$temp = $1;
-			if ($temp =~ m{>(.*?)<}gsi) {
-				$c = $1;
-			}
-		}
-		if ($urldata =~ m{views:</dt><dd>(.*?)</dd>}gsi) {
-			$v = $1;
-		}
-		print "<TD>$vn</TD><TD>$c</TD><TD>$d</TD><TD>$v</TD><TD><a target=_blank id=\"thumb_browse$t height=90px width=120px/></TD></TR>";
-	}
-	print "</TABLE>";
+    print "<TABLE><TABLE BORDER><TR Style='Font-Weight: bold;'><TD align=center>Video Name</TD><TD align=center>Category</TD><TD align=center>Duration</TD><TD align=center>Views</TD><TD align=center>Thumb</TD></TR>";
+    for ($count = 0;$count < $maxcount;$count++) {
+        print "<TR>";
+        if ($urldata =~ m{<a  id=\"thumb_browse(.*?)/>}gsi) {
+            $t = $1;
+        }
+        if ($urldata =~ m{class=\"runLength\">(.*?)</span>}gsi) {
+            $d = $1;
+        }
+        if ($urldata =~ m{<a  id=\"thumbTitle_browse(.*?)/a>}gsi) {
+            $temp = $1;
+            if ($temp =~ m{>(.*?)<}gsi) {
+                $vn = $1;
+            }
+        }
+        if ($urldata =~ m{<dl><dt>category:</dt><dd><a(.*?)/a>}gsi) {
+            $temp = $1;
+            if ($temp =~ m{>(.*?)<}gsi) {
+                $c = $1;
+            }
+        }
+        if ($urldata =~ m{views:</dt><dd>(.*?)</dd>}gsi) {
+            $v = $1;
+        }
+        print "<TD>$vn</TD><TD>$c</TD><TD>$d</TD><TD>$v</TD><TD><a target=_blank id=\"thumb_browse$t height=90px width=120px/></TD></TR>";
+    }
+    print "</TABLE>";
 } else {
-	print "<h3>No Video Results</h3><br/>";
+    print "<h3>No Video Results</h3><br/>";
 }
 
 print "</div>";

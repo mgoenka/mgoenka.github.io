@@ -11,9 +11,9 @@ var callFunc=false;
 function Clear(start,endNumber)
 {
     var counter=start
-    
+
     var strID=""
-    
+
     while(counter <= endNumber)
     {
         strID="component"+counter
@@ -25,7 +25,7 @@ function Clear(start,endNumber)
 function SetValue(strID,strValue)
 {
     var obj=document.getElementById(strID)
-    
+
     switch(obj.type)
     {
         case 'text':
@@ -53,7 +53,7 @@ function SetValue(strID,strValue)
 function LoadSelectedValue(obj,strValue)
 {
     var counter=0
-    
+
     while(counter<obj.options.length)
     {
         if(obj.options[counter].value==strValue)
@@ -68,15 +68,15 @@ function LoadSelectedValue(obj,strValue)
 function GetValue(strID)
 {
     var obj=document.getElementById(strID)
-    
+
     switch(obj.type)
     {
         case 'text':
             return obj.value
         break;
-        
+
         case 'textarea':
-            
+
             return obj.value
             break;
         case 'checkbox':
@@ -97,13 +97,13 @@ function GetValue(strID)
 
 function getAjaxHandle()
 {
-    
+
   var xmlHttp1;
   try
     {
     // Firefox, Opera 8.0+, Safari, IE 7
     xmlHttp1 = new XMLHttpRequest()
-    
+
     }
   catch (e)
     {
@@ -128,7 +128,7 @@ function getAjaxHandle()
     //alert(xmlHttp1)
     return xmlHttp1;
  }
-     
+
  function ValidateIP(strInput)
  {
     if(!(typeof strInput=="undefined"))
@@ -140,7 +140,7 @@ function getAjaxHandle()
         }
 //        while( intCounter < strInput.length)
 //        {
-////            if (strInput.charAt(intCounter) == "&" | strInput.charAt(intCounter) == "'" | strInput.charAt(intCounter) == "=" | strInput.charAt(intCounter) == ">" | strInput.charAt(intCounter) == "<" | strInput.charAt(intCounter) == "*" | strInput.charAt(intCounter) == "%") 
+////            if (strInput.charAt(intCounter) == "&" | strInput.charAt(intCounter) == "'" | strInput.charAt(intCounter) == "=" | strInput.charAt(intCounter) == ">" | strInput.charAt(intCounter) == "<" | strInput.charAt(intCounter) == "*" | strInput.charAt(intCounter) == "%")
 ////            {
 ////                return false
 ////            }
@@ -153,14 +153,14 @@ function getAjaxHandle()
      {
         return false
      }
-      
+
  }
- 
- 
+
+
  function DisplayMessage(strFrom,strValue)
  {
     var objTD=document.getElementById("tdError")
-    
+
     switch(strFrom)
     {
         case "STATUS":
@@ -169,7 +169,7 @@ function getAjaxHandle()
                 case "SUCCESS":
                      WriteMessage(objTD,"Candidate Status has been updated.")
                 break;
-                
+
                 case "FAILURE":
                      WriteMessage(objTD,"Error occured,please contact the administrator.")
                 break;
@@ -185,7 +185,7 @@ function getAjaxHandle()
                     WriteMessage(objTD,"Invalid characters in the input.")
                 break;
             }
-            
+
         break;
         case "EMAILID":
             switch(strValue)
@@ -248,7 +248,7 @@ function getAjaxHandle()
                 break;
             }
         break;
-        
+
         case "POSITION":
             switch(strValue)
             {
@@ -257,7 +257,7 @@ function getAjaxHandle()
                 break;
             }
         break;
-        
+
         case "MANDATORY":
             switch(strValue)
             {
@@ -273,7 +273,7 @@ function getAjaxHandle()
                 case "PREFIX":
                     WriteMessage(objTD,"Please enter your prefix.")
                 break;
-                
+
                 case "ADDRESS":
                     WriteMessage(objTD,"Please enter your address.")
                 break;
@@ -292,7 +292,7 @@ function getAjaxHandle()
                 case "REFERENCES":
                     WriteMessage(objTD,"Please give atleast three references.")
                 break;
-                
+
                 case "EMPTYXML":
                     WriteMessage(objTD,"Please enter your details.")
                 break;
@@ -302,10 +302,10 @@ function getAjaxHandle()
                 case "CITIZENSHIP":
                     WriteMessage(objTD,"Please select residency status.")
                 break;
-                
+
             }
         break;
-        
+
         case "RAREA":
             switch(strValue)
             {
@@ -320,7 +320,7 @@ function getAjaxHandle()
                 break;
             }
         break;
-        
+
         case "INFO":
             switch(strValue)
             {
@@ -332,7 +332,7 @@ function getAjaxHandle()
                 break;
             }
         break;
-        
+
         case "STMT":
             switch(strValue)
             {
@@ -344,10 +344,10 @@ function getAjaxHandle()
                 break;
             }
         break;
-        
+
     }
  }
- 
+
 function WriteMessage(obj,strMessage)
 {
     obj.innerText=strMessage
@@ -365,11 +365,11 @@ function Position()
 this.x=""
 this.y=""
 }
-   
+
 function ObjectCoOrdinates(strObjectName)
 {
         var el = document.getElementById(strObjectName)
-      
+
         var totalOffsetTop = 0;
         var totalOffsetLeft=0
         var pos=new Position()
@@ -377,9 +377,9 @@ function ObjectCoOrdinates(strObjectName)
         {
          pos.x=-1
          pos.y=-1
-         return pos   
-        }  
-        while (el != null) 
+         return pos
+        }
+        while (el != null)
         {
             totalOffsetTop += el.offsetTop;
             totalOffsetLeft+= el.offsetLeft;
@@ -389,30 +389,30 @@ function ObjectCoOrdinates(strObjectName)
         pos.x=totalOffsetLeft
         return pos
 }
-  
-  
+
+
   function RelocateAndDisplay(strFrom,strValue,strID,optX,optY)
   {
         DisplayMessage(strFrom,strValue)
         var pos=ObjectCoOrdinates(strID)
         var objDIV=document.getElementById("divError")
 
-        
+
         pos.x+=optX+150
-        pos.y+=optY      
-        
+        pos.y+=optY
+
         objDIV.style.position="absolute"
         objDIV.style.top=pos.y+"px"
         objDIV.style.left=pos.x+"px"
-        
+
         objDIV.style.display=""
-    
+
   }
-  
+
   function IsMandatoryEmpty(arrMandatory,strID)
   {
         var counter=0
-        
+
         while(counter< arrMandatory.length)
         {
             if(arrMandatory[counter]==strID)
@@ -424,15 +424,15 @@ function ObjectCoOrdinates(strObjectName)
             }
             counter++
         }
-        
+
         return true
   }
-  
+
   function GetCredentials()
   {
     var str=""
     var titles=new Array()
-    
+
     titles[titles.length]="FNAME"
     titles[titles.length]="LNAME"
     titles[titles.length]="EMAILID"
@@ -440,14 +440,14 @@ function ObjectCoOrdinates(strObjectName)
     str+="<CREDENTIALS>"
     while(counter< titles.length)
     {
-        
+
         str+="<"+titles[counter]+">"+credentials[counter]+"</"+titles[counter]+">"
         counter++
     }
     str+="</CREDENTIALS>"
     return str
   }
-  
+
   function SetCredentials()
   {
     if(document.getElementsByName("FNAME")[0].value!="")
@@ -472,7 +472,7 @@ function isAlpha(parm) {return isValid(parm,lwr+upr);}
 
 function CheckPhoneNumber(value,id)
 {
-    
+
     if(!isNum(value))
     {
         document.getElementById(id).style.border="2px solid #990000"
@@ -488,15 +488,15 @@ function CheckPhoneNumber(value,id)
 
 function CheckEmailID(value,id)
 {
-    
+
     if(!specialChars(value))
     {
         HighlightComponent(document.getElementById(id))
         RelocateAndDisplay("INVALID","EMAILID",id,30,0)
-        
+
         return false
     }
-    
+
     else
     {
         if(value=="")
@@ -509,15 +509,15 @@ function CheckEmailID(value,id)
         {
             HighlightComponent(document.getElementById(id))
             RelocateAndDisplay("INVALID","EMAILID",id,30,0)
-            
+
             return false
         }
         if(value.indexOf(" ")!=-1)
         {
-            
+
             HighlightComponent(document.getElementById(id))
             RelocateAndDisplay("INVALID","EMAILID",id,30,0)
-            
+
             return false
         }
         UnHighlightComponent(document.getElementById(id))
@@ -534,7 +534,7 @@ function specialChars(value)
     arrChars[arrChars.length]="!"
     //arrChars[arrChars.length]="@"
     arrChars[arrChars.length]="#"
-    
+
     arrChars[arrChars.length]="$"
     arrChars[arrChars.length]="%"
     arrChars[arrChars.length]="^"
@@ -549,7 +549,7 @@ function specialChars(value)
     arrChars[arrChars.length]="{"
     arrChars[arrChars.length]="}"
 //    arrChars[arrChars.length]="["
-//    
+//
 //    arrChars[arrChars.length]="]"
     arrChars[arrChars.length]=";"
     //arrChars[arrChars.length]=":"
@@ -561,9 +561,9 @@ function specialChars(value)
 
     arrChars[arrChars.length]="|"
     arrChars[arrChars.length]="?"
-    
+
     var counter=0;
-    
+
     while(counter< arrChars.length)
     {
         if(value.indexOf(arrChars[counter])!=-1)
@@ -581,7 +581,7 @@ function HighlightComponent(obj)
     obj.style.border="2px solid #FF0000"
 }
 
-function UnHighlightComponent(obj){ 
+function UnHighlightComponent(obj){
 
 obj.style.border="1px solid #CCCCCC";
 }
@@ -608,7 +608,7 @@ function GetText(tag,value)
     }
     var arrObj=document.getElementsByName(tag)
     var counter=0
-    
+
     while(counter<arrObj.length)
     {
         switch(arrObj[counter].type)
@@ -620,7 +620,7 @@ function GetText(tag,value)
                         return value
                     }
                 }
-            
+
             break;
             case 'select-one':
             {
@@ -635,7 +635,7 @@ function GetText(tag,value)
         }
         counter++
     }
-    
+
 }
 
 
@@ -643,9 +643,9 @@ function GetText(tag,value)
 function ConvertToXMLDom(xml)
 {
     var xmlDoc
-    
-    //UGLY HACK 
-    
+
+    //UGLY HACK
+
 //    if(window.ActiveXObject)
 //    {
 //        xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
@@ -671,9 +671,9 @@ function ConvertToXMLDom(xml)
 }
 
 
-function Trim(stringToTrim) 
+function Trim(stringToTrim)
 {
-	return stringToTrim.replace(/^\s+|\s+$/g,"")
+    return stringToTrim.replace(/^\s+|\s+$/g,"")
 }
 
 
@@ -693,58 +693,58 @@ function RemoveDummy(id)
 {
     var objDirt=document.getElementById("divDummy")
     var objParent=objDirt.parentElement || objDirt.parentNode
-    
+
     objParent.removeChild(objDirt)
     objParent.appendChild(document.getElementById(id))
 }
 
 function CloseWindow(id)
 {
-    BlurBackground()    
+    BlurBackground()
     document.getElementById(id).style.display="none"
-    RemoveDummy(id) 
+    RemoveDummy(id)
 }
 
 function BlurBackground()
 {
-    
-    
+
+
     var objBlockUI=document.getElementById("blockUI")
     var isVisible=objBlockUI.style.display
     var objTable=document.getElementById("tblBlockUI")
     var pos=ObjectCoOrdinates("tblBlockUI")
-    
-    
+
+
     objBlockUI.style.position="fixed"
     objBlockUI.style.top="0px"
     objBlockUI.style.left="0px"
-    
+
     var dimensions=GetDimensions()
     objBlockUI.style.zIndex=100
     objBlockUI.style.height=dimensions.y+"px"
     objBlockUI.style.width=dimensions.x+"px"
     //objBlockUI.style.height="825px"
-    
+
    // objBlockUI.style.width="780px"
-    
+
     if(isVisible=="none")
     {
-       
+
         objBlockUI.style.display=""
     }
     else
     {
          objBlockUI.style.display="none"
     }
-   
+
 }
 function GetDimensions()
 {
     var pos=new Position()
-    
+
     if (typeof event!="undefined")
     {
-        
+
         pos.x=document.documentElement.scrollWidth
         pos.y=document.documentElement.offsetHeight
     }
@@ -755,7 +755,7 @@ function GetDimensions()
 //    }
     else
     {
-        
+
         pos.x=document.documentElement.scrollWidth
         pos.y=document.documentElement.scrollHeight
     }

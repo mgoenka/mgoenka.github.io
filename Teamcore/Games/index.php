@@ -1,63 +1,63 @@
-<?php 
-	session_start();
-	$expire = time()+60*2; //10 minutes
+<?php
+    session_start();
+    $expire = time()+60*2; //10 minutes
 
-	if(isset($_SESSION['counter1']))
-		$_SESSION['counter1']=$_SESSION['counter1']+1;
-	else
-	{
-		
-		$_SESSION['counter1']=0;
-	}
+    if(isset($_SESSION['counter1']))
+        $_SESSION['counter1']=$_SESSION['counter1']+1;
+    else
+    {
 
-	if (!isset($_SESSION['name']))
-		$_SESSION['name'] = $_REQUEST['name'];
-	if (!isset($_SESSION['email']))
-		$_SESSION['email'] = $_REQUEST['email'];	
-	if (!isset($_SESSION['gender']))
-		$_SESSION['gender'] = $_REQUEST['gender'];	
-	if ((!isset($_SESSION['country']) || ($_SESSION['country'] == "NotSet")))
-		$_SESSION['country'] = $_REQUEST['country'];
-		
-	if (($_SESSION['name'] == "") || ($_SESSION['name'] == null))
-		unset($_SESSION['name']);
-	if (($_SESSION['email'] == "") || ($_SESSION['email'] == null))
-		unset($_SESSION['email']);
-	if (($_SESSION['gender'] == "") || ($_SESSION['gender'] == null))
-		unset($_SESSION['gender']);
-	if (($_SESSION['country'] == "") || ($_SESSION['country'] == null))
-		unset($_SESSION['country']);
+        $_SESSION['counter1']=0;
+    }
 
-	if ((isset($_SESSION['name']) && isset($_SESSION['email']) && isset($_SESSION['gender']) && (isset($_SESSION['country']) && ($_SESSION['country'] != "NotSet"))) || (isset($_COOKIE['name']) && isset($_COOKIE['email']) && isset($_COOKIE['gender']) && (isset($_COOKIE['country']) && ($_COOKIE['country'] != "NotSet"))))
-	{
-		$handle = fopen('data.csv', 'a+');
-		$today = date("F j, Y, g:i a");
+    if (!isset($_SESSION['name']))
+        $_SESSION['name'] = $_REQUEST['name'];
+    if (!isset($_SESSION['email']))
+        $_SESSION['email'] = $_REQUEST['email'];
+    if (!isset($_SESSION['gender']))
+        $_SESSION['gender'] = $_REQUEST['gender'];
+    if ((!isset($_SESSION['country']) || ($_SESSION['country'] == "NotSet")))
+        $_SESSION['country'] = $_REQUEST['country'];
 
-		if (!(isset($_COOKIE['name']) && isset($_COOKIE['email']) && isset($_COOKIE['gender']) && (isset($_COOKIE['country']) && ($_COOKIE['country'] != "NotSet"))))
-		{
-			setcookie("name", $_SESSION['name'], $expire);
-			setcookie("email", $_SESSION['email'], $expire);
-			setcookie("gender", $_SESSION['gender'], $expire);
-			setcookie("country", $_SESSION['country'], $expire);
-			$data = "\n".$_SESSION['name'].",".$_SESSION['email'].",".$_SESSION['gender'].",".$_SESSION['country'].",$today";
-		}
-		else
-			$data = "\n".$_COOKIE['name'].",".$_COOKIE['email'].",".$_COOKIE['gender'].",".$_COOKIE['country'].",$today";
-		
-		fwrite($handle, $data);
-		fclose($handle);
-		
-		unset($_SESSION['counter1']);
-		unset($_SESSION['counter']);
-		unset($_SESSION['gameid']);
-		unset($_SESSION['guard']);
-		unset($_SESSION['selection']);
-		
-		if ($_REQUEST['practice'] == "Yes")
-			echo "<meta http-equiv='refresh' content='0;url=practice.php'>";
-		else
-			echo "<meta http-equiv='refresh' content='0;url=jamesgame5Obs_COBRAvsQRE.php'>";
-	}
+    if (($_SESSION['name'] == "") || ($_SESSION['name'] == null))
+        unset($_SESSION['name']);
+    if (($_SESSION['email'] == "") || ($_SESSION['email'] == null))
+        unset($_SESSION['email']);
+    if (($_SESSION['gender'] == "") || ($_SESSION['gender'] == null))
+        unset($_SESSION['gender']);
+    if (($_SESSION['country'] == "") || ($_SESSION['country'] == null))
+        unset($_SESSION['country']);
+
+    if ((isset($_SESSION['name']) && isset($_SESSION['email']) && isset($_SESSION['gender']) && (isset($_SESSION['country']) && ($_SESSION['country'] != "NotSet"))) || (isset($_COOKIE['name']) && isset($_COOKIE['email']) && isset($_COOKIE['gender']) && (isset($_COOKIE['country']) && ($_COOKIE['country'] != "NotSet"))))
+    {
+        $handle = fopen('data.csv', 'a+');
+        $today = date("F j, Y, g:i a");
+
+        if (!(isset($_COOKIE['name']) && isset($_COOKIE['email']) && isset($_COOKIE['gender']) && (isset($_COOKIE['country']) && ($_COOKIE['country'] != "NotSet"))))
+        {
+            setcookie("name", $_SESSION['name'], $expire);
+            setcookie("email", $_SESSION['email'], $expire);
+            setcookie("gender", $_SESSION['gender'], $expire);
+            setcookie("country", $_SESSION['country'], $expire);
+            $data = "\n".$_SESSION['name'].",".$_SESSION['email'].",".$_SESSION['gender'].",".$_SESSION['country'].",$today";
+        }
+        else
+            $data = "\n".$_COOKIE['name'].",".$_COOKIE['email'].",".$_COOKIE['gender'].",".$_COOKIE['country'].",$today";
+
+        fwrite($handle, $data);
+        fclose($handle);
+
+        unset($_SESSION['counter1']);
+        unset($_SESSION['counter']);
+        unset($_SESSION['gameid']);
+        unset($_SESSION['guard']);
+        unset($_SESSION['selection']);
+
+        if ($_REQUEST['practice'] == "Yes")
+            echo "<meta http-equiv='refresh' content='0;url=practice.php'>";
+        else
+            echo "<meta http-equiv='refresh' content='0;url=jamesgame5Obs_COBRAvsQRE.php'>";
+    }
 ?>
 
 
@@ -71,22 +71,22 @@
 <meta name="description" content="Game Theory and Human Behavior group is focused on research in the field of game theory. It is a part of the various departments at the University of Southern California." />
 <meta name="keywords" content="GTHB, Game, Theory, Human, Behavior, USC" />
 
-<link rel="shortcut icon" href="../Images/favicon.gif" type="image/x-icon" /> 
+<link rel="shortcut icon" href="../Images/favicon.gif" type="image/x-icon" />
 <link rel="stylesheet" type="text/css" href="../CSS/default.css">
 <script type="text/javascript" src="../JS/CheckFunctions.js"></script>
 <script type="text/javascript" src="../JS/Utils.js"></script>
 <script type="text/javascript" src="../JS/BrowserDetect.js"></script>
 <script type="text/javascript" src="../JS/Common.js"></script>
 
-	<!-- ------------------------------------------------------------------------- -->
-	<!-- START: PUT YOUR PAGE TITLE BELOW -->
-	<!-- ------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------- -->
+    <!-- START: PUT YOUR PAGE TITLE BELOW -->
+    <!-- ------------------------------------------------------------------------- -->
 
     <title>Games - Teamcore</title>
 
-	<!-- ------------------------------------------------------------------------- -->
-	<!-- END: PUT YOUR PAGE TITLE ABOVE -->
-	<!-- ------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------- -->
+    <!-- END: PUT YOUR PAGE TITLE ABOVE -->
+    <!-- ------------------------------------------------------------------------- -->
 
 </head>
 
@@ -135,17 +135,17 @@
                         <tr>
                             <td>
 
-							<!-- Beginning of menu bar (external js file "../JS/Menu.js") -->
-							<table id="gthb_Links_Table"style="width: 100%; height: 30px;" cellpadding="0" cellspacing="0" border="0" class="noPrint">
-								<tbody>
-									<tr>
-				
-								<script language="javascript" type="text/javascript" src="../JS/Menu.js"></script>
-								<noscript>Your browser does not support JavaScript! OR The JavaScript has been turned off!
-											Please upgrade your browser OR turn on the JavaScript on your browser.
-								</noscript></tr>
-							</table>
-							<!-- End of menu bar -->
+                            <!-- Beginning of menu bar (external js file "../JS/Menu.js") -->
+                            <table id="gthb_Links_Table"style="width: 100%; height: 30px;" cellpadding="0" cellspacing="0" border="0" class="noPrint">
+                                <tbody>
+                                    <tr>
+
+                                <script language="javascript" type="text/javascript" src="../JS/Menu.js"></script>
+                                <noscript>Your browser does not support JavaScript! OR The JavaScript has been turned off!
+                                            Please upgrade your browser OR turn on the JavaScript on your browser.
+                                </noscript></tr>
+                            </table>
+                            <!-- End of menu bar -->
 
                             </td>
                         </tr>
@@ -157,95 +157,95 @@
                     <table id="Content_Table" style="width: 1000px; background-color: white;" cellpadding="0" cellspacing="0">
                         <tbody><tr>
                             <td style="width: 100%; text-align: left;">
-                                
+
     <table id="SubLinks_Table" cellpadding="0" cellspacing="0" style="width: 100%; height: 100px;
         border-bottom: solid 2px #CCCCCC; background-color: #F0F0F0;">
         <tbody><tr style="height: 80px;">
             <td style="width: 100%;" colspan="5">
 
-				<!-- ------------------------------------------------------------------------- -->
-				<!-- START: PUT YOUR SECTION TITLE BELOW -->
-				<!-- ------------------------------------------------------------------------- -->
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- START: PUT YOUR SECTION TITLE BELOW -->
+                <!-- ------------------------------------------------------------------------- -->
 
-					<strong class="topLinkText">Games</strong>
+                    <strong class="topLinkText">Games</strong>
 
-				<!-- ------------------------------------------------------------------------- -->
-				<!-- END: PUT YOUR SECTION TITLE ABOVE -->
-				<!-- ------------------------------------------------------------------------- -->                
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- END: PUT YOUR SECTION TITLE ABOVE -->
+                <!-- ------------------------------------------------------------------------- -->
                 <br>
 
-				<!-- ------------------------------------------------------------------------- -->
-				<!-- START: PUT YOUR SECTION DESCRIPTION BELOW -->
-				<!-- ------------------------------------------------------------------------- -->
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- START: PUT YOUR SECTION DESCRIPTION BELOW -->
+                <!-- ------------------------------------------------------------------------- -->
 
-	                <strong class="topLinkSubText">Game Theory and Human Behavior Research</strong>
+                    <strong class="topLinkSubText">Game Theory and Human Behavior Research</strong>
 
-				<!-- ------------------------------------------------------------------------- -->
-				<!-- END: PUT YOUR SECTION DESCRIPTION ABOVE -->
-				<!-- ------------------------------------------------------------------------- -->
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- END: PUT YOUR SECTION DESCRIPTION ABOVE -->
+                <!-- ------------------------------------------------------------------------- -->
             </td>
 
-			<td rowspan="2" style="padding-right: 20px;">
-				<!-- ------------------------------------------------------------------------- -->
-				<!-- START: PUT YOUR SECTION DESCRIPTION BELOW -->
-				<!-- ------------------------------------------------------------------------- -->
+            <td rowspan="2" style="padding-right: 20px;">
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- START: PUT YOUR SECTION DESCRIPTION BELOW -->
+                <!-- ------------------------------------------------------------------------- -->
 
-	                <!--img src="" style="vertical-align: middle; border: solid 1px #D8D8D8" class="noPrint" height="80px" /-->
+                    <!--img src="" style="vertical-align: middle; border: solid 1px #D8D8D8" class="noPrint" height="80px" /-->
 
-				<!-- ------------------------------------------------------------------------- -->
-				<!-- END: PUT YOUR SECTION DESCRIPTION ABOVE -->
-				<!-- ------------------------------------------------------------------------- -->
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- END: PUT YOUR SECTION DESCRIPTION ABOVE -->
+                <!-- ------------------------------------------------------------------------- -->
 
             </td>
 
         </tr>
 
-		<tr align="left" style="height: 20px;">
+        <tr align="left" style="height: 20px;">
             <td>
                 &nbsp; &nbsp; &nbsp;
 
-				<!-- Beginning of Submenu bar (external js file "Submenu.js") -->
-					<script language="javascript" type="text/javascript" src="Submenu.js"></script>
-					<noscript>Your browser does not support JavaScript! OR The JavaScript has been turned off!
-						Please upgrade your browser OR turn on the JavaScript on your browser.
-					</noscript>
-				<!-- End of menu bar -->
-                
-            </td>            
+                <!-- Beginning of Submenu bar (external js file "Submenu.js") -->
+                    <script language="javascript" type="text/javascript" src="Submenu.js"></script>
+                    <noscript>Your browser does not support JavaScript! OR The JavaScript has been turned off!
+                        Please upgrade your browser OR turn on the JavaScript on your browser.
+                    </noscript>
+                <!-- End of menu bar -->
+
+            </td>
         </tr>
     </tbody></table>
 
-	<table id="NavigationTable" cellpadding="0" cellspacing="0" style="width: 100%;" class="contentTable noBorder">
+    <table id="NavigationTable" cellpadding="0" cellspacing="0" style="width: 100%;" class="contentTable noBorder">
         <tbody><tr style="height: 30px;">
              <td align="right" style="text-align:right; padding-right: 20px;">
                 <span id="ctl00_gthbHolder_gthbSiteMapPath">
-				
-				<!-- ------------------------------------------------------------------------- -->
-				<!-- START: PUT YOUR PAGE TITLE BELOW -->
-				<!-- ------------------------------------------------------------------------- -->
 
-				<span class="navigationActiveLinks">Games</span>
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- START: PUT YOUR PAGE TITLE BELOW -->
+                <!-- ------------------------------------------------------------------------- -->
 
-				<!-- ------------------------------------------------------------------------- -->
-				<!-- END: PUT YOUR PAGE TITLE ABOVE -->
-				<!-- ------------------------------------------------------------------------- -->
-				<a id="ctl00_gthbHolder_gthbSiteMapPath_SkipLink"></a></span>
+                <span class="navigationActiveLinks">Games</span>
+
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- END: PUT YOUR PAGE TITLE ABOVE -->
+                <!-- ------------------------------------------------------------------------- -->
+                <a id="ctl00_gthbHolder_gthbSiteMapPath_SkipLink"></a></span>
             </td>
         </tr>
     </tbody></table>
     <table id="PageContentTable" cellpadding="0" cellspacing="0" style="width: 100%;" class="contentTable noBorder">
         <tbody><tr>
             <td valign="top">
-				
-				<!--Usage Templates-->
-					<!--Links><a href="http://gthb.usc.edu" class="infoLinks">Home</a-->
-					<!--Headings><a id="home"><strong>Home</strong></a><br-->
-					<!--Content><p>Game Theory and Human Behavior</p-->
 
-				<!-- ------------------------------------------------------------------------- -->
-				<!-- START: PUT YOUR CONTENT HERE -->
-				<!-- Please don't write anything above this line... -->
-				<!-- ------------------------------------------------------------------------- -->
+                <!--Usage Templates-->
+                    <!--Links><a href="http://gthb.usc.edu" class="infoLinks">Home</a-->
+                    <!--Headings><a id="home"><strong>Home</strong></a><br-->
+                    <!--Content><p>Game Theory and Human Behavior</p-->
+
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- START: PUT YOUR CONTENT HERE -->
+                <!-- Please don't write anything above this line... -->
+                <!-- ------------------------------------------------------------------------- -->
 
 <!-- Homepage Article -->
 
@@ -284,8 +284,8 @@ You did not enter your Name.<br/>
 Please enter your Name to start playing.<br/><br/>
 <?php } ?>
 <?php if (!isset($_SESSION['name'])) { ?>
-	<h4>Enter Your Name*</h4>
-	<input name="name" type="text" style = "width:250px"><br /><br />
+    <h4>Enter Your Name*</h4>
+    <input name="name" type="text" style = "width:250px"><br /><br />
 <?php } ?>
 
 <?php if (($_SESSION['counter1'] > 0) && (!isset($_SESSION['email']))) { ?>
@@ -293,8 +293,8 @@ You did not enter your Email Address.<br/>
 Please enter your Email Address to start playing.<br/><br/>
 <?php } ?>
 <?php if (!isset($_SESSION['email'])) { ?>
-	<h4>Enter Your Email Address*</h4>
-	<input name="email" type="text" style = "width:250px"><br /><br />
+    <h4>Enter Your Email Address*</h4>
+    <input name="email" type="text" style = "width:250px"><br /><br />
 <?php } ?>
 
 <?php if ((($_SESSION['counter1'] > 0) && (!isset($_SESSION['gender']))) || (($_SESSION['counter1'] > 0) && (!isset($_SESSION['country']) || ($_SESSION['country'] == "NotSet")))) { ?>
@@ -302,10 +302,10 @@ You did not enter your Gender.<br/>
 Please enter your Gender to start playing.<br/><br/>
 <?php } ?>
 <?php if (!isset($_SESSION['gender']) || ((!isset($_SESSION['country']) || ($_SESSION['country'] == "NotSet")))) { ?>
-	<h4>Gender*</h4>
-	<input type="radio" name="gender" value="Male"/> Male<br />
-	<input type="radio" name="gender" value="Female"/> Female
-	<br /><br />
+    <h4>Gender*</h4>
+    <input type="radio" name="gender" value="Male"/> Male<br />
+    <input type="radio" name="gender" value="Female"/> Female
+    <br /><br />
 <?php } ?>
 
 <?php if ((($_SESSION['counter1'] > 0) && (!isset($_SESSION['gender']))) || ($_SESSION['counter1'] > 0) && (!isset($_SESSION['country']) || ($_SESSION['country'] == "NotSet"))) { ?>
@@ -581,10 +581,10 @@ Please enter your Country to start playing.<br/><br/>
 
 
 
-				<!-- ------------------------------------------------------------------------- -->
-				<!-- Please don't write anything below this line... -->
-				<!-- STOP PUTTING YOUR CONTENT -->
-				<!-- ------------------------------------------------------------------------- -->
+                <!-- ------------------------------------------------------------------------- -->
+                <!-- Please don't write anything below this line... -->
+                <!-- STOP PUTTING YOUR CONTENT -->
+                <!-- ------------------------------------------------------------------------- -->
 
             </td>
             <td style="width: 20px;">
@@ -601,26 +601,26 @@ Please enter your Country to start playing.<br/><br/>
                         </tr>
                     </tbody></table>
                 </td>
-            </tr>            
+            </tr>
             <tr align="center">
                 <td>
 
-				<!-- Footer: Copyright and other info from "../JS/Footer.js" -->
-				<table id="CopyrightTable" style="width: 1000px; background-color: white; border-top: solid 2px #CCCCCC;" cellpadding="0" cellspacing="0">
-					<tbody>
-						<tr>
-							<td align="left">
-								<script language="javascript" type="text/javascript" src="../JS/Footer.js"></script>
-								<noscript>Your browser does not support JavaScript! OR The JavaScript has been turned off!
-									Please upgrade your browser OR turn on the JavaScript on your browser.
-								</noscript>
+                <!-- Footer: Copyright and other info from "../JS/Footer.js" -->
+                <table id="CopyrightTable" style="width: 1000px; background-color: white; border-top: solid 2px #CCCCCC;" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td align="left">
+                                <script language="javascript" type="text/javascript" src="../JS/Footer.js"></script>
+                                <noscript>Your browser does not support JavaScript! OR The JavaScript has been turned off!
+                                    Please upgrade your browser OR turn on the JavaScript on your browser.
+                                </noscript>
                             </td>
                         </tr>
                     </tbody></table>
                 </td>
             </tr>
         </tbody></table>
-    
+
 
 <script type="text/javascript">
 //<![CDATA[

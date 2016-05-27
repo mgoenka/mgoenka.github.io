@@ -22,14 +22,14 @@ def getData(queryString):
         cursor = cnx.cursor()
         cursor.execute(queryStr)
         if "INSERT INTO" in queryString:
-        	cnx.commit()
+            cnx.commit()
         else:
-        	columns = tuple( d[0].decode('utf8') for d in cursor.description )
-        	for row in cursor:
-        		result.append(dict(zip(columns,row)))
+            columns = tuple( d[0].decode('utf8') for d in cursor.description )
+            for row in cursor:
+                result.append(dict(zip(columns,row)))
         # print result
         # print getData(query)
-    except mysql.connector.Error as err:    
+    except mysql.connector.Error as err:
       if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
         print("Something is wrong with your user name or password")
       elif err.errno == errorcode.ER_BAD_DB_ERROR:

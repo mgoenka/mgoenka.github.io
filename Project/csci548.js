@@ -32,29 +32,29 @@ function backToTop() {
 
 function slideshow(url)
 {
-	document.getElementById('Thumb_USC').innerHTML = "<IFRAME FRAMEBORDER='0px' WIDTH=555px' HEIGHT='530px' style=\"overflow:auto;\" src='http://picasaweb.google.com/mohitgoenka/USCCampus#slideshow/"+url+"'></iframe>";
+    document.getElementById('Thumb_USC').innerHTML = "<IFRAME FRAMEBORDER='0px' WIDTH=555px' HEIGHT='530px' style=\"overflow:auto;\" src='http://picasaweb.google.com/mohitgoenka/USCCampus#slideshow/"+url+"'></iframe>";
 }
 
 
 /*function head(title, subtitle)
 {
-	html_text = "<TABLE><TR><TD><img src=\"image/Mohit_Goenka.jpg\" alt=\"Mohit's Castle\" height=\"80\"/></TD><TD valign=\"bottom\" width=\"641\">";
+    html_text = "<TABLE><TR><TD><img src=\"image/Mohit_Goenka.jpg\" alt=\"Mohit's Castle\" height=\"80\"/></TD><TD valign=\"bottom\" width=\"641\">";
 
-	html_text += "<h1>"+title+"</h1>";
+    html_text += "<h1>"+title+"</h1>";
 
-	html_text += "<h2>"+subtitle+"</h2>";
+    html_text += "<h2>"+subtitle+"</h2>";
 
-	html_text += "</TD><TD valign=bottom>";
+    html_text += "</TD><TD valign=bottom>";
 
-	html_text += "<form method=get action=http://www.google.com/search target=_blank align=right>";
-	html_text += "<input type=radio  name=sitesearch value=http://www-scf.usc.edu/~mgoenka checked />Mohit's Castle &nbsp; &nbsp; &nbsp;<input type=radio  name=sitesearch value='' />Google<br />";
-	html_text += "<input type=text name=q size=31 maxlength=255 value='' />";
-	html_text += "<input type=submit value=Search /><br />";
-	html_text += "</form>";
-	html_text += "</TR></TABLE>";
+    html_text += "<form method=get action=http://www.google.com/search target=_blank align=right>";
+    html_text += "<input type=radio  name=sitesearch value=http://www-scf.usc.edu/~mgoenka checked />Mohit's Castle &nbsp; &nbsp; &nbsp;<input type=radio  name=sitesearch value='' />Google<br />";
+    html_text += "<input type=text name=q size=31 maxlength=255 value='' />";
+    html_text += "<input type=submit value=Search /><br />";
+    html_text += "</form>";
+    html_text += "</TR></TABLE>";
 
-	document.getElementById('header').innerHTML = html_text;
-	
-	right();
+    document.getElementById('header').innerHTML = html_text;
+
+    right();
 }
 */

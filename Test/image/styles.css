@@ -1,41 +1,41 @@
 /* BASIC PAGE STYLES */
 * { margin: 0; padding: 0; }
 body {
-	background: #000 url(images/bg.jpg) repeat-x;
-	font: 14px Arial, Helvetica, sans-serif;
+    background: #000 url(images/bg.jpg) repeat-x;
+    font: 14px Arial, Helvetica, sans-serif;
 }
 p { margin: 15px 0; color: #333; font-size: 13px; line-height: 18px; }
 div.wrapper {
-	width: 700px;
-	height: 265px;
-	padding: 0 15px;
-	margin: 25px auto 0;
-	background: #f4f7fa;	
-	border: solid 1px #d2dbe1;
+    width: 700px;
+    height: 265px;
+    padding: 0 15px;
+    margin: 25px auto 0;
+    background: #f4f7fa;
+    border: solid 1px #d2dbe1;
 }
 h1 { margin: 15px 0; font-size: 16px; }
 
 /* Style the menu and position list items */
 ul.mainMenu {
-	position: relative;
-	height: 35px;
-	padding: 0 8px;
-	background: #fff url(images/menubg.png) repeat-x;
-	clear: both;
+    position: relative;
+    height: 35px;
+    padding: 0 8px;
+    background: #fff url(images/menubg.png) repeat-x;
+    clear: both;
 }
 ul.mainMenu li { float: left; list-style: none; }
 
 /* Style and position links and images in second level list items */
 ul.mainMenu li a {
-	display: block;
-	height: 19px;
-	padding: 8px 12px;
-	text-decoration: none;
-	color: #666;
+    display: block;
+    height: 19px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #666;
 }
 ul.mainMenu li a:hover {
-	color: #222;
-	background: url(images/menubg-hover.png) repeat-x;
+    color: #222;
+    background: url(images/menubg-hover.png) repeat-x;
 }
 
 /* When hovering over main list items, show second level lists */
@@ -44,32 +44,32 @@ ul.cssonly li:hover ul { display: block; }
 
 /* Position and style second level lists and items */
 ul.mainMenu ul {
-	position: absolute;
-	top: 35px;
-	left: 8px;
-	padding-top: 5px;
-	background: #fdfdfd url(images/shadow.png) repeat-x;
-	display: none; /* Hide until parent list item is hovered on */
+    position: absolute;
+    top: 35px;
+    left: 8px;
+    padding-top: 5px;
+    background: #fdfdfd url(images/shadow.png) repeat-x;
+    display: none; /* Hide until parent list item is hovered on */
 }
 ul.mainMenu ul li { padding: 8px; border-right: dashed 1px #f4f4f4; }
 ul.mainMenu ul li:last-child { border: 0; }
 ul.mainMenu ul li.title {
-	float: none; /* Remove parent float setting */
-	padding: 6px 10px;
-	border: 0; /* Remove parent border setting */
-	border-bottom: dashed 1px #f4f4f4;
-	font-size: 11px;
-	font-weight: bold;
+    float: none; /* Remove parent float setting */
+    padding: 6px 10px;
+    border: 0; /* Remove parent border setting */
+    border-bottom: dashed 1px #f4f4f4;
+    font-size: 11px;
+    font-weight: bold;
 }
 ul.mainMenu ul img { height: 64px; width: 64px; }
 ul.mainMenu ul span { display: block; }
 ul.mainMenu ul a {
-	height: 80px;
-	text-align: center;
-	font-size: 12px;
-	font-weight: bold;
-	border: solid 1px #ebebeb;
-	background: #fff;
+    height: 80px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    border: solid 1px #ebebeb;
+    background: #fff;
 }
 ul.mainMenu ul a:hover { background: #f4f7fa; }
 ul.mainMenu ul a img { opacity: .7; border: 0; }
@@ -80,24 +80,24 @@ ul.mainMenu ul a:hover span.moreinfo { display: block; }
 
 /* Position and style the more info div */
 ul.mainMenu ul span.moreinfo {
-	display: none;
-	width: 275px;
-	position: absolute;
-	bottom: -25px;
-	left: 12px;
-	padding: 6px 10px;
-	background: #fff;
-	text-align: left;
-	font-weight: normal;
+    display: none;
+    width: 275px;
+    position: absolute;
+    bottom: -25px;
+    left: 12px;
+    padding: 6px 10px;
+    background: #fff;
+    text-align: left;
+    font-weight: normal;
 }
 
 /* Rounded corners */
 ul.mainMenu { -webkit-border-radius: 6px; -moz-border-radius: 6px; }
-ul.mainMenu ul { 
-	-webkit-border-bottom-right-radius: 10px;
-	-webkit-border-bottom-left-radius: 10px;
-	-moz-border-radius-bottomright: 10px;
-	-moz-border-radius-bottomleft: 10px;
+ul.mainMenu ul {
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
 }
 div.wrapper,
 ul.mainMenu ul a { -webkit-border-radius: 10px; -moz-border-radius: 10px; }

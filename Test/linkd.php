@@ -3,7 +3,7 @@
 <head>
 <meta name="google-site-verification" content="k7FHwFm9BvIqcIOqVtg-bAMkTaXC-CLs2RAtaqeypEc" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" /> 
+<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" />
 <meta name="Description" content="Mohit Goenka's website is a place for curriculum as well as fun activities" />
 <link href="linkimages_files/styles.css" rel="stylesheet" type="text/css">
 <BASE HREF="http://www-scf.usc.edu/~mgoenka/";>
@@ -55,128 +55,128 @@
 
 <!-- Top Links -->
 <div id="navigation" style="margin-bottom:5px">
-		<ul class="mainMenu cssonly" id="menu1">
-			<li><a href="#">Link 1 »</a>
-				<ul>
-					<li class="title">This is the Link 1 title</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/firefox-bag.png" alt="Firefox Bag">
-							<span>Link 1a</span>
-							<span class="moreinfo">More info about list item and image could 
+        <ul class="mainMenu cssonly" id="menu1">
+            <li><a href="#">Link 1 »</a>
+                <ul>
+                    <li class="title">This is the Link 1 title</li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/firefox-bag.png" alt="Firefox Bag">
+                            <span>Link 1a</span>
+                            <span class="moreinfo">More info about list item and image could
 go here</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/fixit-bag.png" alt="Fix It Bag">
-							<span>Link 1b</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/globe.png" alt="Globe &amp; Bag">
-							<span>Link 1c</span>
-							<span class="moreinfo">More info about list item and image could 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/fixit-bag.png" alt="Fix It Bag">
+                            <span>Link 1b</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/globe.png" alt="Globe &amp; Bag">
+                            <span>Link 1c</span>
+                            <span class="moreinfo">More info about list item and image could
 go here</span>
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li><a href="#">Link 2</a></li>
-			<li><a href="#">Link 3 »</a>
-				<ul>
-					<li class="title">This is the Link 3 title</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/firefox-bag.png" alt="Firefox Bag">
-							<span>Link 3a</span>
-							<span class="moreinfo">More info about list item and image could 
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3 »</a>
+                <ul>
+                    <li class="title">This is the Link 3 title</li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/firefox-bag.png" alt="Firefox Bag">
+                            <span>Link 3a</span>
+                            <span class="moreinfo">More info about list item and image could
 go here</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/fixit-bag.png" alt="Fix It Bag">
-							<span>Link 3b</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/globe.png" alt="Globe &amp; Bag">
-							<span>Link 3c</span>
-							<span class="moreinfo">More info about list item and image could 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/fixit-bag.png" alt="Fix It Bag">
+                            <span>Link 3b</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/globe.png" alt="Globe &amp; Bag">
+                            <span>Link 3c</span>
+                            <span class="moreinfo">More info about list item and image could
 go here</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/lock.png" alt="Lock &amp; Bag">
-							<span>Link 3d</span>
-						</a>
-					</li>
-				</ul>
-			</li>
-			<li><a href="#">Link 4</a></li>
-			<li><a href="#">Link 5 »</a>
-				<ul>
-					<li class="title">This is the Link 5 title</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/firefox-bag.png" alt="Firefox Bag">
-							<span>Link 5a</span>
-							<span class="moreinfo">More info about list item and image could 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/lock.png" alt="Lock &amp; Bag">
+                            <span>Link 3d</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5 »</a>
+                <ul>
+                    <li class="title">This is the Link 5 title</li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/firefox-bag.png" alt="Firefox Bag">
+                            <span>Link 5a</span>
+                            <span class="moreinfo">More info about list item and image could
 go here</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/fixit-bag.png" alt="Fix It Bag">
-							<span>Link 3b</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/globe.png" alt="Globe &amp; Bag">
-							<span>Link 3c</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/lock.png" alt="Lock &amp; Bag">
-							<span>Link 3d</span>
-							<span class="moreinfo">More info about list item and image could 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/fixit-bag.png" alt="Fix It Bag">
+                            <span>Link 3b</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/globe.png" alt="Globe &amp; Bag">
+                            <span>Link 3c</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/lock.png" alt="Lock &amp; Bag">
+                            <span>Link 3d</span>
+                            <span class="moreinfo">More info about list item and image could
 go here</span>
-						</a>
-					</li>
-					
-					<li>
-						<a href="#">
-							<img src="linkimages_files/safety.png" alt="Safety &amp; Bag">
-							<span>Link 3e</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="linkimages_files/music-bag.png" alt="Music &amp; Bag">
-							<span>Link 3e</span>
-						</a>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/safety.png" alt="Safety &amp; Bag">
+                            <span>Link 3e</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="linkimages_files/music-bag.png" alt="Music &amp; Bag">
+                            <span>Link 3e</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
 
 
      <div id="navigation" style="margin-bottom:5px;">
       <ul>
-	   <li><a href=index.html title=Home>Home</a></li>";
-		<li><a href=Career title=Career>Career</a></li>";
-		<li><a href=Entertainment title=Entertainment>Entertainment</a></li>";
-		<li><a href=Events title=Events>Events</a></li>";
-		<li><a href=Gallery title=Gallery>Gallery</a></li>";
-		<li><a href=Contact title=Contact>Contact</a></li>";
+       <li><a href=index.html title=Home>Home</a></li>";
+        <li><a href=Career title=Career>Career</a></li>";
+        <li><a href=Entertainment title=Entertainment>Entertainment</a></li>";
+        <li><a href=Events title=Events>Events</a></li>";
+        <li><a href=Gallery title=Gallery>Gallery</a></li>";
+        <li><a href=Contact title=Contact>Contact</a></li>";
 
 
        <li><a href="#" title="Features" onmouseover="getDesc(menu_1)">Features</a></li>

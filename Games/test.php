@@ -1,17 +1,17 @@
 <?php
-	session_start();
-	$expire = time()+60*10;
+    session_start();
+    $expire = time()+60*10;
 
-	$_SESSION['name'] = $_REQUEST['name'];
-	$_SESSION['email'] = $_REQUEST['email'];
+    $_SESSION['name'] = $_REQUEST['name'];
+    $_SESSION['email'] = $_REQUEST['email'];
 
-	if(isset($_SESSION['counter1']))
-		$_SESSION['counter1']=$_SESSION['counter1']+1;
-	else
-		$_SESSION['counter1']=0;
+    if(isset($_SESSION['counter1']))
+        $_SESSION['counter1']=$_SESSION['counter1']+1;
+    else
+        $_SESSION['counter1']=0;
 
 
-	function get_facebook_cookie($app_id) {
+    function get_facebook_cookie($app_id) {
   $args = array();
   parse_str(trim($_COOKIE['fbs_' . $app_id], '\\"'), $args);
   ksort($args);
@@ -25,45 +25,45 @@
   return $args;
 }
 
-	$cookie = get_facebook_cookie('138151759539266');
+    $cookie = get_facebook_cookie('138151759539266');
 
-/*	if(isset($_SESSION['user']))
-	{
-		unset($_SESSION['counter']);
-		$handle = fopen('scores.csv', 'a+');
-		$today = date("F j, Y, g:i a");
-		$when = getdate(date("U"));
-		$data = "\n".$_SESSION['pid'].", $today,";
-		fwrite($handle, $data);
-		fclose($handle);
-		echo "<meta http-equiv='refresh' content='0;url=game.php#GT'>";
-	}*/
+/*    if(isset($_SESSION['user']))
+    {
+        unset($_SESSION['counter']);
+        $handle = fopen('scores.csv', 'a+');
+        $today = date("F j, Y, g:i a");
+        $when = getdate(date("U"));
+        $data = "\n".$_SESSION['pid'].", $today,";
+        fwrite($handle, $data);
+        fclose($handle);
+        echo "<meta http-equiv='refresh' content='0;url=game.php#GT'>";
+    }*/
 
-	if ((isset($_SESSION['name']) && isset($_SESSION['email'])) || (isset($_COOKIE['name']) && isset($_COOKIE['email'])))
-	{
-		$handle = fopen('data.csv', 'a+');
-		$today = date("F j, Y, g:i a");
+    if ((isset($_SESSION['name']) && isset($_SESSION['email'])) || (isset($_COOKIE['name']) && isset($_COOKIE['email'])))
+    {
+        $handle = fopen('data.csv', 'a+');
+        $today = date("F j, Y, g:i a");
 
-		if (!(isset($_COOKIE['name']) && isset($_COOKIE['email'])))
-		{
-			setcookie("name", $_SESSION['name'], $expire);
-			setcookie("email", $_SESSION['email'], $expire);
-			$data = "\n".$_SESSION['name'].",".$_SESSION['email'].$id.",$today";
-		}
-		else
-			$data = "\n".$_COOKIE['name'].",".$_COOKIE['email'].",".$id.",$today";
+        if (!(isset($_COOKIE['name']) && isset($_COOKIE['email'])))
+        {
+            setcookie("name", $_SESSION['name'], $expire);
+            setcookie("email", $_SESSION['email'], $expire);
+            $data = "\n".$_SESSION['name'].",".$_SESSION['email'].$id.",$today";
+        }
+        else
+            $data = "\n".$_COOKIE['name'].",".$_COOKIE['email'].",".$id.",$today";
 
-		fwrite($handle, $data);
-		fclose($handle);
-		/*$handle = fopen('scores.csv', 'a+');
-		$today = date("F j, Y, g:i a");
-		$when = getdate(date("U"));
-		$data = "\n".$_SESSION['pid'].",$today";
-		fwrite($handle, $data);
-		fclose($handle);*/
-		unset($_SESSION['counter1']);
-		unset($_SESSION['counter']);
-	}
+        fwrite($handle, $data);
+        fclose($handle);
+        /*$handle = fopen('scores.csv', 'a+');
+        $today = date("F j, Y, g:i a");
+        $when = getdate(date("U"));
+        $data = "\n".$_SESSION['pid'].",$today";
+        fwrite($handle, $data);
+        fclose($handle);*/
+        unset($_SESSION['counter1']);
+        unset($_SESSION['counter']);
+    }
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -115,12 +115,12 @@
 
 <div id="fb-root"></div>
 <script>
-	window.fbAsyncInit = function() {
-		FB.init({appId: '138151759539266', status: true, cookie: true,
-			xfbml: true});
+    window.fbAsyncInit = function() {
+        FB.init({appId: '138151759539266', status: true, cookie: true,
+            xfbml: true});
     };
     (function() {
-		var e = document.createElement('script');
+        var e = document.createElement('script');
         e.type = 'text/javascript';
         e.src = document.location.protocol +
           '//connect.facebook.net/en_US/all.js';
@@ -130,8 +130,8 @@
 </script>
 
 <noscript>
-	Your browser does not support JavaScript! OR The JavaScript has been turned off!<br/>
-	Please upgrade your browser OR turn on the JavaScript on your browser.
+    Your browser does not support JavaScript! OR The JavaScript has been turned off!<br/>
+    Please upgrade your browser OR turn on the JavaScript on your browser.
 </noscript>
 
 </head>
@@ -152,14 +152,14 @@
 <!-- END Site Slogan -->
 
 <table><tr><td width="700px">
-	<fb:login-button show-faces="true" width="300"></fb:login-button>
+    <fb:login-button show-faces="true" width="300"></fb:login-button>
 </td>
 
 <td align="right" width="300px">
 <form method="get" action="http://www.google.com/search" target="_blank" align="right">
-	<input type="radio"  name="sitesearch" value="http://www.mohitgoenka.com" style="display: none;" checked />
-	<input type="text"   name="q" size="30"	maxlength="255" value="" />
-	<input type="submit" value="Search" /><br />
+    <input type="radio"  name="sitesearch" value="http://www.mohitgoenka.com" style="display: none;" checked />
+    <input type="text"   name="q" size="30"    maxlength="255" value="" />
+    <input type="submit" value="Search" /><br />
 </form>
 </td></tr></table>
 </div>
@@ -224,7 +224,7 @@ Test<br/>
 <br/>
 Test Over
 <?php if ((!isset($_SESSION['email'])) || (!isset($_SESSION['email']))) { ?>
-	<h5>All the fields are mandatory</h5>
+    <h5>All the fields are mandatory</h5>
 <?php } ?>
 
 <?php if (($_SESSION['counter1'] > 0) && (!isset($_SESSION['name']))) { ?>
@@ -248,9 +248,9 @@ Please enter your Email Address to start playing.<br/><br/>
 <?php } ?>
 
 <?php if ((!isset($_SESSION['email'])) || (!isset($_SESSION['email']))) { ?>
-	<input type="submit" value="Submit">
+    <input type="submit" value="Submit">
 <?php } else { ?>
-	<input type="submit" value="Start Playing">
+    <input type="submit" value="Start Playing">
 <?php } ?>
 
 <br/>
@@ -274,7 +274,7 @@ Please enter your Email Address to start playing.<br/><br/>
 </div>
 
 <div class="entry" style="background-color:#eceff5; padding: 0.45em;">
-	<fb:comments width="541"></fb:comments>
+    <fb:comments width="541"></fb:comments>
 </div>
 
 </div>

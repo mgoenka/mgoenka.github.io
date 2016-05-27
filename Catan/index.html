@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 
 <head>
-	<title>Mohit's Catan Randomizer</title>
-	<link rel="stylesheet" href="stylesheet.css" type="text/css">  
-	<script src="jquery.js" type="text/javascript"></script>
-	<script type="text/javascript" language="javascript">
-		$(document).ready(function() {
-			init();
-		});
-	</script>
-	<script src="randomizer.js" type="text/javascript"></script>
+    <title>Mohit's Catan Randomizer</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script src="jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function() {
+            init();
+        });
+    </script>
+    <script src="randomizer.js" type="text/javascript"></script>
 </head>
 
 <body>
-	<div id="content-wrapper">
-		<div id="content-left">
-		
-			<h1 id="title">Catan Map Generator</h1>
-			
-			<div id="gen-options">
-				<div>
-					<span><b>Please select the number of players:</b></span><br>
-					<input type="radio" name="game-type" value="normal" checked>1 to 4<br>
-					<input type="radio" name="game-type" value="expanded">5 or 6<br>
-				</div>
-			</div>
-			
-			<button id="gen-map-button" type="button" disabled="true">
-				Loading resources...
-			</button>
+    <div id="content-wrapper">
+        <div id="content-left">
 
-			<br />
-			<br />
+            <h1 id="title">Catan Map Generator</h1>
 
-			<div>
-				<a href="Rules.pdf">Rules</a>
-			</div>
-		
-		</div>
-		<div id="content-right">
-			<div id="map-container">
-			</div>
-		</div>
-	</div>
+            <div id="gen-options">
+                <div>
+                    <span><b>Please select the number of players:</b></span><br>
+                    <input type="radio" name="game-type" value="normal" checked>1 to 4<br>
+                    <input type="radio" name="game-type" value="expanded">5 or 6<br>
+                </div>
+            </div>
+
+            <button id="gen-map-button" type="button" disabled="true">
+                Loading resources...
+            </button>
+
+            <br />
+            <br />
+
+            <div>
+                <a href="Rules.pdf">Rules</a>
+            </div>
+
+        </div>
+        <div id="content-right">
+            <div id="map-container">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

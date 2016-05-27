@@ -18,13 +18,13 @@ var req;
 
 function ajaxFunction()
 {
-	document.getElementById('uploaded').innerHTML="<h2>Following sources have been submitted for integration:</h2><br/>";
+    document.getElementById('uploaded').innerHTML="<h2>Following sources have been submitted for integration:</h2><br/>";
 }
 
 function filename()
 {
-	var w = document.myForm.fileSelection.selectedIndex;
-	document.getElementById('uploaded').innerHTML="<h2>Following sources have been submitted for integration:</h2><br/>"+document.myForm.fleSelection.options[w].text;
+    var w = document.myForm.fileSelection.selectedIndex;
+    document.getElementById('uploaded').innerHTML="<h2>Following sources have been submitted for integration:</h2><br/>"+document.myForm.fleSelection.options[w].text;
 }
 
 </script>
@@ -68,26 +68,26 @@ function filename()
 <h2>Web Resource</h2><br/>
 Specify a URL to RSS Feed:<br/>
 <form id="myForm" method="post" target="uploadFrame" action="submit1.php">
-	    <input type="text" name="txtFile" id="txtFile" width="800px"/>
-	    <input type="submit" id="submitID" name="submit" value="Submit" />
-	</form>
+        <input type="text" name="txtFile" id="txtFile" width="800px"/>
+        <input type="submit" id="submitID" name="submit" value="Submit" />
+    </form>
 <br/>
 <h2>Database</h2><br/>
-	<form name="myForm" method="post" target="uploadFrame" action="submit2.php"">
-	    <input type="file" name="txtFile" id="txtFile" width="800px"/><br/><br/>
-		File Type: 
-		<select name='fileSelection'>
-		<option value="MS Access">MS Access</option>
-		<option value="MySql">MySql</option>
-		<option value="Oracle">Oracle</option>
+    <form name="myForm" method="post" target="uploadFrame" action="submit2.php"">
+        <input type="file" name="txtFile" id="txtFile" width="800px"/><br/><br/>
+        File Type:
+        <select name='fileSelection'>
+        <option value="MS Access">MS Access</option>
+        <option value="MySql">MySql</option>
+        <option value="Oracle">Oracle</option>
         </select><br/><br/>
-	    <input type="submit" id="submitID" name="submit" value="Upload" />
-	</form>
+        <input type="submit" id="submitID" name="submit" value="Upload" />
+    </form>
 
 <div id="uploaded">
 <h2>Following resources have been submitted:
 </div>
-	
+
 <div id="files">
 <h4>Web Resource:</h4>http://www.powells.com/blog/?feed=rss
 </div>
@@ -97,7 +97,7 @@ Specify a URL to RSS Feed:<br/>
 <!-- Homepage Article -->
 <div id="uploaded">
 </div>
-	
+
 <div id="files">
 </div>
 <!-- END Homepage Article -->

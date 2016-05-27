@@ -47,12 +47,12 @@
 
 <div id="fb-root"></div>
 <script>
-	window.fbAsyncInit = function() {
-		FB.init({appId: '138151759539266', status: true, cookie: true,
-			xfbml: true});
+    window.fbAsyncInit = function() {
+        FB.init({appId: '138151759539266', status: true, cookie: true,
+            xfbml: true});
     };
     (function() {
-		var e = document.createElement('script');
+        var e = document.createElement('script');
         e.type = 'text/javascript';
         e.src = document.location.protocol +
           '//connect.facebook.net/en_US/all.js';
@@ -62,8 +62,8 @@
 </script>
 
 <noscript>
-	Your browser does not support JavaScript! OR The JavaScript has been turned off!<br/>
-	Please upgrade your browser OR turn on the JavaScript on your browser.
+    Your browser does not support JavaScript! OR The JavaScript has been turned off!<br/>
+    Please upgrade your browser OR turn on the JavaScript on your browser.
 </noscript>
 
 </head>
@@ -89,9 +89,9 @@
 
 <td align="right" width="300px">
 <form method="get" action="http://www.google.com/search" target="_blank" align="right">
-	<input type="radio"  name="sitesearch" value="http://www.mohitgoenka.com" style="display: none;" checked />
-	<input type="text"   name="q" size="30"	maxlength="255" value="" />
-	<input type="submit" value="Search" /><br />
+    <input type="radio"  name="sitesearch" value="http://www.mohitgoenka.com" style="display: none;" checked />
+    <input type="text"   name="q" size="30"    maxlength="255" value="" />
+    <input type="submit" value="Search" /><br />
 </form>
 </td></tr></table>
 </div>
@@ -131,74 +131,74 @@
 <br/>
 
 <table align="center" cellspacing="10" cellpadding="50" bgcolor="black">
-	<tr bgcolor = #555555>
-		<th>Gates</th>
-		<th>Gate 1</th>
-		<th>Gate 2</th>
-		<th>Gate 3</th>
-		<th>Gate 4</th>
-		<th>Gate 5</th>
-		<th>Gate 6</th>
-		<th>Gate 7</th>
-		<th>Gate 8</th>
-	</tr>
-	<tr align="center" >
-		<td></td>
-		<td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 1"><br/><Input type="radio" name="gate" value="1"/> </td>
-		<td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 2"><br/><Input type="radio" name="gate" value="2"/> </td>
-		<td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 3"><br/><Input type="radio" name="gate" value="3"/> </td>
-		<td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 4"><br/><Input type="radio" name="gate" value="4"/> </td>
-		<td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 5"><br/><Input type="radio" name="gate" value="5"/> </td>
-		<td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 6"><br/><Input type="radio" name="gate" value="6"/> </td>
-		<td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 7"><br/><Input type="radio" name="gate" value="7"/> </td>
-		<td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 8"><br/><Input type="radio" name="gate" value="8"/> </td>
-	</tr>
-	<tr align="center" >
-		<td bgcolor = #555555 align="left" rowspan="2">Probabilities</td><td>0.28</td><td>0.54</td><td>0.61</td><td>0.33</td><td>0.27</td><td>0.04</td><td>0.48</td><td>0.45</td>
-	</tr>
-	<tr align="center" valign="bottom">
-		<td><img src="Images/p3.jpg"><br/></td>
-		<td><img src="Images/p5.jpg"><br/></td>
-		<td><img src="Images/p6.jpg"><br/></td>
-		<td><img src="Images/p3.jpg"><br/></td>
-		<td><img src="Images/p3.jpg"><br/></td>
-		<td><img src="Images/p0.jpg"><br/></td>
-		<td><img src="Images/p5.jpg"><br/></td>
-		<td><img src="Images/p5.jpg"><br/></td>
-	</tr>
-	<tr align="center" >
-		<td bgcolor = #555555 align="left"  rowspan="2">Player Rewards</td><td>5</td><td>7</td><td>2</td><td>9</td><td>6</td><td>3</td><td>8</td><td>9</td>
-	</tr>
-	<tr align="center" valign="bottom">
-		<td><img src="Images/w5.jpg"><br/></td>
-		<td><img src="Images/w7.jpg"><br/></td>
-		<td><img src="Images/w2.jpg"><br/></td>
-		<td><img src="Images/w9.jpg"><br/></td>
-		<td><img src="Images/w6.jpg"><br/></td>
-		<td><img src="Images/w3.jpg"><br/></td>
-		<td><img src="Images/w8.jpg"><br/></td>
-		<td><img src="Images/w9.jpg"><br/></td>
-	</tr>
-	<tr align="center">
-		<td bgcolor = #555555 align="left" valign="center" rowspan="2">Player Penalties</td>
-		<td valign="top"><img src="Images/l5.jpg"><br/></td>
-		<td valign="top"><img src="Images/l3.jpg"><br/></td>
-		<td valign="top"><img src="Images/l1.jpg"><br/></td>
-		<td valign="top"><img src="Images/l7.jpg"><br/></td>
-		<td valign="top"><img src="Images/l6.jpg"><br/></td>
-		<td valign="top"><img src="Images/l10.jpg"><br/></td>
-		<td valign="top"><img src="Images/l4.jpg"><br/></td>
-		<td valign="top"><img src="Images/l5.jpg"><br/></td>
-	</tr>
-	<tr align="center" >
-		<td>-5</td><td>-3</td><td>-1</td><td>-7</td><td>-6</td><td>-10</td><td>-4</td><td>-5</td>
-	</tr>
-	<tr align="center" >
-		<td bgcolor = #555555 align="left" >Guard Rewards</td><td>8</td><td>5</td><td>8</td><td>7</td><td>4</td><td>1</td><td>2</td><td>7</td>
-	</tr>
-	<tr align="center" >
-		<td bgcolor = #555555 align="left" >Guard Penalties</td><td>-8</td><td>-1</td><td>-9</td><td>-9</td><td>-6</td><td>-7</td><td>-7</td><td>-9</td>
-	</tr>
+    <tr bgcolor = #555555>
+        <th>Gates</th>
+        <th>Gate 1</th>
+        <th>Gate 2</th>
+        <th>Gate 3</th>
+        <th>Gate 4</th>
+        <th>Gate 5</th>
+        <th>Gate 6</th>
+        <th>Gate 7</th>
+        <th>Gate 8</th>
+    </tr>
+    <tr align="center" >
+        <td></td>
+        <td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 1"><br/><Input type="radio" name="gate" value="1"/> </td>
+        <td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 2"><br/><Input type="radio" name="gate" value="2"/> </td>
+        <td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 3"><br/><Input type="radio" name="gate" value="3"/> </td>
+        <td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 4"><br/><Input type="radio" name="gate" value="4"/> </td>
+        <td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 5"><br/><Input type="radio" name="gate" value="5"/> </td>
+        <td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 6"><br/><Input type="radio" name="gate" value="6"/> </td>
+        <td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 7"><br/><Input type="radio" name="gate" value="7"/> </td>
+        <td bgcolor = #555555 ><img src="Images/closedGate.jpg" title="Gate 8"><br/><Input type="radio" name="gate" value="8"/> </td>
+    </tr>
+    <tr align="center" >
+        <td bgcolor = #555555 align="left" rowspan="2">Probabilities</td><td>0.28</td><td>0.54</td><td>0.61</td><td>0.33</td><td>0.27</td><td>0.04</td><td>0.48</td><td>0.45</td>
+    </tr>
+    <tr align="center" valign="bottom">
+        <td><img src="Images/p3.jpg"><br/></td>
+        <td><img src="Images/p5.jpg"><br/></td>
+        <td><img src="Images/p6.jpg"><br/></td>
+        <td><img src="Images/p3.jpg"><br/></td>
+        <td><img src="Images/p3.jpg"><br/></td>
+        <td><img src="Images/p0.jpg"><br/></td>
+        <td><img src="Images/p5.jpg"><br/></td>
+        <td><img src="Images/p5.jpg"><br/></td>
+    </tr>
+    <tr align="center" >
+        <td bgcolor = #555555 align="left"  rowspan="2">Player Rewards</td><td>5</td><td>7</td><td>2</td><td>9</td><td>6</td><td>3</td><td>8</td><td>9</td>
+    </tr>
+    <tr align="center" valign="bottom">
+        <td><img src="Images/w5.jpg"><br/></td>
+        <td><img src="Images/w7.jpg"><br/></td>
+        <td><img src="Images/w2.jpg"><br/></td>
+        <td><img src="Images/w9.jpg"><br/></td>
+        <td><img src="Images/w6.jpg"><br/></td>
+        <td><img src="Images/w3.jpg"><br/></td>
+        <td><img src="Images/w8.jpg"><br/></td>
+        <td><img src="Images/w9.jpg"><br/></td>
+    </tr>
+    <tr align="center">
+        <td bgcolor = #555555 align="left" valign="center" rowspan="2">Player Penalties</td>
+        <td valign="top"><img src="Images/l5.jpg"><br/></td>
+        <td valign="top"><img src="Images/l3.jpg"><br/></td>
+        <td valign="top"><img src="Images/l1.jpg"><br/></td>
+        <td valign="top"><img src="Images/l7.jpg"><br/></td>
+        <td valign="top"><img src="Images/l6.jpg"><br/></td>
+        <td valign="top"><img src="Images/l10.jpg"><br/></td>
+        <td valign="top"><img src="Images/l4.jpg"><br/></td>
+        <td valign="top"><img src="Images/l5.jpg"><br/></td>
+    </tr>
+    <tr align="center" >
+        <td>-5</td><td>-3</td><td>-1</td><td>-7</td><td>-6</td><td>-10</td><td>-4</td><td>-5</td>
+    </tr>
+    <tr align="center" >
+        <td bgcolor = #555555 align="left" >Guard Rewards</td><td>8</td><td>5</td><td>8</td><td>7</td><td>4</td><td>1</td><td>2</td><td>7</td>
+    </tr>
+    <tr align="center" >
+        <td bgcolor = #555555 align="left" >Guard Penalties</td><td>-8</td><td>-1</td><td>-9</td><td>-9</td><td>-6</td><td>-7</td><td>-7</td><td>-9</td>
+    </tr>
 </table>
 
 <?php echo $_SESSION['counter']; ?>
@@ -224,7 +224,7 @@
 </div>
 
 <div class="entry" style="background-color:#eceff5; padding: 0.45em;">
-	<fb:comments width="541"></fb:comments>
+    <fb:comments width="541"></fb:comments>
 </div>
 
 </div>

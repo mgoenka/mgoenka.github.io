@@ -4,13 +4,13 @@
         <title>news lab</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-        
+
         /* Large size first == default */
         body, html {
             padding: 0;
             margin: 0;
         }
-        
+
         article {
             width: 31%;
             padding: 1%;
@@ -19,86 +19,86 @@
             overflow: auto;
             border: 1px solid #aaa;
         }
-        
+
         article header h1, article header h2 {
             margin: 0;
         }
-        
+
         article header h2 {
             font-size: 0.8em;
             color: #aaa;
         }
-        
+
         article section p {
             margin: 0;
         }
-        
+
         article section img {
             margin: 0 0.5em 0.5em 0;
         }
-        
+
         /* Medium layout == 2 columns */
         @media screen and (max-width: 1024px) and (min-width: 600px) {
             body {
                 font-size: 120%;
             }
-            
+
             article {
                 width: 47%;
             }
         }
-        
+
         /* Small layout == 1 column */
         @media screen and (max-width: 599px) {
             body {
                 font-size: 150%;
             }
-            
+
             article {
                 width: 100%;
                 height: auto;
             }
-            
+
             article section {
                 display: none;
             }
         }
 
         </style>
-        <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>       
+        <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
         <script>
-			YUI().use('node', 'substitute', 'yql', function(Y) {
-			    Y.YQL(
-			        "select * from rss where url='http://rss.news.yahoo.com/rss/topstories'", 
-			        function(response) {
-			            var items = response.query.results.item;
-			            var i, item;
-			            var output = [];
-			            var template = Y.one("#template").getContent();
-			            for (i = 0; i < items.length; i++) {
-			                //console.log(items[i]);
-			                item = items[i];
-			                item.source = item.source.content;
-			                
-			                output.push(Y.substitute(template, item));
-			            }
-			            Y.one("#news").setContent(output.join(""));
-			            
-			            Y.one("#news").delegate("click", function(e) {
-			            	this.one("section").setStyle("display", "block");
-			            }, "article");
-			            
-			            /*
-			            Y.one("#news").on("click", function(e) {
-			            	if (e.target.get("nodeName") === "H1" &&
-			            			e.target.get("parentNode").get("nodeName") === "HEADER") {
-			            		e.target.get("parentNode").get("parentNode").one("section").setStyle("display", "block");
-			            	}
-			            });
-			            */
-			        }
-			    );
-			});
+            YUI().use('node', 'substitute', 'yql', function(Y) {
+                Y.YQL(
+                    "select * from rss where url='http://rss.news.yahoo.com/rss/topstories'",
+                    function(response) {
+                        var items = response.query.results.item;
+                        var i, item;
+                        var output = [];
+                        var template = Y.one("#template").getContent();
+                        for (i = 0; i < items.length; i++) {
+                            //console.log(items[i]);
+                            item = items[i];
+                            item.source = item.source.content;
+
+                            output.push(Y.substitute(template, item));
+                        }
+                        Y.one("#news").setContent(output.join(""));
+
+                        Y.one("#news").delegate("click", function(e) {
+                            this.one("section").setStyle("display", "block");
+                        }, "article");
+
+                        /*
+                        Y.one("#news").on("click", function(e) {
+                            if (e.target.get("nodeName") === "H1" &&
+                                    e.target.get("parentNode").get("nodeName") === "HEADER") {
+                                e.target.get("parentNode").get("parentNode").one("section").setStyle("display", "block");
+                            }
+                        });
+                        */
+                    }
+                );
+            });
         </script>
         <script id="template" type="text/template">
             <article>

@@ -1,61 +1,61 @@
 <?php
-	session_start();
-	$expire = time()+60*10; //10 minutes
+    session_start();
+    $expire = time()+60*10; //10 minutes
 
-	$_SESSION['name'] = $_REQUEST['name'];
-	$_SESSION['email'] = $_REQUEST['email'];
-	$_SESSION['gender'] = $_REQUEST['gender'];
-	$_SESSION['country'] = $_REQUEST['country'];
+    $_SESSION['name'] = $_REQUEST['name'];
+    $_SESSION['email'] = $_REQUEST['email'];
+    $_SESSION['gender'] = $_REQUEST['gender'];
+    $_SESSION['country'] = $_REQUEST['country'];
 
-	if(isset($_SESSION['counter1']))
-		$_SESSION['counter1']=$_SESSION['counter1']+1;
-	else
-		$_SESSION['counter1']=0;
+    if(isset($_SESSION['counter1']))
+        $_SESSION['counter1']=$_SESSION['counter1']+1;
+    else
+        $_SESSION['counter1']=0;
 
-/*	if(isset($_SESSION['user']))
-	{
-		unset($_SESSION['counter']);
-		$handle = fopen('scores.csv', 'a+');
-		$today = date("F j, Y, g:i a");
-		$when = getdate(date("U"));
-		$data = "\n".$_SESSION['pid'].", $today,";
-		fwrite($handle, $data);
-		fclose($handle);
-		echo "<meta http-equiv='refresh' content='0;url=game.php#GT'>";
-	}*/
+/*    if(isset($_SESSION['user']))
+    {
+        unset($_SESSION['counter']);
+        $handle = fopen('scores.csv', 'a+');
+        $today = date("F j, Y, g:i a");
+        $when = getdate(date("U"));
+        $data = "\n".$_SESSION['pid'].", $today,";
+        fwrite($handle, $data);
+        fclose($handle);
+        echo "<meta http-equiv='refresh' content='0;url=game.php#GT'>";
+    }*/
 
-	if ((isset($_SESSION['name']) && isset($_SESSION['email']) && isset($_SESSION['gender']) && isset($_SESSION['country'])) || (isset($_COOKIE['name']) && isset($_COOKIE['email']) && isset($_COOKIE['gender']) && isset($_COOKIE['country'])))
-	{
-		$handle = fopen('data.csv', 'a+');
-		$today = date("F j, Y, g:i a");
+    if ((isset($_SESSION['name']) && isset($_SESSION['email']) && isset($_SESSION['gender']) && isset($_SESSION['country'])) || (isset($_COOKIE['name']) && isset($_COOKIE['email']) && isset($_COOKIE['gender']) && isset($_COOKIE['country'])))
+    {
+        $handle = fopen('data.csv', 'a+');
+        $today = date("F j, Y, g:i a");
 
-		if (!(isset($_COOKIE['name']) && isset($_COOKIE['email']) && isset($_COOKIE['gender']) && isset($_COOKIE['country'])))
-		{
-			setcookie("name", $_SESSION['name'], $expire);
-			setcookie("email", $_SESSION['email'], $expire);
-			setcookie("gender", $_SESSION['gender'], $expire);
-			setcookie("country", $_SESSION['country'], $expire);
-			$data = "\n".$_SESSION['name'].",".$_SESSION['email'].",".$_SESSION['gender'].",".$_SESSION['country'].",$today";
-		}
-		else
-			$data = "\n".$_COOKIE['name'].",".$_COOKIE['email'].",".$_COOKIE['gender'].",".$_COOKIE['country'].",$today";
+        if (!(isset($_COOKIE['name']) && isset($_COOKIE['email']) && isset($_COOKIE['gender']) && isset($_COOKIE['country'])))
+        {
+            setcookie("name", $_SESSION['name'], $expire);
+            setcookie("email", $_SESSION['email'], $expire);
+            setcookie("gender", $_SESSION['gender'], $expire);
+            setcookie("country", $_SESSION['country'], $expire);
+            $data = "\n".$_SESSION['name'].",".$_SESSION['email'].",".$_SESSION['gender'].",".$_SESSION['country'].",$today";
+        }
+        else
+            $data = "\n".$_COOKIE['name'].",".$_COOKIE['email'].",".$_COOKIE['gender'].",".$_COOKIE['country'].",$today";
 
-		fwrite($handle, $data);
-		fclose($handle);
-		/*$handle = fopen('scores.csv', 'a+');
-		$today = date("F j, Y, g:i a");
-		$when = getdate(date("U"));
-		$data = "\n".$_SESSION['pid'].",$today";
-		fwrite($handle, $data);
-		fclose($handle);*/
-		unset($_SESSION['counter1']);
-		unset($_SESSION['counter']);
-		unset($_SESSION['gameid']);
-		if ($_REQUEST['practice'] == "Yes")
-			echo "<meta http-equiv='refresh' content='0;url=practice.php'>";
-		else
-			echo "<meta http-equiv='refresh' content='0;url=game.php'>";
-	}
+        fwrite($handle, $data);
+        fclose($handle);
+        /*$handle = fopen('scores.csv', 'a+');
+        $today = date("F j, Y, g:i a");
+        $when = getdate(date("U"));
+        $data = "\n".$_SESSION['pid'].",$today";
+        fwrite($handle, $data);
+        fclose($handle);*/
+        unset($_SESSION['counter1']);
+        unset($_SESSION['counter']);
+        unset($_SESSION['gameid']);
+        if ($_REQUEST['practice'] == "Yes")
+            echo "<meta http-equiv='refresh' content='0;url=practice.php'>";
+        else
+            echo "<meta http-equiv='refresh' content='0;url=game.php'>";
+    }
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -107,12 +107,12 @@
 
 <div id="fb-root"></div>
 <script>
-	window.fbAsyncInit = function() {
-		FB.init({appId: '138151759539266', status: true, cookie: true,
-			xfbml: true});
+    window.fbAsyncInit = function() {
+        FB.init({appId: '138151759539266', status: true, cookie: true,
+            xfbml: true});
     };
     (function() {
-		var e = document.createElement('script');
+        var e = document.createElement('script');
         e.type = 'text/javascript';
         e.src = document.location.protocol +
           '//connect.facebook.net/en_US/all.js';
@@ -122,8 +122,8 @@
 </script>
 
 <noscript>
-	Your browser does not support JavaScript! OR The JavaScript has been turned off!<br/>
-	Please upgrade your browser OR turn on the JavaScript on your browser.
+    Your browser does not support JavaScript! OR The JavaScript has been turned off!<br/>
+    Please upgrade your browser OR turn on the JavaScript on your browser.
 </noscript>
 
 </head>
@@ -149,9 +149,9 @@
 
 <td align="right" width="300px">
 <form method="get" action="http://www.google.com/search" target="_blank" align="right">
-	<input type="radio"  name="sitesearch" value="http://www.mohitgoenka.com" style="display: none;" checked />
-	<input type="text"   name="q" size="30"	maxlength="255" value="" />
-	<input type="submit" value="Search" /><br />
+    <input type="radio"  name="sitesearch" value="http://www.mohitgoenka.com" style="display: none;" checked />
+    <input type="text"   name="q" size="30"    maxlength="255" value="" />
+    <input type="submit" value="Search" /><br />
 </form>
 </td></tr></table>
 </div>
@@ -229,20 +229,20 @@ Please enter your Country to start playing.<br/><br/>
 <?php } ?>
 
 <?php if (!isset($_SESSION['name'])) { ?>
-	<h4>Enter Your Name*</h4>
-	<input name="name" type="text" style = "width:250px"><br /><br />
+    <h4>Enter Your Name*</h4>
+    <input name="name" type="text" style = "width:250px"><br /><br />
 <?php } ?>
 
 <?php if (!isset($_SESSION['email'])) { ?>
-	<h4>Enter Your Email Address*</h4>
-	<input name="email" type="text" style = "width:250px"><br /><br />
+    <h4>Enter Your Email Address*</h4>
+    <input name="email" type="text" style = "width:250px"><br /><br />
 <?php } ?>
 
 <?php if (!isset($_SESSION['gender'])) { ?>
-	<h4>Gender*</h4>
-	<input type="radio" name="gender" value="Male"/> Male<br />
-	<input type="radio" name="gender" value="Female"/> Female
-	<br /><br />
+    <h4>Gender*</h4>
+    <input type="radio" name="gender" value="Male"/> Male<br />
+    <input type="radio" name="gender" value="Female"/> Female
+    <br /><br />
 <?php } ?>
 
 <?php if (!isset($_SESSION['country'])) { ?>
@@ -274,7 +274,7 @@ Please enter your Country to start playing.<br/><br/>
 </div>
 
 <div class="entry" style="background-color:#eceff5; padding: 0.45em;">
-	<fb:comments width="541"></fb:comments>
+    <fb:comments width="541"></fb:comments>
 </div>
 
 </div>

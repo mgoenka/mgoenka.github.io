@@ -47,12 +47,12 @@
 
 <div id="fb-root"></div>
 <script>
-	window.fbAsyncInit = function() {
-		FB.init({appId: '138151759539266', status: true, cookie: true,
-			xfbml: true});
+    window.fbAsyncInit = function() {
+        FB.init({appId: '138151759539266', status: true, cookie: true,
+            xfbml: true});
     };
     (function() {
-		var e = document.createElement('script');
+        var e = document.createElement('script');
         e.type = 'text/javascript';
         e.src = document.location.protocol +
           '//connect.facebook.net/en_US/all.js';
@@ -62,14 +62,14 @@
 </script>
 
 <noscript>
-	Your browser does not support JavaScript! OR The JavaScript has been turned off!<br/>
-	Please upgrade your browser OR turn on the JavaScript on your browser.
+    Your browser does not support JavaScript! OR The JavaScript has been turned off!<br/>
+    Please upgrade your browser OR turn on the JavaScript on your browser.
 </noscript>
 
 </head>
 
 <div class="entry" style="background-color:#eceff5; padding: 0.45em;">
-	<fb:comments width="800px"></fb:comments>
+    <fb:comments width="800px"></fb:comments>
 </div>
 
 </html>

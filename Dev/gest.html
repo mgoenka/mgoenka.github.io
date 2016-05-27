@@ -9,7 +9,7 @@
                 padding: 0;
                 height: 100%;
             }
-            
+
             #lock {
                 background-image: url("img/lock.jpg");
                 width: 240px;
@@ -21,14 +21,14 @@
         </style>
         <script>
             window.onload = function() {
-            	var body = document.body;
-            	var lock = document.querySelector("#lock");
-            	
-            	body.addEventListener("touchmove", function(e) {
-            		e.preventDefault();
-            	}, false);
-            	
-            	body.addEventListener("gesturechange", function(e) {
+                var body = document.body;
+                var lock = document.querySelector("#lock");
+
+                body.addEventListener("touchmove", function(e) {
+                    e.preventDefault();
+                }, false);
+
+                body.addEventListener("gesturechange", function(e) {
                     e.preventDefault();
                     lock.style.webkitTransform = "rotate("+e.rotation+"deg)";
                 }, false);

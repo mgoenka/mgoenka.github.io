@@ -18,9 +18,9 @@
     }
     fclose($fp);
     if ($landing_page != ""){
-	header("Location: http://".$_SERVER["HTTP_HOST"]."/$landing_page");
+    header("Location: http://".$_SERVER["HTTP_HOST"]."/$landing_page");
     } else {
-	header("Location: http://".$_SERVER["HTTP_HOST"]."/");
+    header("Location: http://".$_SERVER["HTTP_HOST"]."/");
     }
 
 

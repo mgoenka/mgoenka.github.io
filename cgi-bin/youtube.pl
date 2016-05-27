@@ -15,8 +15,8 @@ print "<body>";
 @nvpairs = split(/&/, $buffer);
 foreach $pair (@nvpairs)
 {
-	($name, $value) = split(/=/, $pair);
-	$data = $value;
+    ($name, $value) = split(/=/, $pair);
+    $data = $value;
     $data =~ tr/+/ /;
     $data =~ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
 
@@ -43,8 +43,8 @@ use LWP::Simple;
 # Checking if the LWP Module is installed
 if(eval{require LWP::Simple;}){
 } else {
-	print "You need to install the Perl LWP module!<br/>";
-	exit;
+    print "You need to install the Perl LWP module!<br/>";
+    exit;
 }
 
 # Fetching the content of the URL passed in the get() function and storing the HTML coding in the variable $urldata
@@ -55,46 +55,46 @@ print "<br/><div align=center>";
 my $maxcount = 0;
 $maxcount++ while $urldata =~ m{<div class="playlist-short-title">}gsi;
 if ($maxcount >3) {
-	$maxcount = 3;
+    $maxcount = 3;
 }
 if ($maxcount > 0) {
-	print "<h3>Playlist Results</h3><br/><TABLE><TABLE BORDER><TR Style='Font-Weight: bold;'><TD align=center>Video Name</TD><TD align=center>Description</TD><TD align=center>Thumb</TD></TR>";
-	for ($count = 0;$count < $maxcount;$count++) {
-		print "<TR>";
-		if ($urldata =~ m{<div class="playlist-short-title">(.*?)</div>}gsi) {
-			print "<TD>$1</TD>";
-		}
-		if ($urldata =~ m{<ul>(.*?)</ul>}gsi) {
-			print "<TD><ul>";
-			$desc = $1;
-			$listcount = 0;
-			$listcount++ while ($desc =~ m{<div class="playlist-video">(.*?)</div>}gsi);
-			for ($i = 0;$i < $listcount ;$i++) {
-				if ($desc =~ m{<span><a(.*?)</span>}gsi) {
-					print "<li><a$1</li>";
-				}
-			}
-			print "</ul></TD>";
-		}
-		if ($urldata =~ m{<div class="playlist-alt-query">}gsi){
-		}
-		for ($i = 0;$i < $count;$i++) {
-			if ($urldata =~ m{<div class="playlist-short-title">(.*?)</div>}gsi) {
-			}
-		}
-		if ($urldata =~ m{<div class="playlist-main-thumb">(.*?)</div>}gsi) {
-			$thumb = $1;
-			if ($thumb =~ m{<img(.*?)>}gsi) {
-				print "<TD align=center><img$1></TD>";
-			}
-		}
-		if ($urldata =~ m{<ul>(.*?)</ul>}gsi) {
-		}
-		print "</TR>";
-	}
-	print "</TABLE>";
+    print "<h3>Playlist Results</h3><br/><TABLE><TABLE BORDER><TR Style='Font-Weight: bold;'><TD align=center>Video Name</TD><TD align=center>Description</TD><TD align=center>Thumb</TD></TR>";
+    for ($count = 0;$count < $maxcount;$count++) {
+        print "<TR>";
+        if ($urldata =~ m{<div class="playlist-short-title">(.*?)</div>}gsi) {
+            print "<TD>$1</TD>";
+        }
+        if ($urldata =~ m{<ul>(.*?)</ul>}gsi) {
+            print "<TD><ul>";
+            $desc = $1;
+            $listcount = 0;
+            $listcount++ while ($desc =~ m{<div class="playlist-video">(.*?)</div>}gsi);
+            for ($i = 0;$i < $listcount ;$i++) {
+                if ($desc =~ m{<span><a(.*?)</span>}gsi) {
+                    print "<li><a$1</li>";
+                }
+            }
+            print "</ul></TD>";
+        }
+        if ($urldata =~ m{<div class="playlist-alt-query">}gsi){
+        }
+        for ($i = 0;$i < $count;$i++) {
+            if ($urldata =~ m{<div class="playlist-short-title">(.*?)</div>}gsi) {
+            }
+        }
+        if ($urldata =~ m{<div class="playlist-main-thumb">(.*?)</div>}gsi) {
+            $thumb = $1;
+            if ($thumb =~ m{<img(.*?)>}gsi) {
+                print "<TD align=center><img$1></TD>";
+            }
+        }
+        if ($urldata =~ m{<ul>(.*?)</ul>}gsi) {
+        }
+        print "</TR>";
+    }
+    print "</TABLE>";
 } else {
-	print "<h3>No Playlist Results</h3><br/>";
+    print "<h3>No Playlist Results</h3><br/>";
 }
 
 # Checking for Channel Results
@@ -103,79 +103,79 @@ if ($urldata =~ m{<div class="channel-alt-query">}gsi) {
 $maxcount = 0;
 $maxcount++ while $urldata =~ m{<div class="channel-long-title">}gsi;
 if ($maxcount >3) {
-	$maxcount = 3;
+    $maxcount = 3;
 }
 if ($maxcount > 0) {
-	print "<h3>Channel Results</h3><br/><TABLE><TABLE BORDER><TR Style='Font-Weight: bold;'><TD align=center>Video Name</TD><TD align=center>Description</TD><TD align=center>Thumb</TD></TR>";
-	for ($count = 0;$count < $maxcount;$count++) {
-		print "<TR>";
-		if ($urldata =~ m{<div class="channel-long-title">(.*?)</div>}gsi) {
-			print "<TD>$1</TD>";
-		}
-		if ($urldata =~ m{<div  class="channel-description">(.*?)</div>}gsi) {
-			print "<TD>$1</TD>";
-		}
-		if ($urldata =~ m{<div class="channel-alt-query">}gsi) {
-		}
-		for ($i = 0;$i < $count;$i++) {
-			if ($urldata =~ m{<div class="channel-long-title">(.*?)</div>}gsi) {
-			}
-		}
-		if ($urldata =~ m{<div class="user-thumb-xlarge"><div>(.*?)</div>}gsi) {
-			$thumb = $1;
-			if ($thumb =~ m{<img(.*?)>}gsi) {
-				print "<TD align=center><img$1></TD>";
-			}
-		}
-		if ($urldata =~ m{<div  class="channel-description">(.*?)</div>}gsi) {
-		}
-		print "</TR>";
-	}
-	print "</TABLE>";
+    print "<h3>Channel Results</h3><br/><TABLE><TABLE BORDER><TR Style='Font-Weight: bold;'><TD align=center>Video Name</TD><TD align=center>Description</TD><TD align=center>Thumb</TD></TR>";
+    for ($count = 0;$count < $maxcount;$count++) {
+        print "<TR>";
+        if ($urldata =~ m{<div class="channel-long-title">(.*?)</div>}gsi) {
+            print "<TD>$1</TD>";
+        }
+        if ($urldata =~ m{<div  class="channel-description">(.*?)</div>}gsi) {
+            print "<TD>$1</TD>";
+        }
+        if ($urldata =~ m{<div class="channel-alt-query">}gsi) {
+        }
+        for ($i = 0;$i < $count;$i++) {
+            if ($urldata =~ m{<div class="channel-long-title">(.*?)</div>}gsi) {
+            }
+        }
+        if ($urldata =~ m{<div class="user-thumb-xlarge"><div>(.*?)</div>}gsi) {
+            $thumb = $1;
+            if ($thumb =~ m{<img(.*?)>}gsi) {
+                print "<TD align=center><img$1></TD>";
+            }
+        }
+        if ($urldata =~ m{<div  class="channel-description">(.*?)</div>}gsi) {
+        }
+        print "</TR>";
+    }
+    print "</TABLE>";
 } else {
-	print "<h3>No Channel Results</h3><br/>";
+    print "<h3>No Channel Results</h3><br/>";
 }
 
 # Checking for Promoted Video Results
 $maxcount = 0;
 $maxcount++ while $urldata =~ m{<div class="spons-vid-text search-ad-description">}gsi;
 if ($maxcount >3) {
-	$maxcount = 3;
+    $maxcount = 3;
 }
 if ($maxcount > 0) {
-	print "<h3>Promoted Video Results</h3><br/><TABLE><TABLE BORDER><TR Style='Font-Weight: bold;'><TD align=center>Video Name</TD><TD align=center>Description</TD><TD align=center>Rating</TD><TD align=center>Thumb</TD></TR>";
-	for ($count = 0;$count < $maxcount;$count++) {
-		print "<TR>";
-		if ($urldata =~ m{style="padding-top: 2px;">(.*?)</a>}gsi) {
-			print "<TD>$1</a></TD>";
-		}
-		if ($urldata =~ m{<div class="spons-vid-text search-ad-description">(.*?)</div>}gsi) {
-			print "<TD>$1</TD>";
-		}
-		if ($urldata =~ m{<table(.*?)</table>}gsi) {
-			$thumb = $1;
-			if ($thumb =~ m{<button class="master-sprite ratingVS ratingVS-(.*?)" }gsi) {
-				print "<TD>$1</TD>";
-			} else {
-				print "<TD>N/A</TD>";
-			}
-		}
-		if ($urldata =~ m{<div style="margin-bottom: 2em;">}gsi) {
-		}
-		for ($i = 0;$i <= $count;$i++) {
-			if ($urldata =~ m{<div style="margin-bottom:20px">}gsi) {
-			}
-		}
-		if ($urldata =~ m{<img(.*?)>}gsi) {
-			print "<TD align=center><img$1></TD>";
-		}
-		if ($urldata =~ m{<div class="spons-vid-text search-ad-description">}gsi) {
-		}
-		print "</TR>";
-	}
-	print "</TABLE>";
+    print "<h3>Promoted Video Results</h3><br/><TABLE><TABLE BORDER><TR Style='Font-Weight: bold;'><TD align=center>Video Name</TD><TD align=center>Description</TD><TD align=center>Rating</TD><TD align=center>Thumb</TD></TR>";
+    for ($count = 0;$count < $maxcount;$count++) {
+        print "<TR>";
+        if ($urldata =~ m{style="padding-top: 2px;">(.*?)</a>}gsi) {
+            print "<TD>$1</a></TD>";
+        }
+        if ($urldata =~ m{<div class="spons-vid-text search-ad-description">(.*?)</div>}gsi) {
+            print "<TD>$1</TD>";
+        }
+        if ($urldata =~ m{<table(.*?)</table>}gsi) {
+            $thumb = $1;
+            if ($thumb =~ m{<button class="master-sprite ratingVS ratingVS-(.*?)" }gsi) {
+                print "<TD>$1</TD>";
+            } else {
+                print "<TD>N/A</TD>";
+            }
+        }
+        if ($urldata =~ m{<div style="margin-bottom: 2em;">}gsi) {
+        }
+        for ($i = 0;$i <= $count;$i++) {
+            if ($urldata =~ m{<div style="margin-bottom:20px">}gsi) {
+            }
+        }
+        if ($urldata =~ m{<img(.*?)>}gsi) {
+            print "<TD align=center><img$1></TD>";
+        }
+        if ($urldata =~ m{<div class="spons-vid-text search-ad-description">}gsi) {
+        }
+        print "</TR>";
+    }
+    print "</TABLE>";
 } else {
-	print "<h3>No Promoted Video Results</h3><br/>";
+    print "<h3>No Promoted Video Results</h3><br/>";
 }
 
 print "</div>";

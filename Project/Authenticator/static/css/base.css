@@ -1,29 +1,29 @@
 body{
-	font-family : Verdana,Arial;
-	color: #0066CC;
-	font-size : larger;	
+    font-family : Verdana,Arial;
+    color: #0066CC;
+    font-size : larger;
 }
 .heading{
-	font-size : x-large;
-	text-align : center;
-	background : #0066CC;
-	color : rgb(240,240,240) ;
-	padding : 1%;
-	margin : 1%;	
+    font-size : x-large;
+    text-align : center;
+    background : #0066CC;
+    color : rgb(240,240,240) ;
+    padding : 1%;
+    margin : 1%;
 }
 .sub-heading{
-	font-size : large;
-	text-align : center;
-	background : #0066CC;
-	color : rgb(240,240,240);
-	padding : 1%;
-	margin : 1%;		
+    font-size : large;
+    text-align : center;
+    background : #0066CC;
+    color : rgb(240,240,240);
+    padding : 1%;
+    margin : 1%;
 }
 table{
-	padding : 1%;
-	margin : 1%;
+    padding : 1%;
+    margin : 1%;
 }
 .table-contents{
-	padding : 1%;
-	margin : 1%;
+    padding : 1%;
+    margin : 1%;
 }

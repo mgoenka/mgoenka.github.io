@@ -2,86 +2,86 @@
 <html>
     <head>
         <title>location and storage</title>
-        <meta name="viewport" 
+        <meta name="viewport"
         content="width=device-width, initial-scale=1.0"/>
         <style>
-			#breadcrumbs {
-			    margin: 0 auto;
-			    width: 80%;
-			    background-color: #003399;
-			    overflow: auto;
-			    color: white;
-			}
-			#breadcrumbs .loc {
-			    float: left;
-			    width: 31%;
-			    padding: 1%;
-			    font-size: 300%;
-			}
-			@media screen and (max-width: 1024px) and (min-width: 481px) {
-			    #breadcrumbs .loc {
-			        width: 48%;
-			        font-size: 200%;
-			    }
-			}
-			@media screen and (max-width: 480px) {
-			    #breadcrumbs .loc {
-			        width: 100%;
-			        font-size: 300%;
-			    }
-			}
+            #breadcrumbs {
+                margin: 0 auto;
+                width: 80%;
+                background-color: #003399;
+                overflow: auto;
+                color: white;
+            }
+            #breadcrumbs .loc {
+                float: left;
+                width: 31%;
+                padding: 1%;
+                font-size: 300%;
+            }
+            @media screen and (max-width: 1024px) and (min-width: 481px) {
+                #breadcrumbs .loc {
+                    width: 48%;
+                    font-size: 200%;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                #breadcrumbs .loc {
+                    width: 100%;
+                    font-size: 300%;
+                }
+            }
         </style>
-        <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>       
+        <script src="http://yui.yahooapis.com/3.4.1/build/yui/yui-min.js"></script>
         <script>
-			YUI().use("node", function(Y) {
-			    var breadcrumbs = [];
-			    
-			    if (localStorage.breadcrumbs) {
-			        breadcrumbs = JSON.parse(localStorage.breadcrumbs);
-			    }
-			    
-			    Y.one("#clear").on("click", function(e) {
-			        // localStorage.breadcrumbs = undefined;
-			        // delete localStorage.breadcrumbs;
-			        localStorage.clear();
-			    });
-			    // http://jsfiddle.net/D3XyY/8/
-			    var showBreadcrumbs = function() {
-			        var i;
-			        Y.one("#breadcrumbs").empty();
-			        for (i = 0; i < breadcrumbs.length; i++) {
-			            Y.one("#breadcrumbs").append(
-			                "<div class='loc'>"+breadcrumbs[i]+"</div>");
-			        }
-			    };
-			    
-			    Y.one("form").on("submit", function(e) {
-			        e.preventDefault();
-			        if (navigator.geolocation) {
-			            navigator.geolocation.getCurrentPosition(
-						    function(p) {
-						        var lat = p.coords.latitude;
-						        var lon = p.coords.longitude;
-						        var accuracy = p.coords.accuracy;
-						        breadcrumbs.push(lat + ", " + lon);
-						        
-						        showBreadcrumbs();
-						        
-						        localStorage.breadcrumbs = JSON.stringify(breadcrumbs);
-						    },
-						    function(e) {
-						        Y.Node.create("<div>").setContent("Error: " + e.code)
-						            .appendTo("body");
-						    },
-						    {
-						        "maximumAge": 2000,
-						        "timeout": 20000,
-						        "enableHighAccuracy": true
-						    }
-						);
-			        }
-			    });
-			});
+            YUI().use("node", function(Y) {
+                var breadcrumbs = [];
+
+                if (localStorage.breadcrumbs) {
+                    breadcrumbs = JSON.parse(localStorage.breadcrumbs);
+                }
+
+                Y.one("#clear").on("click", function(e) {
+                    // localStorage.breadcrumbs = undefined;
+                    // delete localStorage.breadcrumbs;
+                    localStorage.clear();
+                });
+                // http://jsfiddle.net/D3XyY/8/
+                var showBreadcrumbs = function() {
+                    var i;
+                    Y.one("#breadcrumbs").empty();
+                    for (i = 0; i < breadcrumbs.length; i++) {
+                        Y.one("#breadcrumbs").append(
+                            "<div class='loc'>"+breadcrumbs[i]+"</div>");
+                    }
+                };
+
+                Y.one("form").on("submit", function(e) {
+                    e.preventDefault();
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(
+                            function(p) {
+                                var lat = p.coords.latitude;
+                                var lon = p.coords.longitude;
+                                var accuracy = p.coords.accuracy;
+                                breadcrumbs.push(lat + ", " + lon);
+
+                                showBreadcrumbs();
+
+                                localStorage.breadcrumbs = JSON.stringify(breadcrumbs);
+                            },
+                            function(e) {
+                                Y.Node.create("<div>").setContent("Error: " + e.code)
+                                    .appendTo("body");
+                            },
+                            {
+                                "maximumAge": 2000,
+                                "timeout": 20000,
+                                "enableHighAccuracy": true
+                            }
+                        );
+                    }
+                });
+            });
         </script>
     </head>
     <body>
@@ -90,7 +90,7 @@
             <input id="clear" type="button" value="Clear Breadcrumbs"/>
         </form>
         <div id="breadcrumbs">
-            
+
         </div>
     </body>
 </html>
