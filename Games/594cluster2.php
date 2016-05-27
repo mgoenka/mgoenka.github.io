@@ -7,11 +7,11 @@
 
 	do
 	{
-	
+
 	if ($_SESSION['counter'] == 0)
 	{
 		$pirate[1] = rand(0, 100);
-		
+
 		if ($pirate[1] < 22)
 			$pgate[1] = "1";
 		else if ($pirate[1] < 73)
@@ -22,12 +22,12 @@
 		$pgate[3] = "-2";
 		$pgate[4] = "-3";
 		$pgate[5] = "-4";
-		
+
 	}
 	else if ($_SESSION['counter'] == 1)
 	{
 		$pirate[1] = rand(0, 100);
-		
+
 		if ($pirate[1] < 23)
 			$pgate[1] = "1";
 		else if ($pirate[1] < 72)
@@ -42,7 +42,7 @@
 	else if ($_SESSION['counter'] == 2)
 	{
 		$pirate[1] = rand(0, 100);
-		
+
 		if ($pirate[1] < 30)
 			$pgate[1] = "1";
 		else if ($pirate[1] < 64)
@@ -57,7 +57,7 @@
 	else if ($_SESSION['counter'] == 3)
 	{
 		$pirate[1] = rand(0, 100);
-		
+
 		if ($pirate[1] < 28)
 			$pgate[1] = "1";
 		else if ($pirate[1] < 61)
@@ -72,7 +72,7 @@
 	else if ($_SESSION['counter'] == 4)
 	{
 		$pirate[1] = rand(0, 100);
-		
+
 		if ($pirate[1] < 29)
 			$pgate[1] = "1";
 		else if ($pirate[1] < 65)
@@ -87,7 +87,7 @@
 	else if ($_SESSION['counter'] == 5)
 	{
 		$pirate[1] = rand(0, 100);
-		
+
 		if ($pirate[1] < 25)
 			$pgate[1] = "1";
 		else if ($pirate[1] < 53)
@@ -102,7 +102,7 @@
 	else if ($_SESSION['counter'] == 6)
 	{
 		$pirate[1] = rand(0, 100);
-		
+
 		if ($pirate[1] < 26)
 			$pgate[1] = "1";
 		else if ($pirate[1] < 65)
@@ -119,7 +119,7 @@
 		for ($pc = 1; $pc < 3 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 200);
-				
+
 			if ($pirate[$pc] < 60)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 80)
@@ -142,7 +142,7 @@
 		for ($pc = 1; $pc < 3 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 200);
-				
+
 			if ($pirate[$pc] < 63)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 85)
@@ -165,7 +165,7 @@
 		for ($pc = 1; $pc < 3 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 200);
-				
+
 			if ($pirate[$pc] < 76)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 101)
@@ -188,7 +188,7 @@
 		for ($pc = 1; $pc < 3 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 200);
-				
+
 			if ($pirate[$pc] < 66)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 94)
@@ -211,7 +211,7 @@
 		for ($pc = 1; $pc < 3 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 200);
-				
+
 			if ($pirate[$pc] < 59)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 86)
@@ -234,7 +234,7 @@
 		for ($pc = 1; $pc < 3 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 200);
-				
+
 			if ($pirate[$pc] < 56)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 68)
@@ -257,7 +257,7 @@
 		for ($pc = 1; $pc < 3 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 200);
-				
+
 			if ($pirate[$pc] < 58)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 76)
@@ -280,7 +280,7 @@
 		for ($pc = 1; $pc < 4 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 300);
-				
+
 			if ($pirate[$pc] < 21)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 45)
@@ -308,7 +308,7 @@
 		for ($pc = 1; $pc < 4 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 300);
-				
+
 			if ($pirate[$pc] < 29)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 43)
@@ -336,7 +336,7 @@
 		for ($pc = 1; $pc < 4 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 300);
-				
+
 			if ($pirate[$pc] < 13)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 30)
@@ -364,7 +364,7 @@
 		for ($pc = 1; $pc < 4 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 300);
-				
+
 			if ($pirate[$pc] < 0)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 23)
@@ -392,7 +392,7 @@
 		for ($pc = 1; $pc < 4 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 300);
-				
+
 			if ($pirate[$pc] < 9)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 41)
@@ -420,7 +420,7 @@
 		for ($pc = 1; $pc < 4 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 300);
-				
+
 			if ($pirate[$pc] < 17)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 32)
@@ -448,7 +448,7 @@
 		for ($pc = 1; $pc < 4 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 300);
-				
+
 			if ($pirate[$pc] < 16)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 32)
@@ -476,7 +476,7 @@
 		for ($pc = 1; $pc < 5 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 400);
-				
+
 			if ($pirate[$pc] < 42)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 49)
@@ -509,7 +509,7 @@
 		for ($pc = 1; $pc < 5 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 400);
-				
+
 			if ($pirate[$pc] < 55)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 65)
@@ -542,7 +542,7 @@
 		for ($pc = 1; $pc < 5 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 400);
-				
+
 			if ($pirate[$pc] < 36)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 36)
@@ -575,7 +575,7 @@
 		for ($pc = 1; $pc < 5 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 400);
-				
+
 			if ($pirate[$pc] < 34)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 47)
@@ -608,7 +608,7 @@
 		for ($pc = 1; $pc < 5 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 400);
-				
+
 			if ($pirate[$pc] < 29)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 40)
@@ -641,7 +641,7 @@
 		for ($pc = 1; $pc < 5 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 400);
-				
+
 			if ($pirate[$pc] < 0)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 6)
@@ -674,7 +674,7 @@
 		for ($pc = 1; $pc < 5 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 400);
-				
+
 			if ($pirate[$pc] < 9)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 18)
@@ -707,7 +707,7 @@
 		for ($pc = 1; $pc < 6 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 500);
-				
+
 			if ($pirate[$pc] < 16)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 42)
@@ -745,7 +745,7 @@
 		for ($pc = 1; $pc < 6 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 500);
-				
+
 			if ($pirate[$pc] < 28)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 57)
@@ -783,7 +783,7 @@
 		for ($pc = 1; $pc < 6 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 500);
-				
+
 			if ($pirate[$pc] < 0)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 46)
@@ -821,7 +821,7 @@
 		for ($pc = 1; $pc < 6 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 500);
-				
+
 			if ($pirate[$pc] < 0)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 54)
@@ -859,7 +859,7 @@
 		for ($pc = 1; $pc < 6 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 500);
-				
+
 			if ($pirate[$pc] < 0)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 43)
@@ -897,7 +897,7 @@
 		for ($pc = 1; $pc < 6 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 500);
-				
+
 			if ($pirate[$pc] < 0)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 36)
@@ -935,7 +935,7 @@
 		for ($pc = 1; $pc < 6 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 500);
-				
+
 			if ($pirate[$pc] < 0)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 40)
@@ -973,7 +973,7 @@
 		for ($pc = 1; $pc < 6 ; $pc++)
 		{
 			$pirate[$pc] = rand(0, 500);
-				
+
 			if ($pirate[$pc] < 0)
 				$pgate[$pc] = "1";
 			else if ($pirate[$pc] < 40)
@@ -1017,7 +1017,7 @@
 		//Specify data for index $maxround at the end
 
 		$_SESSION['gameid'] = rand(1, 35);
-		
+
 		if ($_SESSION['gameid'] == 1)
 			$_SESSION['combo'] = array(30,23,13,16,19,9,12,5,27,31,25,2,24,35,34,29,6,22,33,4,8,18,17,32,28,1,3,14,11,15,26,20,7,10,21,36);
 		else if ($_SESSION['gameid'] == 2)
@@ -1143,11 +1143,11 @@
 		$_SESSION['guard'][$_SESSION['combo'][$_SESSION['position'] - 1]][4] = $pgate[4];
 		$_SESSION['guard'][$_SESSION['combo'][$_SESSION['position'] - 1]][5] = $pgate[5];
 //	}
-	
+
 	$_SESSION['pretime'] = time();
 
-	
-	
+
+
 
 	if (($gate == "") || ($gate == null))
 	{
@@ -1167,12 +1167,12 @@
 
 <meta name="google-site-verification" content="k7FHwFm9BvIqcIOqVtg-bAMkTaXC-CLs2RAtaqeypEc" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" /> 
+<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" />
 <meta name="Description" content="This website is a place for curriculum as well as fun activities" />
 <meta property="og:title" content="Mohit's Castle"/>
 <meta property="og:type" content="activity"/>
 <meta property="og:url" content="http://www.mohitgoenka.com"/>
-<meta property="og:image" content="http://www.mohitgoenka.com/img/Castle.png"/>
+<meta property="og:image" content="http://mgoenka.github.io/img/Castle.png"/>
 <meta property="fb:admins" content="683925722"/>
 <meta property="og:site_name" content="Mohit Goenka's Website"/>
 <meta property="og:description" content="This website is a place for curriculum as well as fun activities"/>
@@ -1182,16 +1182,16 @@
 <title  onload='right();'>Mohit's Castle</title>
 <!-- END TITLE -->
 
-<link rel="shortcut icon" href="http://www.mohitgoenka.com/Home/favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://mgoenka.github.io/Home/favicon.png" type="image/x-icon" />
 
 <!-- CSS Style Sheets -->
-<link rel="stylesheet" href="http://www.mohitgoenka.com/css/style.css" type="text/css" media="screen" />
-<link rel="alternate stylesheet" type="text/css" media="screen" title="green-theme" href="http://www.mohitgoenka.com/css/style2.css" />
-<link rel="alternate stylesheet" type="text/css" media="screen" title="blue-theme" href="http://www.mohitgoenka.com/css/style3.css" />
+<link rel="stylesheet" href="http://mgoenka.github.io/css/style.css" type="text/css" media="screen" />
+<link rel="alternate stylesheet" type="text/css" media="screen" title="green-theme" href="http://mgoenka.github.io/css/style2.css" />
+<link rel="alternate stylesheet" type="text/css" media="screen" title="blue-theme" href="http://mgoenka.github.io/css/style3.css" />
 <!-- END CSS Style Sheet -->
 
-<script type="text/javascript" src="http://www.mohitgoenka.com/index.js" language="JAVASCRIPT"></script>
-<script type="text/javascript" src="http://www.mohitgoenka.com/css/New_Style.js" language="JAVASCRIPT"></script>
+<script type="text/javascript" src="http://mgoenka.github.io/index.js" language="JAVASCRIPT"></script>
+<script type="text/javascript" src="http://mgoenka.github.io/css/New_Style.js" language="JAVASCRIPT"></script>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -1291,7 +1291,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 	<h3>Round <?php echo $_SESSION['position']+1; ?> of <?php echo $curround; ?></h3>
 <?php } ?>
 
-<?php 
+<?php
 	if ($_SESSION['counter'] >= $maxround)
 	{ ?>
 		<a href="javascript: void(0)" onclick="popup('feedback.php', 'Feedback: The Guards and the Treasure')"><h3>Leave your Feedback</h3></a>
@@ -1315,9 +1315,9 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 				$i = 1;
 				$maxround = 10;
 			}*/
-			
+
 			?>
-			<?php if ($_SESSION['selection'][$i] > 0) { 
+			<?php if ($_SESSION['selection'][$i] > 0) {
 				$data = $data.$_SESSION['selection'][$i].",";
 				$time = $time.",".$_SESSION['timemillis'][$i];
 			?>
@@ -1325,7 +1325,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 					<td><?php echo $j++; ?></td>
 					<td><?php echo $_SESSION['selection'][$_SESSION['combo'][$j - 2]]; ?></td>
 					<td><?php if ($_SESSION['guard'][$_SESSION['combo'][$j - 2]][1] > 0) echo $_SESSION['guard'][$_SESSION['combo'][$j - 2]][1]; ?><?php if ($_SESSION['guard'][$_SESSION['combo'][$j - 2]][1] > 0) echo ", "; ?><?php if ($_SESSION['guard'][$_SESSION['combo'][$j - 2]][2] > 0) echo $_SESSION['guard'][$_SESSION['combo'][$j - 2]][2]; ?><?php if ($_SESSION['guard'][$_SESSION['combo'][$j - 2]][2] > 0) echo ", "; ?><?php if ($_SESSION['guard'][$_SESSION['combo'][$j - 2]][3] > 0) echo $_SESSION['guard'][$_SESSION['combo'][$j - 2]][3]; ?><?php if ($_SESSION['guard'][$_SESSION['combo'][$j - 2]][3] > 0) echo ", "; ?><?php if ($_SESSION['guard'][$_SESSION['combo'][$j - 2]][4] > 0) echo $_SESSION['guard'][$_SESSION['combo'][$j - 2]][4]; ?><?php if ($_SESSION['guard'][$_SESSION['combo'][$j - 2]][4] > 0) echo ", "; ?><?php echo $_SESSION['guard'][$_SESSION['combo'][$j - 2]][5]; ?></td>
-				<?php if(($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][1]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][2]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][3]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][4]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][5])) 
+				<?php if(($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][1]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][2]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][3]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][4]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][5]))
 					{
 						$twon++;
 						$won = "Yes";
@@ -1527,7 +1527,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="top"><img src="Images/l5.jpg"><br/>-5</td>
 		<td valign="top"><img src="Images/l1.jpg"><br/>-1</td>
 		<td valign="top"><img src="Images/l5.jpg"><br/>-5</td>
-		
+
 	</tr>
 <?php } ?>
 
@@ -1658,14 +1658,14 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.78<br/><img src="Images/pn8.jpg"></td>
 		<td valign="bottom">0.49<br/><img src="Images/pn5.jpg"></td>
 		<td valign="bottom">0.73<br/><img src="Images/pn7.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
 		<td valign="top"><img src="Images/p2.jpg"><br/>0.22</td>
 		<td valign="top"><img src="Images/p5.jpg"><br/>0.51</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.27</td>
-		
+
 	</tr>
 <?php } else if ($_SESSION['counter'] == 1) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
@@ -1673,14 +1673,14 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.77<br/><img src="Images/pn8.jpg"></td>
 		<td valign="bottom">0.51<br/><img src="Images/pn5.jpg"></td>
 		<td valign="bottom">0.72<br/><img src="Images/pn7.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
 		<td valign="top"><img src="Images/p2.jpg"><br/>0.23</td>
 		<td valign="top"><img src="Images/p5.jpg"><br/>0.49</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.28</td>
-		
+
 	</tr>
 <?php } else if ($_SESSION['counter'] == 2) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
@@ -1688,14 +1688,14 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.70<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.66<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.64<br/><img src="Images/pn6.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.30</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.34</td>
 		<td valign="top"><img src="Images/p4.jpg"><br/>0.36</td>
-		
+
 	</tr>
 <?php } else if ($_SESSION['counter'] == 3) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
@@ -1703,14 +1703,14 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.72<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.67<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.61<br/><img src="Images/pn6.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.28</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.33</td>
 		<td valign="top"><img src="Images/p4.jpg"><br/>0.39</td>
-		
+
 	</tr>
 <?php } else if ($_SESSION['counter'] == 4) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
@@ -1718,14 +1718,14 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.71<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.64<br/><img src="Images/pn6.jpg"></td>
 		<td valign="bottom">0.65<br/><img src="Images/pn7.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.29</td>
 		<td valign="top"><img src="Images/p4.jpg"><br/>0.36</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.35</td>
-		
+
 	</tr>
 <?php } else if ($_SESSION['counter'] == 5) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
@@ -1733,14 +1733,14 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.75<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.72<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.53<br/><img src="Images/pn5.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.25</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.28</td>
 		<td valign="top"><img src="Images/p5.jpg"><br/>0.47</td>
-		
+
 	</tr>
 <?php } else if ($_SESSION['counter'] == 6) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
@@ -1748,14 +1748,14 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.74<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.71<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.55<br/><img src="Images/pn6.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.26</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.29</td>
 		<td valign="top"><img src="Images/p4.jpg"><br/>0.45</td>
-		
+
 	</tr>
 <?php } else if ($_SESSION['counter'] == 7) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
@@ -1766,7 +1766,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.64<br/><img src="Images/pn6.jpg"></td>
 		<td valign="bottom">0.85<br/><img src="Images/pn9.jpg"></td>
 		<td valign="bottom">0.71<br/><img src="Images/pn7.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
@@ -1786,7 +1786,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.79<br/><img src="Images/pn8.jpg"></td>
 		<td valign="bottom">0.83<br/><img src="Images/pn8.jpg"></td>
 		<td valign="bottom">0.69<br/><img src="Images/pn7.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
@@ -1796,7 +1796,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="top"><img src="Images/p2.jpg"><br/>0.21</td>
 		<td valign="top"><img src="Images/p2.jpg"><br/>0.17</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.31</td>
-		
+
 	</tr>
 <?php } else if ($_SESSION['counter'] == 9) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
@@ -1807,7 +1807,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.67<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.95<br/><img src="Images/pn9.jpg"></td>
 		<td valign="bottom">0.50<br/><img src="Images/pn5.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
@@ -1827,7 +1827,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 <td valign="bottom">0.71<br/><img src="Images/pn7.jpg"></td>
 <td valign="bottom">0.84<br/><img src="Images/pn8.jpg"></td>
 <td valign="bottom">0.57<br/><img src="Images/pn6.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
@@ -1847,7 +1847,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 <td valign="bottom">0.55<br/><img src="Images/pn6.jpg"></td>
 <td valign="bottom">0.84<br/><img src="Images/pn8.jpg"></td>
 <td valign="bottom">0.61<br/><img src="Images/pn6.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
@@ -1857,7 +1857,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 <td valign="top"><img src="Images/p4.jpg"><br/>0.45</td>
 <td valign="top"><img src="Images/p2.jpg"><br/>0.16</td>
 <td valign="top"><img src="Images/p4.jpg"><br/>0.39</td>
-		
+
 	</tr>
 <?php } else if ($_SESSION['counter'] == 12) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
@@ -1868,7 +1868,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="bottom">0.75<br/><img src="Images/pn8.jpg"></td>
 		<td valign="bottom">0.66<br/><img src="Images/pn7.jpg"></td>
 		<td valign="bottom">0.61<br/><img src="Images/pn6.jpg"></td>
-		
+
 	</tr>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of Guard</td>
@@ -1897,7 +1897,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.28</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.29</td>
 		<td valign="top"><img src="Images/p4.jpg"><br/>0.39</td>
-		
+
 	</tr>
 <?php } else if ($_SESSION['counter'] == 14) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #555555">
@@ -2648,7 +2648,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 </form>
 <?php } ?>
 
-<?php if ($_SESSION['counter'] >= $maxround) { 
+<?php if ($_SESSION['counter'] >= $maxround) {
 	session_destroy();
  } ?>
 

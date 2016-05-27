@@ -6,13 +6,13 @@
 
 	do
 	{
-	
+
 	if ($_SESSION['counter'] == 0)
 	{
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 54)
 			$pgate1 = "1";
 		else if ($pirate1 < 70)
@@ -534,7 +534,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 54)
 			$pgate1 = "1";
 		else if ($pirate1 < 70)
@@ -649,12 +649,12 @@
 
 <meta name="google-site-verification" content="k7FHwFm9BvIqcIOqVtg-bAMkTaXC-CLs2RAtaqeypEc" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" /> 
+<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" />
 <meta name="Description" content="This website is a place for curriculum as well as fun activities" />
 <meta property="og:title" content="Mohit's Castle"/>
 <meta property="og:type" content="activity"/>
 <meta property="og:url" content="http://www.mohitgoenka.com"/>
-<meta property="og:image" content="http://www.mohitgoenka.com/img/Castle.png"/>
+<meta property="og:image" content="http://mgoenka.github.io/img/Castle.png"/>
 <meta property="fb:admins" content="683925722"/>
 <meta property="og:site_name" content="Mohit Goenka's Website"/>
 <meta property="og:description" content="This website is a place for curriculum as well as fun activities"/>
@@ -664,16 +664,16 @@
 <title  onload='right();'>Mohit's Castle</title>
 <!-- END TITLE -->
 
-<link rel="shortcut icon" href="http://www.mohitgoenka.com/Home/favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://mgoenka.github.io/Home/favicon.png" type="image/x-icon" />
 
 <!-- CSS Style Sheets -->
-<link rel="stylesheet" href="http://www.mohitgoenka.com/css/style.css" type="text/css" media="screen" />
-<link rel="alternate stylesheet" type="text/css" media="screen" title="green-theme" href="http://www.mohitgoenka.com/css/style2.css" />
-<link rel="alternate stylesheet" type="text/css" media="screen" title="blue-theme" href="http://www.mohitgoenka.com/css/style3.css" />
+<link rel="stylesheet" href="http://mgoenka.github.io/css/style.css" type="text/css" media="screen" />
+<link rel="alternate stylesheet" type="text/css" media="screen" title="green-theme" href="http://mgoenka.github.io/css/style2.css" />
+<link rel="alternate stylesheet" type="text/css" media="screen" title="blue-theme" href="http://mgoenka.github.io/css/style3.css" />
 <!-- END CSS Style Sheet -->
 
-<script type="text/javascript" src="http://www.mohitgoenka.com/index.js" language="JAVASCRIPT"></script>
-<script type="text/javascript" src="http://www.mohitgoenka.com/css/New_Style.js" language="JAVASCRIPT"></script>
+<script type="text/javascript" src="http://mgoenka.github.io/index.js" language="JAVASCRIPT"></script>
+<script type="text/javascript" src="http://mgoenka.github.io/css/New_Style.js" language="JAVASCRIPT"></script>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -773,7 +773,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 	<h3>Round <?php echo $_SESSION['counter']+1; ?> of 10</h3>
 <?php } ?>
 
-<?php 
+<?php
 	if ($_SESSION['counter'] >= $maxround)
 	{ ?>
 		<a href="javascript: void(0)" onclick="popup('feedback.php', 'Feedback: The Guards and the Treasure')"><h3>Leave your Feedback</h3></a>
@@ -799,7 +799,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 					<td><?php echo $i; ?></td>
 					<td><?php echo $_SESSION['selection'][$i]; ?></td>
 					<td><?php echo $_SESSION['guard'][$i][1]; ?>, <?php echo $_SESSION['guard'][$i][2]; ?> and <?php echo $_SESSION['guard'][$i][3]; ?></td>
-				<?php if(($_SESSION['selection'][$i] != $_SESSION['guard'][$i][1]) && ($_SESSION['selection'][$i] != $_SESSION['guard'][$i][2]) && ($_SESSION['selection'][$i] != $_SESSION['guard'][$i][3])) 
+				<?php if(($_SESSION['selection'][$i] != $_SESSION['guard'][$i][1]) && ($_SESSION['selection'][$i] != $_SESSION['guard'][$i][2]) && ($_SESSION['selection'][$i] != $_SESSION['guard'][$i][3]))
 					{
 						$twon++;
 						$won = "Yes";
@@ -899,7 +899,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 	</tr>
 <?php } ?>
 
-<?php if ($_SESSION['counter'] == 0) { ?>	
+<?php if ($_SESSION['counter'] == 0) { ?>
 	<tr align="center">
 		<td bgcolor = #555555 align="left">Probabilities</td>
 		<td valign="bottom">0.54<br/><img src="Images/p5.jpg"></td>

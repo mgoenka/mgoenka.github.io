@@ -22,7 +22,7 @@ foreach $pair (@nvpairs)
 
 }
 
-print "<Form ACTION=http://www.mohitgoenka.com/cgi-bin/youtube.pl METHOD=Post>";
+print "<Form ACTION=http://mgoenka.github.io/cgi-bin/youtube.pl METHOD=Post>";
 print "<P Align=Center>";
 print "<Font Size = 6px/><B>Search Youtube Videos</B><BR /><Font Size = 2px/><BR />";
 print "<Input Name=name style='Width: 220' Value='$data'/>";

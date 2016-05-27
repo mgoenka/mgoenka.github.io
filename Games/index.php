@@ -1,4 +1,4 @@
-<?php 
+<?php
 	session_start();
 	$expire = time()+60*2; //10 minutes
 
@@ -6,19 +6,19 @@
 		$_SESSION['counter1']=$_SESSION['counter1']+1;
 	else
 	{
-		
+
 		$_SESSION['counter1']=0;
 	}
 
 	if (!isset($_SESSION['name']))
 		$_SESSION['name'] = $_REQUEST['name'];
 	if (!isset($_SESSION['email']))
-		$_SESSION['email'] = $_REQUEST['email'];	
+		$_SESSION['email'] = $_REQUEST['email'];
 	if (!isset($_SESSION['gender']))
-		$_SESSION['gender'] = $_REQUEST['gender'];	
+		$_SESSION['gender'] = $_REQUEST['gender'];
 	if ((!isset($_SESSION['country']) || ($_SESSION['country'] == "NotSet")))
 		$_SESSION['country'] = $_REQUEST['country'];
-		
+
 	if (($_SESSION['name'] == "") || ($_SESSION['name'] == null))
 		unset($_SESSION['name']);
 	if (($_SESSION['email'] == "") || ($_SESSION['email'] == null))
@@ -43,16 +43,16 @@
 		}
 		else
 			$data = "\n".$_COOKIE['name'].",".$_COOKIE['email'].",".$_COOKIE['gender'].",".$_COOKIE['country'].",$today";
-		
+
 		fwrite($handle, $data);
 		fclose($handle);
-		
+
 		unset($_SESSION['counter1']);
 		unset($_SESSION['counter']);
 		unset($_SESSION['gameid']);
 		unset($_SESSION['guard']);
 		unset($_SESSION['selection']);
-		
+
 		if ($_REQUEST['practice'] == "Yes")
 			echo "<meta http-equiv='refresh' content='0;url=exppractice.php'>";
 		else
@@ -69,12 +69,12 @@
 
 <meta name="google-site-verification" content="k7FHwFm9BvIqcIOqVtg-bAMkTaXC-CLs2RAtaqeypEc" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" /> 
+<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" />
 <meta name="Description" content="This website is a place for curriculum as well as fun activities" />
 <meta property="og:title" content="Mohit's Castle"/>
 <meta property="og:type" content="activity"/>
 <meta property="og:url" content="http://www.mohitgoenka.com"/>
-<meta property="og:image" content="http://www.mohitgoenka.com/img/Castle.png"/>
+<meta property="og:image" content="http://mgoenka.github.io/img/Castle.png"/>
 <meta property="fb:admins" content="683925722"/>
 <meta property="og:site_name" content="Mohit Goenka's Website"/>
 <meta property="og:description" content="This website is a place for curriculum as well as fun activities"/>
@@ -85,16 +85,16 @@
 <title  onload='right();'>Mohit's Castle</title>
 <!-- END TITLE -->
 
-<link rel="shortcut icon" href="http://www.mohitgoenka.com/Home/favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://mgoenka.github.io/Home/favicon.png" type="image/x-icon" />
 
 <!-- CSS Style Sheets -->
-<link rel="stylesheet" href="http://www.mohitgoenka.com/css/style.css" type="text/css" media="screen" />
-<link rel="alternate stylesheet" type="text/css" media="screen" title="green-theme" href="http://www.mohitgoenka.com/css/style2.css" />
-<link rel="alternate stylesheet" type="text/css" media="screen" title="blue-theme" href="http://www.mohitgoenka.com/css/style3.css" />
+<link rel="stylesheet" href="http://mgoenka.github.io/css/style.css" type="text/css" media="screen" />
+<link rel="alternate stylesheet" type="text/css" media="screen" title="green-theme" href="http://mgoenka.github.io/css/style2.css" />
+<link rel="alternate stylesheet" type="text/css" media="screen" title="blue-theme" href="http://mgoenka.github.io/css/style3.css" />
 <!-- END CSS Style Sheet -->
 
-<script type="text/javascript" src="http://www.mohitgoenka.com/index.js" language="JAVASCRIPT"></script>
-<script type="text/javascript" src="http://www.mohitgoenka.com/css/New_Style.js" language="JAVASCRIPT"></script>
+<script type="text/javascript" src="http://mgoenka.github.io/index.js" language="JAVASCRIPT"></script>
+<script type="text/javascript" src="http://mgoenka.github.io/css/New_Style.js" language="JAVASCRIPT"></script>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];

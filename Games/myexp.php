@@ -7,13 +7,13 @@
 
 	do
 	{
-	
+
 	if ($_SESSION['counter'] == 0)
 	{
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 39)
 			$pgate1 = "1";
 		else if ($pirate1 < 90)
@@ -69,7 +69,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 50)
 			$pgate1 = "1";
 		else if ($pirate1 < 105)
@@ -559,7 +559,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 32)
 			$pgate1 = "1";
 		else if ($pirate1 < 86)
@@ -614,7 +614,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 48)
 			$pgate1 = "1";
 		else if ($pirate1 < 102)
@@ -669,7 +669,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 42)
 			$pgate1 = "1";
 		else if ($pirate1 < 120)
@@ -724,7 +724,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 53)
 			$pgate1 = "1";
 		else if ($pirate1 < 105)
@@ -779,7 +779,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 42)
 			$pgate1 = "1";
 		else if ($pirate1 < 66)
@@ -835,7 +835,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 40)
 			$pgate1 = "1";
 		else if ($pirate1 < 81)
@@ -890,7 +890,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 57)
 			$pgate1 = "1";
 		else if ($pirate1 < 106)
@@ -946,7 +946,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 46)
 			$pgate1 = "1";
 		else if ($pirate1 < 73)
@@ -1001,7 +1001,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 48)
 			$pgate1 = "1";
 		else if ($pirate1 < 90)
@@ -1056,7 +1056,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 53)
 			$pgate1 = "1";
 		else if ($pirate1 < 90)
@@ -1111,7 +1111,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 36)
 			$pgate1 = "1";
 		else if ($pirate1 < 79)
@@ -1166,7 +1166,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 28)
 			$pgate1 = "1";
 		else if ($pirate1 < 55)
@@ -1222,7 +1222,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 31)
 			$pgate1 = "1";
 		else if ($pirate1 < 71)
@@ -1277,7 +1277,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 9)
 			$pgate1 = "1";
 		else if ($pirate1 < 56)
@@ -1711,7 +1711,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 0)
 			$pgate1 = "1";
 		else if ($pirate1 < 59)
@@ -1766,7 +1766,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 12)
 			$pgate1 = "1";
 		else if ($pirate1 < 74)
@@ -2091,7 +2091,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 54)
 			$pgate1 = "1";
 		else if ($pirate1 < 94)
@@ -2362,7 +2362,7 @@
 		$pirate1 = rand(0, 300);
 		$pirate2 = rand(0, 300);
 		$pirate3 = rand(0, 300);
-	
+
 		if ($pirate1 < 39)
 			$pgate1 = "1";
 		else if ($pirate1 < 90)
@@ -2423,7 +2423,7 @@
 		//Specify data for index $maxround at the end
 
 		$_SESSION['gameid'] = 1;
-		
+
 		if ($_SESSION['gameid'] == 1)
 			$_SESSION['combo'] = array(1,4,7,8,11,14,15,18,21,22,25,28,29,32,35,36);
 		else if ($_SESSION['gameid'] == 2)
@@ -2571,11 +2571,11 @@
 		$_SESSION['guard'][$_SESSION['combo'][$_SESSION['position'] - 1]][2] = $pgate2;
 		$_SESSION['guard'][$_SESSION['combo'][$_SESSION['position'] - 1]][3] = $pgate3;
 //	}
-	
+
 	$_SESSION['pretime'] = time();
 
-	
-	
+
+
 
 	if (($gate == "") || ($gate == null))
 	{
@@ -2595,12 +2595,12 @@
 
 <meta name="google-site-verification" content="k7FHwFm9BvIqcIOqVtg-bAMkTaXC-CLs2RAtaqeypEc" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" /> 
+<meta name="Keywords" content="mohit, goenka, mohitgoenka, mgoenka, moheet, goinka, gonka, castle, feedbacks, usc" />
 <meta name="Description" content="This website is a place for curriculum as well as fun activities" />
 <meta property="og:title" content="Mohit's Castle"/>
 <meta property="og:type" content="activity"/>
 <meta property="og:url" content="http://www.mohitgoenka.com"/>
-<meta property="og:image" content="http://www.mohitgoenka.com/img/Castle.png"/>
+<meta property="og:image" content="http://mgoenka.github.io/img/Castle.png"/>
 <meta property="fb:admins" content="683925722"/>
 <meta property="og:site_name" content="Mohit Goenka's Website"/>
 <meta property="og:description" content="This website is a place for curriculum as well as fun activities"/>
@@ -2610,16 +2610,16 @@
 <title  onload='right();'>Mohit's Castle</title>
 <!-- END TITLE -->
 
-<link rel="shortcut icon" href="http://www.mohitgoenka.com/Home/favicon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://mgoenka.github.io/Home/favicon.png" type="image/x-icon" />
 
 <!-- CSS Style Sheets -->
-<link rel="stylesheet" href="http://www.mohitgoenka.com/css/style.css" type="text/css" media="screen" />
-<link rel="alternate stylesheet" type="text/css" media="screen" title="green-theme" href="http://www.mohitgoenka.com/css/style2.css" />
-<link rel="alternate stylesheet" type="text/css" media="screen" title="blue-theme" href="http://www.mohitgoenka.com/css/style3.css" />
+<link rel="stylesheet" href="http://mgoenka.github.io/css/style.css" type="text/css" media="screen" />
+<link rel="alternate stylesheet" type="text/css" media="screen" title="green-theme" href="http://mgoenka.github.io/css/style2.css" />
+<link rel="alternate stylesheet" type="text/css" media="screen" title="blue-theme" href="http://mgoenka.github.io/css/style3.css" />
 <!-- END CSS Style Sheet -->
 
-<script type="text/javascript" src="http://www.mohitgoenka.com/index.js" language="JAVASCRIPT"></script>
-<script type="text/javascript" src="http://www.mohitgoenka.com/css/New_Style.js" language="JAVASCRIPT"></script>
+<script type="text/javascript" src="http://mgoenka.github.io/index.js" language="JAVASCRIPT"></script>
+<script type="text/javascript" src="http://mgoenka.github.io/css/New_Style.js" language="JAVASCRIPT"></script>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -2724,7 +2724,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 	<h3>The guards were in gates <?php echo $pgate1; ?>, <?php echo $pgate2; ?> and <?php echo $pgate3; ?></h3>
 <?php } ?>
 
-<?php 
+<?php
 	if ($_SESSION['counter'] >= $maxround)
 	{ ?>
 		<a href="javascript: void(0)" onclick="popup('feedback.php', 'Feedback: The Guards and the Treasure')"><h3>Leave your Feedback</h3></a>
@@ -2748,9 +2748,9 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 				$i = 1;
 				$maxround = 10;
 			}*/
-			
+
 			?>
-			<?php if ($_SESSION['selection'][$i] > 0) { 
+			<?php if ($_SESSION['selection'][$i] > 0) {
 				$data = $data.$_SESSION['selection'][$i].",";
 				$time = $time.",".$_SESSION['timemillis'][$i];
 			?>
@@ -2758,7 +2758,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 					<td><?php echo $j++; ?></td>
 					<td><?php echo $_SESSION['selection'][$_SESSION['combo'][$j - 2]]; ?></td>
 					<td><?php if ($_SESSION['guard'][$_SESSION['combo'][$j - 2]][1] > 0) echo $_SESSION['guard'][$_SESSION['combo'][$j - 2]][1]; ?><?php if ($_SESSION['guard'][$_SESSION['combo'][$j - 2]][1] > 0) echo ", "; ?><?php echo $_SESSION['guard'][$_SESSION['combo'][$j - 2]][2]; ?> and <?php echo $_SESSION['guard'][$_SESSION['combo'][$j - 2]][3]; ?></td>
-				<?php if(($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][1]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][2]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][3])) 
+				<?php if(($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][1]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][2]) && ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] != $_SESSION['guard'][$_SESSION['combo'][$j - 2]][3]))
 					{
 						$twon++;
 						$won = "Yes";
@@ -2804,7 +2804,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 							else if ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] == "8") $points = 5;
 						}
 						/*
-						else if (($_SESSION['combo'][$j - 2] == 22) || ($_SESSION['combo'][$j - 2] == 23) || ($_SESSION['combo'][$j - 2] == 24) || ($_SESSION['combo'][$j - 2] == 25) || ($_SESSION['combo'][$j - 2] == 26) || ($_SESSION['combo'][$j - 2] == 27) || ($_SESSION['combo'][$j - 2] == 28))*/						
+						else if (($_SESSION['combo'][$j - 2] == 22) || ($_SESSION['combo'][$j - 2] == 23) || ($_SESSION['combo'][$j - 2] == 24) || ($_SESSION['combo'][$j - 2] == 25) || ($_SESSION['combo'][$j - 2] == 26) || ($_SESSION['combo'][$j - 2] == 27) || ($_SESSION['combo'][$j - 2] == 28))*/
 						else if (($_SESSION['combo'][$j - 2] == 16) || ($_SESSION['combo'][$j - 2] == 17) || ($_SESSION['combo'][$j - 2] == 18) || ($_SESSION['combo'][$j - 2] == 19) || ($_SESSION['combo'][$j - 2] == 20))
 						{
 							if ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] == "1") $points = 3;
@@ -2901,7 +2901,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 							else if ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] == "8") $points = -2;
 						}
 						/*
-						else if (($_SESSION['combo'][$j - 2] == 22) || ($_SESSION['combo'][$j - 2] == 23) || ($_SESSION['combo'][$j - 2] == 24) || ($_SESSION['combo'][$j - 2] == 25) || ($_SESSION['combo'][$j - 2] == 26) || ($_SESSION['combo'][$j - 2] == 27) || ($_SESSION['combo'][$j - 2] == 28))*/						
+						else if (($_SESSION['combo'][$j - 2] == 22) || ($_SESSION['combo'][$j - 2] == 23) || ($_SESSION['combo'][$j - 2] == 24) || ($_SESSION['combo'][$j - 2] == 25) || ($_SESSION['combo'][$j - 2] == 26) || ($_SESSION['combo'][$j - 2] == 27) || ($_SESSION['combo'][$j - 2] == 28))*/
 						else if (($_SESSION['combo'][$j - 2] == 16) || ($_SESSION['combo'][$j - 2] == 17) || ($_SESSION['combo'][$j - 2] == 18) || ($_SESSION['combo'][$j - 2] == 19) || ($_SESSION['combo'][$j - 2] == 20))
 						{
 							if ($_SESSION['selection'][$_SESSION['combo'][$j - 2]] == "1") $points = -4;
@@ -3194,7 +3194,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 		<td valign="top"><img src="Images/p7.jpg"><br/>0.70</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.26</td>
 		<td valign="top"><img src="Images/p3.jpg"><br/>0.28</td>
-	</tr>	
+	</tr>
 <?php } else if ($_SESSION['counter'] == 1) { ?>
 	<tr align="center" bgcolor="#afc7c7" style="color: #000000; font-size: large">
 		<td bgcolor = "#afc7c7" align="left">Probability<br/>of No Guard</td>
@@ -4087,7 +4087,7 @@ Welcome&nbsp;<?php echo $_SESSION['username']; ?>!
 	<br/>
 <?php } ?>
 
-<?php if ($_SESSION['counter'] >= $maxround) { 
+<?php if ($_SESSION['counter'] >= $maxround) {
 	session_destroy();
  } ?>
 
