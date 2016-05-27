@@ -8,7 +8,6 @@ function right()
 	html_text += "<li><a href=\"http://www.mohitgoenka.com\" title=Home>Home</a></li>";
 	html_text += "<li><a href=\"Career\" title=Career>Career</a></li>";
 	html_text += "<li><a href=\"Entertainment\" title=Entertainment>Entertainment</a></li>";
-	html_text += "<li><a href=\"Games\" title=Games>Games</a></li>";
 	html_text += "<li><a href=\"Events\" title=Events>Events</a></li>";
 	html_text += "<li><a href=\"Gallery\" title=Gallery>Gallery</a></li>";
 	html_text += "<li><a href=\"Resources\" title=Resources>Resources</a></li>";
